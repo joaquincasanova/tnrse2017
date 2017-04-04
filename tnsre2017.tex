@@ -7,7 +7,6 @@
 % *** CITATION PACKAGES ***
 %
 \usepackage{cite}
-\usepackage{tikz}
 
 % *** GRAPHICS RELATED PACKAGES ***
 %
@@ -36,13 +35,6 @@
 
 \begin{document}
 % Definition of blocks:
-\tikzset{%
-  block/.style    = {draw, thick, rectangle, minimum height = 3em,
-    minimum width = 3em},
-  sum/.style      = {draw, circle, node distance = 2cm}, % Adder
-  input/.style    = {coordinate}, % Input
-  output/.style   = {coordinate} % Output
-}
 
 \title{EEG and MEG Inversion Using Convolutional and Recurrent Neural Networks}
 %
@@ -123,9 +115,17 @@ our approach: max dipole
 Subsubsection text here.
 Audio
 Faces
-\subsection{Precprocessing}
+\subsection{Preprocessing}
 \subsection{Description of Neural Networks}
-
+\begin{figure*}%[!t]
+\centering
+\includegraphics[width=7in]{cnnrnn}
+% where an .eps filename suffix will be assumed under latex, 
+% and a .pdf suffix will be assumed for pdflatex; or what has been declared
+% via \DeclareGraphicsExtensions.
+\caption{Block diagram of CNN+RNN neural network.}
+\label{fig_cnnrnn}
+\end{figure*}
 Subsection text here.
 
 % needed in second column of first page if using \IEEEpubid
