@@ -31,6 +31,12 @@ F.~H.~L. da~Silva, ``The impact of eeg/meg signal processing and modeling in
   the diagnostic and management of epilepsy,'' \emph{IEEE Reviews in Biomedical
   Engineering}, vol.~1, pp. 143--156, 2008.
 
+\bibitem{sharon2007advantage}
+D.~Sharon, M.~S. H{\"a}m{\"a}l{\"a}inen, R.~B. Tootell, E.~Halgren, and J.~W.
+  Belliveau, ``The advantage of combining meg and eeg: comparison to fmri in
+  focally stimulated visual cortex,'' \emph{Neuroimage}, vol.~36, no.~4, pp.
+  1225--1235, 2007.
+
 \bibitem{grech2008review}
 R.~Grech, T.~Cassar, J.~Muscat, K.~P. Camilleri, S.~G. Fabri, M.~Zervakis,
   P.~Xanthopoulos, V.~Sakkalis, and B.~Vanrumste, ``Review on solving the
@@ -90,6 +96,15 @@ S.~Hochreiter and J.~Schmidhuber, ``Long short-term memory,'' \emph{Neural
 S.~Venugopalan, H.~Xu, J.~Donahue, M.~Rohrbach, R.~Mooney, and K.~Saenko,
   ``Translating videos to natural language using deep recurrent neural
   networks,'' \emph{arXiv preprint arXiv:1412.4729}, 2014.
+
+\bibitem{gramfort2014mne}
+A.~Gramfort, M.~Luessi, E.~Larson, D.~A. Engemann, D.~Strohmeier, C.~Brodbeck,
+  L.~Parkkonen, and M.~S. H{\"a}m{\"a}l{\"a}inen, ``Mne software for processing
+  meg and eeg data,'' \emph{Neuroimage}, vol.~86, pp. 446--460, 2014.
+
+\bibitem{wakeman2015multi}
+D.~G. Wakeman and R.~N. Henson, ``A multi-subject, multi-modal human
+  neuroimaging dataset,'' \emph{Scientific data}, vol.~2, 2015.
 
 \bibitem{gramfort2013meg}
 A.~Gramfort, M.~Luessi, E.~Larson, D.~A. Engemann, D.~Strohmeier, C.~Brodbeck,

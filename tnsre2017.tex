@@ -94,77 +94,20 @@ EEG, MEG, Localization, Neural networks.
 
 \section{Introduction}
 
-\IEEEPARstart{T}{here} is a great need for interpretation of brain signals for both use in control of devices, for prosthetics, for example, or for disease diagnostics . Sensor measurements include ...
-Problem of neuron localization or distribution of currents
-typical approaches
-our approach: max dipole
-
-\cite{mellinger2007meg}
-
-An MEG-based brain--computer interface (BCI)
-
-\cite{da2008impact}
-
-The impact of EEG/MEG signal processing and modeling in the diagnostic and management of epilepsy
-
-Inversion methods
-
-\cite{grech2008review}
-
-Review on solving the inverse problem in EEG source analysis
-
-\cite{mosher1992multiple}
-
-Multiple dipole modeling and localization from spatio-temporal MEG data
-
-\cite{buchner1997inverse}
-
-Inverse localization of electric dipole current sources in finite element models of the human head
-
-\cite{galka2004solution}
-
-A solution to the dynamical inverse problem of EEG generation using spatiotemporal Kalman filtering
-
-\cite{somersalo2003non}
-
-Non-stationary magnetoencephalography by Bayesian filtering of dipole models
-
-\cite{taulu2005applications}
-
-Applications of the signal space separation method
-
-\cite{sekihara2001reconstructing}
-
-Reconstructing spatio-temporal activities of neural sources using an MEG vector beamformer technique
+\IEEEPARstart{T}{here} is a great need for interpretation of brain signals for both use in control of devices, for prosthetics, for example, or for disease diagnostics. Magnetoencephalography (MEG), the measurement of the brain's magnetic field, is typically done using cryogenic superconducting quantum interference devices (SQUID) on a dense grid surrounding the skull, and has been used in brain-computer interfaces \cite{mellinger2007meg}. Additionally, electroencephalography (EEG), is also used for BCI as well as medical diagnostics and study of brain stucture and function \cite{da2008impact}. Particularly for the latter, there is great utility in using the external measurements of MEG and EEG to determine which parts of the brain are most electrically active, a problem know as localization or inversion. Functional magnetic resonance imaging (fMRI) can be used but instead measures blood flow, and is thus not a direct measurement of electrical activity \cite{sharon2007advantage}.
 
 
-\cite{van2000eeg}
-
-EEG dipole source localization using artificial neural networks
-
-Neural nets
-
-\cite{lecun1998gradient}
-
-Convolutional
+Classically, MEG/EEG inversion has followed one of a few approaches, with incremental enhancements as sophistication and computational power has increased. \cite{grech2008review} provides an excellent review of techniques. \cite{mosher1992multiple} established the oroignal framework of the dipole in a sphere model, in which a lead-field matrix based on magnetostatic and electrostatic equations, and the positions of dipoles, transforms a vector of dipole magnitudes into a vector of magnetic flux and electric potential at sensor locations. The problem of localization becomes a problem of finding the locations and magnitudes of dipoles that minimize the square error of predicted versus observed fields. Using this formalism and a finite-element model, \cite{buchner1997inverse} localized dipoles from MEG data. \cite{galka2004solution} used Kalman filtering to solve the dynamical inverse problem. Thesignal-space separation method transforms the data into basis functions in signal space to better filter background noise sources \cite{taulu2005applications}. Beamformer techniques have also been applied for MEG/EEG inversion \cite{sekihara2001reconstructing}. More recently, EEG has been inverted using artificial neural networks \cite{van2000eeg}.
 
 
-\cite{hochreiter1997long}
+Neural networks have proven an important tool for accurate predictions from noisy and large datasets. A recent technique is convolutional neural networks, in which image inputs are convolved with weighted kernels \cite{lecun1998gradient}. To treat time-series or sequences, recurrent neural networks, incorporating temporal feedback, have been developed, such as the long-short-term memory RNN \cite{hochreiter1997long}. CNN and RNN have been combined in \cite{venugopalan2014translating} to translate video sequences into text descriptions of the video.
 
-Long short-term memory
-Recurrent
 
-\cite{venugopalan2014translating}
-Translating videos to natural language using deep recurrent neural networks
-
-% You must have at least 2 lines in the paragraph with the drop letter
-  % (should never be an issue
-
-Data/processing
-\cite{gramfort2013meg}
+Our proposed idea is to apply the combined CNN/RNN framework to sequences of MEG/EEG data, and predict the location of only the peak dipole. In this way we simplify the problem, and with approporiately trained networks, we could make quick predicts from data, possibly in real time. To demonstrate our technique, we use publicly available datasets, and use the dipole currents predicted by a well established technique (MNE) as the true value to which we compare our estimates and train our network \cite{gramfort2014mne}. Further, we investigate four variations of the network architecture (2-layer MLP, RNN, CNN, and CNN with RNN), to establish the advantages and disadvantages of each.
 
 \section{Methods}
 \subsubsection{Datasets}
+\cite{wakeman2015multi}
 \cite{gramfort2013meg}
 Subsubsection text here.
 Audio

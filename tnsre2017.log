@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.12.27)  10 APR 2017 15:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.12.27)  13 APR 2017 12:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -313,60 +313,60 @@ e
 <cnnrnn.png, id=1, 1638.12pt x 1059.96pt>
 File: cnnrnn.png Graphic file (type png)
  <use cnnrnn.png>
-Package pdftex.def Info: cnnrnn.png used on input line 181.
+Package pdftex.def Info: cnnrnn.png used on input line 124.
 (pdftex.def)             Requested size: 505.89pt x 327.33884pt.
 
 <cnn.png, id=2, 1638.12pt x 1059.96pt>
 File: cnn.png Graphic file (type png)
  <use cnn.png>
-Package pdftex.def Info: cnn.png used on input line 190.
+Package pdftex.def Info: cnn.png used on input line 133.
 (pdftex.def)             Requested size: 505.89pt x 327.33884pt.
 
 <rnn.png, id=3, 1638.12pt x 1059.96pt>
 File: rnn.png Graphic file (type png)
  <use rnn.png>
-Package pdftex.def Info: rnn.png used on input line 199.
+Package pdftex.def Info: rnn.png used on input line 142.
 (pdftex.def)             Requested size: 505.89pt x 327.33884pt.
 
 <mlp.png, id=4, 1638.12pt x 1059.96pt>
 File: mlp.png Graphic file (type png)
  <use mlp.png>
-Package pdftex.def Info: mlp.png used on input line 208.
+Package pdftex.def Info: mlp.png used on input line 151.
 (pdftex.def)             Requested size: 505.89pt x 327.33884pt.
 
 <aud.png, id=5, 1175.1102pt x 641.0349pt>
 File: aud.png Graphic file (type png)
  <use aud.png>
-Package pdftex.def Info: aud.png used on input line 227.
+Package pdftex.def Info: aud.png used on input line 170.
 (pdftex.def)             Requested size: 505.89pt x 275.96242pt.
+ [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
-<faces.png, id=7, 1175.1102pt x 641.0349pt>
+
+] <faces.png, id=16, 1175.1102pt x 641.0349pt>
 File: faces.png Graphic file (type png)
- <use faces.png>
-Package pdftex.def Info: faces.png used on input line 237.
+
+<use faces.png>
+Package pdftex.def Info: faces.png used on input line 180.
 (pdftex.def)             Requested size: 505.89pt x 275.96242pt.
- (./tnsre2017.bbl
-[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
-
-
-]) [2 <./cnnrnn.png (PNG copy)>] [3
+ (./tnsre2017.bbl [2 <./cnnrnn.png (PNG copy)>]) [3
 
  <./cnn.png (PNG copy)>] [4 <./rnn.png (PNG copy)>] [5 <./mlp.png (PNG copy)> <
-./aud.png>] [6 <./faces.png>] (./tnsre2017.aux) ) 
+./aud.png>]
+[6 <./faces.png>] (./tnsre2017.aux) ) 
 Here is how much of TeX's memory you used:
- 3209 strings out of 493029
- 48841 string characters out of 6136233
- 120206 words of memory out of 5000000
- 6699 multiletter control sequences out of 15000+600000
+ 3212 strings out of 493029
+ 48897 string characters out of 6136233
+ 121218 words of memory out of 5000000
+ 6702 multiletter control sequences out of 15000+600000
  40063 words of font info for 71 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 38i,8n,28p,1494b,303s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist
-/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/urw/tim
-es/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb>
-</usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on tnsre2017.pdf (6 pages, 507877 bytes).
+ 38i,8n,28p,1494b,299s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/d
+vips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pf
+b></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/
+texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-d
+ist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on tnsre2017.pdf (6 pages, 510641 bytes).
 PDF statistics:
  49 PDF objects out of 1000 (max. 8388607)
  28 compressed objects within 1 object stream

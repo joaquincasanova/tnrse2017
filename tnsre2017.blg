@@ -13,44 +13,44 @@ Database file #1: ./casanova_ieee.bib
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
 
 Done.
-You've used 15 entries,
+You've used 18 entries,
             4087 wiz_defined-function locations,
-            920 strings with 10646 characters,
-and the built_in function-call counts, 13128 in all, are:
-= -- 1078
-> -- 395
-< -- 115
-+ -- 212
-- -- 76
-* -- 664
-:= -- 1947
-add.period$ -- 30
-call.type$ -- 15
-change.case$ -- 15
-chr.to.int$ -- 234
-cite$ -- 15
-duplicate$ -- 934
-empty$ -- 913
-format.name$ -- 90
-if$ -- 3037
+            934 strings with 11281 characters,
+and the built_in function-call counts, 15725 in all, are:
+= -- 1288
+> -- 476
+< -- 139
++ -- 256
+- -- 91
+* -- 792
+:= -- 2323
+add.period$ -- 36
+call.type$ -- 18
+change.case$ -- 18
+chr.to.int$ -- 288
+cite$ -- 18
+duplicate$ -- 1116
+empty$ -- 1097
+format.name$ -- 108
+if$ -- 3641
 int.to.chr$ -- 0
-int.to.str$ -- 15
-missing$ -- 173
-newline$ -- 68
-num.names$ -- 15
-pop$ -- 371
+int.to.str$ -- 18
+missing$ -- 206
+newline$ -- 77
+num.names$ -- 18
+pop$ -- 445
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 1005
+skip$ -- 1204
 stack$ -- 0
-substring$ -- 583
-swap$ -- 817
-text.length$ -- 37
+substring$ -- 712
+swap$ -- 976
+text.length$ -- 43
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 15
+type$ -- 18
 warning$ -- 0
-while$ -- 55
-width$ -- 17
-write$ -- 179
+while$ -- 66
+width$ -- 20
+write$ -- 209
