@@ -106,12 +106,17 @@ Neural networks have proven an important tool for accurate predictions from nois
 Our proposed idea is to apply the combined CNN/RNN framework to sequences of MEG/EEG data, and predict the location of only the peak dipole. In this way we simplify the problem, and with approporiately trained networks, we could make quick predicts from data, possibly in real time. To demonstrate our technique, we use publicly available datasets, and use the dipole currents predicted by a well established technique (MNE) as the true value to which we compare our estimates and train our network \cite{gramfort2014mne}. Further, we investigate four variations of the network architecture (2-layer MLP, RNN, CNN, and CNN with RNN), to establish the advantages and disadvantages of each.
 
 \section{Methods}
+
+In this section, we describe our methodology, including datasets, preprocessing, and neural network architectures.
+
 \subsubsection{Datasets}
-\cite{wakeman2015multi}
-\cite{gramfort2013meg}
-Subsubsection text here.
-Audio
-Faces
+
+To test our method, we used two multimodal datasets. Both were processed using the python-mne package \cite{gramfort2014mne}.
+
+One dataset \cite{wakeman2015multi} consisted of 19 subjects presented with stimulus of famous, unfamiliar, or scrambled faces. There were 102 magnetometers, 204 planar gradiometers, and 70 electrodes, with 3 electrodes used for ocular and cardiac arifacts. We excluded gradiometers, as our study is to develop an inversion technique for use with our own MEG system, which only has the radial magnetometers. We considered one subject only (sub007) as that subject's MRI was the only one to segment properly into skin, skull, and cortex layers (an important feature for the inversion step). We used the data processing pipeline provided with the dataset here: \url{http://mne-tools.github.io/mne-biomag-group-demo/}. Sampling rate 1100 Hz 551 time points per trial, ico-4
+
+The second dataset \cite{gramfort2013meg} is included with MNE. ... one ocular channel 59 eeg 102 mag oct-5 checkerboard patterns were presented into the left and right visual field, interspersed by tones to the left or right ear. 
+
 \subsection{Preprocessing}
 \subsection{Description of Neural Networks}
 \url{tensorflow.com}
