@@ -113,12 +113,17 @@ In this section, we describe our methodology, including datasets, preprocessing,
 
 To test our method, we used two multimodal datasets. Both were processed using the python-mne package \cite{gramfort2014mne}.
 
-One dataset \cite{wakeman2015multi} consisted of 19 subjects presented with stimulus of famous, unfamiliar, or scrambled faces. There were 102 magnetometers, 204 planar gradiometers, and 70 electrodes, with 3 electrodes used for ocular and cardiac arifacts. We excluded gradiometers, as our study is to develop an inversion technique for use with our own MEG system, which only has the radial magnetometers. We considered one subject only (sub007) as that subject's MRI was the only one to segment properly into skin, skull, and cortex layers (an important feature for the inversion step). We used the data processing pipeline provided with the dataset here: \url{http://mne-tools.github.io/mne-biomag-group-demo/}. Sampling rate 1100 Hz 551 time points per trial, ico-4
+One dataset \cite{wakeman2015multi} consisted of 19 subjects presented with stimulus of famous, unfamiliar, or scrambled faces. There were 102 magnetometers, 204 planar gradiometers, and 70 electrodes, with 3 electrodes used for ocular and cardiac arifacts. We excluded gradiometers, as our study is to develop an inversion technique for use with our own MEG system, which only has the radial magnetometers. We considered one subject only (sub007) as that subject's MRI was the only one to segment properly into skin, skull, and cortex layers (an important feature for the inversion step). We used the data processing pipeline provided with the dataset here: \url{http://mne-tools.github.io/mne-biomag-group-demo/}. The sampling rate was 1100 Hz, with 551 time points per trial, and oct6 (source spacing 4.9/mm) grid for the dipole mesh used in MNE. There were a total of 879 trials.
 
-The second dataset \cite{gramfort2013meg} is included with MNE. ... one ocular channel 59 eeg 102 mag oct-5 checkerboard patterns were presented into the left and right visual field, interspersed by tones to the left or right ear. 
+The second dataset \cite{gramfort2013meg} is included with MNE, and consists of trials where subjects received audio or visual stimulus: checkerboard patterns were presented into the left and right visual field, interspersed by tones to the left or right ear. The datasset includes, for each trial, one ocular channel (for artifact removal), 59 EEG channels 102, and MEG channels. The source grid used was oct5 (9.9/mm). The sampling rate was 150 Hz, for 106 time steps, with 239 trials. 
 
 \subsection{Preprocessing}
+For both datasets, channels were preprocessed through lowpass filtering, followed by EOG/ECG artifact removal using direct measurements of EOG or ECG and/or independent component analysis. Data was epoched (cut into trials) but not averaged over each type of stimulus - each trial is considered as a separate datapoint. Further, prior to input to the neural network, the data was transformed by principle component analysis, to avoid numerical problems due to the small sensor units (fT and $\mu$V).
+
 \subsection{Description of Neural Networks}
+
+
+
 \url{tensorflow.com}
 \cite{kingma2014adam}
 
