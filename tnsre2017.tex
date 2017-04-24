@@ -120,122 +120,99 @@ The second dataset \cite{gramfort2013meg} is included with MNE, and consists of 
 \subsection{Preprocessing}
 For both datasets, channels were preprocessed through lowpass filtering, followed by EOG/ECG artifact removal using direct measurements of EOG or ECG and/or independent component analysis. Data was epoched (cut into trials) but not averaged over each type of stimulus - each trial is considered as a separate datapoint. Further, prior to input to the neural network, the data was transformed by principle component analysis, to avoid numerical problems due to the small sensor units (fT and $\mu$V).
 
-\subsection{Description of Neural Networks}
-
-
-
-\url{tensorflow.com}
-\cite{kingma2014adam}
-
-Adam: A method for stochastic optimization
-
-\begin{figure*}[!t]
-\centering
-\includegraphics[width=7in]{cnnrnn}
-% where an .eps filename suffix will be assumed under latex, 
-% and a .pdf suffix will be assumed for pdflatex; or what has been declared
-% via \DeclareGraphicsExtensions.
-\caption{Block diagram of CNN+RNN neural network.}
-\label{fig_cnnrnn}
-\end{figure*}
-\begin{figure*}[!t]
-\centering
-\includegraphics[width=7in]{cnn}
-% where an .eps filename suffix will be assumed under latex, 
-% and a .pdf suffix will be assumed for pdflatex; or what has been declared
-% via \DeclareGraphicsExtensions.
-\caption{Block diagram of CNN neural network.}
-\label{fig_cnn}
-\end{figure*}
-\begin{figure*}[!t]
-\centering
-\includegraphics[width=7in]{rnn}
-% where an .eps filename suffix will be assumed under latex, 
-% and a .pdf suffix will be assumed for pdflatex; or what has been declared
-% via \DeclareGraphicsExtensions.
-\caption{Block diagram of RNN neural network.}
-\label{fig_rnn}
-\end{figure*}
-\begin{figure*}[!t]
+\subsection{Description of Neural Networks} 
+\begin{figure*}[h!]
 \centering
 \includegraphics[width=7in]{mlp}
 % where an .eps filename suffix will be assumed under latex, 
 % and a .pdf suffix will be assumed for pdflatex; or what has been declared
 % via \DeclareGraphicsExtensions.
 \caption{Block diagram of MLP neural network.}
-\label{fig_mlp}
+\label{fig:mlp}
 \end{figure*}
 
-Subsection text here.
+\begin{figure*}[h!]
+\centering
+\includegraphics[width=7in]{cnn}
+% where an .eps filename suffix will be assumed under latex, 
+% and a .pdf suffix will be assumed for pdflatex; or what has been declared
+% via \DeclareGraphicsExtensions.
+\caption{Block diagram of CNN neural network.}
+\label{fig:cnn}
+\end{figure*}
 
-% needed in second column of first page if using \IEEEpubid
-%\IEEEpubidadjcol
-\subsection{Hyperparameters}
+\begin{figure*}[h!]
+\centering
+\includegraphics[width=7in]{rnn}
+% where an .eps filename suffix will be assumed under latex, 
+% and a .pdf suffix will be assumed for pdflatex; or what has been declared
+% via \DeclareGraphicsExtensions.
+\caption{Block diagram of RNN neural network.}
+\label{fig:rnn}
+\end{figure*}
+
+\begin{figure*}[h!]
+\centering
+\includegraphics[width=7in]{cnnrnn}
+% where an .eps filename suffix will be assumed under latex, 
+% and a .pdf suffix will be assumed for pdflatex; or what has been declared
+% via \DeclareGraphicsExtensions.
+\caption{Block diagram of CNN+RNN neural network.}
+\label{fig:cnnrnn}
+\end{figure*}
+
+
+We considered four variations of the network structure, each of which was programmed using Google's Tensorflow API in Python (\url{tensorflow.com}). The simplest configuration was a multi-layer perceptron, where the PCA-transformed data is input as a vector at each timestep, and transformed by an input layer with ReLU activation functions, and then an output layer, with linear activation functions, to give the coordinate of the maximum current neuron at each timestep (Figure \ref{fig:mlp}). The next network type was a convolutional neural network, where the data at each timestep was interpolated to an 11 by 11 grid, such that the data forms a sequence of 2-channel (EEG and MEG) images. The grid size was chosen such that increasing the number of pixels had no marginal benefit on the model error. There were two convolutional layers, with kernel size 3 by 3. This was followed by a dense layer which is mapped to the output with a linear activation function (Figure \ref{fig:cnn}). We also considered a recurrent neural network, with long short term memory (LSTM) cells, with an input layer, recurrent layer, and output layer, returning the dipole location of the maximum current neuron over the entire timeseries, not at each timestep (Figure \ref{fig:rnn}). Finally, we considered a combination of the CNN and RNN networks (Figure \ref{fig:cnnrnn}). Network paameters are given in Table \ref{tab:params}. 
+
+\begin{table*}[h!]
+  \begin{tabular}{c||c|c|c}
+    \hline
+    Network & CNN & Hidden layer & RNN\\
+    \hline
+    \hline
+    MLP & N/A & 10 units & N/A \\
+    \hline
+    CNN & 2 layers (3, then 5 channels) & N/A & N/A \\
+    \hline
+    RNN & N/A & N/A & 10 units, 3 layers \\
+    \hline
+    CNN+RNN & 2 layers (3, then 5 channels) &  N/A & 10 units, 3 layers \\
+  \end{tabular}
+  \caption{Network parameters.}
+  \label{tab:params}
+\end{table*}
+
 
 \subsection{Training and testing}
+
+To train the networks, on each dataset the data was divided into randomly selected test, validation, and training sets, where the test set was 20\% of the total dataset, validation was 20\% of the remainder, and the remainder was divided into batches for training of 20\% each. Cost was the RMSE of the location of the dipole, where the true value was taken fromthe estimate given by the Minimum Norm Estimate found using the MNE Python package. Validation error was logged every 100 steps, and each batch was trained for 1250 steps (giving 5000 train steps total). We used Adam optimization to train the network parameters \cite{kingma2014adam} with a learning rate of 0.005.
+
 \section{Results}
 
-\begin{figure*}[!t]
+Training and validation curves are given in Figures \ref{fig:aud} and \ref{fig:faces}, for the auditory dataset and the faces dataset, respectively. The predicted and true locations of dipoles are shown for example batches in ...
+
+\begin{figure*}[h!]
 \centering
 \includegraphics[width=7in]{aud1}
 % where an .eps filename suffix will be assumed under latex, 
 % and a .pdf suffix will be assumed for pdflatex; or what has been declared
 % via \DeclareGraphicsExtensions.
 \caption{Training/validation results for auditory stimulus dataset (1 dipole).}
-\label{fig_aud}
+\label{fig:aud}
 \end{figure*}
 
-\begin{figure*}[!t]
+\begin{figure*}[h!]
 \centering
 \includegraphics[width=7in]{faces1}
 % where an .eps filename suffix will be assumed under latex, 
 % and a .pdf suffix will be assumed for pdflatex; or what has been declared
 % via \DeclareGraphicsExtensions.
 \caption{Training/validation results for faces stimulus dataset (1 dipole).}
-\label{fig_faces}
+\label{fig:faces}
 \end{figure*}
 
-\begin{figure*}[!t]
-\centering
-\includegraphics[width=7in]{aud10}
-% where an .eps filename suffix will be assumed under latex, 
-% and a .pdf suffix will be assumed for pdflatex; or what has been declared
-% via \DeclareGraphicsExtensions.
-\caption{Training/validation results for auditory stimulus dataset (best of 10 dipoles).}
-\label{fig_aud10}
-\end{figure*}
-
-\begin{figure*}[!t]
-\centering
-\includegraphics[width=7in]{faces10}
-% where an .eps filename suffix will be assumed under latex, 
-% and a .pdf suffix will be assumed for pdflatex; or what has been declared
-% via \DeclareGraphicsExtensions.
-\caption{Training/validation results for faces stimulus dataset (best of 10 dipoles).}
-\label{fig_faces10}
-\end{figure*}
-
-\begin{figure*}[!t]
-\centering
-\includegraphics[width=7in]{aud100}
-% where an .eps filename suffix will be assumed under latex, 
-% and a .pdf suffix will be assumed for pdflatex; or what has been declared
-% via \DeclareGraphicsExtensions.
-\caption{Training/validation results for auditory stimulus dataset (best of 100 dipole).}
-\label{fig_aud100}
-\end{figure*}
-
-\begin{figure*}[!t]
-\centering
-\includegraphics[width=7in]{faces100}
-% where an .eps filename suffix will be assumed under latex, 
-% and a .pdf suffix will be assumed for pdflatex; or what has been declared
-% via \DeclareGraphicsExtensions.
-\caption{Training/validation results for faces stimulus dataset (best of 100 dipoles).}
-\label{fig_faces100}
-\end{figure*}
 \section{Conclusion}
-The conclusion goes here.
+We have presented a new technique for rapid inversion of MEG/EEG data.
 
 
 % use section* for acknowledgment

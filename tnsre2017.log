@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.12.27)  20 APR 2017 13:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.12.27)  24 APR 2017 16:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -314,90 +314,84 @@ e
 
 
 ]
-<cnnrnn.png, id=10, 1638.12pt x 1059.96pt>
-File: cnnrnn.png Graphic file (type png)
- <use cnnrnn.png>
-Package pdftex.def Info: cnnrnn.png used on input line 129.
+<mlp.png, id=10, 1638.12pt x 1059.96pt>
+File: mlp.png Graphic file (type png)
+ <use mlp.png>
+Package pdftex.def Info: mlp.png used on input line 126.
 (pdftex.def)             Requested size: 505.89pt x 327.33884pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 <cnn.png, id=11, 1638.12pt x 1059.96pt>
 File: cnn.png Graphic file (type png)
  <use cnn.png>
-Package pdftex.def Info: cnn.png used on input line 138.
+Package pdftex.def Info: cnn.png used on input line 136.
 (pdftex.def)             Requested size: 505.89pt x 327.33884pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 <rnn.png, id=12, 1638.12pt x 1059.96pt>
 File: rnn.png Graphic file (type png)
  <use rnn.png>
-Package pdftex.def Info: rnn.png used on input line 147.
+Package pdftex.def Info: rnn.png used on input line 146.
 (pdftex.def)             Requested size: 505.89pt x 327.33884pt.
 
-<mlp.png, id=13, 1638.12pt x 1059.96pt>
-File: mlp.png Graphic file (type png)
- <use mlp.png>
-Package pdftex.def Info: mlp.png used on input line 156.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<cnnrnn.png, id=13, 1638.12pt x 1059.96pt>
+File: cnnrnn.png Graphic file (type png)
+ <use cnnrnn.png>
+Package pdftex.def Info: cnnrnn.png used on input line 156.
 (pdftex.def)             Requested size: 505.89pt x 327.33884pt.
 
-<aud1.png, id=14, 643.203pt x 549.252pt>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<aud1.png, id=14, 578.16pt x 433.62pt>
 File: aud1.png Graphic file (type png)
  <use aud1.png>
-Package pdftex.def Info: aud1.png used on input line 175.
-(pdftex.def)             Requested size: 505.89pt x 432.00186pt.
+Package pdftex.def Info: aud1.png used on input line 196.
+(pdftex.def)             Requested size: 505.89pt x 379.41656pt.
 
-<faces1.png, id=16, 596.9502pt x 463.9734pt>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<faces1.png, id=16, 578.16pt x 433.62pt>
 File: faces1.png Graphic file (type png)
  <use faces1.png>
-Package pdftex.def Info: faces1.png used on input line 185.
-(pdftex.def)             Requested size: 505.89pt x 393.20403pt.
-
-<aud10.png, id=17, 578.16pt x 433.62pt>
-File: aud10.png Graphic file (type png)
- <use aud10.png>
-Package pdftex.def Info: aud10.png used on input line 195.
+Package pdftex.def Info: faces1.png used on input line 206.
 (pdftex.def)             Requested size: 505.89pt x 379.41656pt.
 
-<faces10.png, id=18, 578.16pt x 433.62pt>
-File: faces10.png Graphic file (type png)
- <use faces10.png>
-Package pdftex.def Info: faces10.png used on input line 205.
-(pdftex.def)             Requested size: 505.89pt x 379.41656pt.
 
-<aud100.png, id=19, 578.16pt x 433.62pt>
-File: aud100.png Graphic file (type png)
- <use aud100.png>
-Package pdftex.def Info: aud100.png used on input line 215.
-(pdftex.def)             Requested size: 505.89pt x 379.41656pt.
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<faces100.png, id=20, 578.16pt x 433.62pt>
-File: faces100.png Graphic file (type png)
- <use faces100.png>
-Package pdftex.def Info: faces100.png used on input line 225.
-(pdftex.def)             Requested size: 505.89pt x 379.41656pt.
-
-Underfull \vbox (badness 5847) has occurred while \output is active []
-
-
-(./tnsre2017.bbl [2 <./cnnrnn.png (PNG copy)>]) [3 <./cnn.png (PNG copy)>]
-[4 <./rnn.png (PNG copy)>] [5 <./mlp.png (PNG copy)>] [6 <./aud1.png>] [7 <./fa
-ces1.png>] [8 <./aud10.png>] [9 <./faces10.png>] [10 <./aud100.png>] [11 <./fac
-es100.png>] (./tnsre2017.aux) ) 
+(./tnsre2017.bbl [2]) [3 <./mlp.png (PNG copy)>] [4 <./cnn.png (PNG copy)>]
+[5 <./rnn.png (PNG copy)>] [6 <./cnnrnn.png (PNG copy)>] [7 <./aud1.png>]
+[8 <./faces1.png>] (./tnsre2017.aux) ) 
 Here is how much of TeX's memory you used:
- 3236 strings out of 493029
- 49243 string characters out of 6136233
- 121253 words of memory out of 5000000
- 6722 multiletter control sequences out of 15000+600000
- 40063 words of font info for 71 fonts, out of 8000000 for 9000
+ 3231 strings out of 493029
+ 49088 string characters out of 6136233
+ 125226 words of memory out of 5000000
+ 6713 multiletter control sequences out of 15000+600000
+ 44060 words of font info for 81 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 38i,8n,28p,1494b,299s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/b
-ase/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texliv
-e/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fo
-nts/type1/urw/times/utmri8a.pfb>
-Output written on tnsre2017.pdf (11 pages, 670111 bytes).
+ 38i,8n,28p,1494b,295s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/
+dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></u
+sr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/f
+onts/type1/urw/times/utmri8a.pfb>
+Output written on tnsre2017.pdf (8 pages, 443591 bytes).
 PDF statistics:
- 74 PDF objects out of 1000 (max. 8388607)
- 40 compressed objects within 1 object stream
+ 61 PDF objects out of 1000 (max. 8388607)
+ 37 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 51 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 31 words of extra memory for PDF output out of 10000 (max. 10000000)
 
