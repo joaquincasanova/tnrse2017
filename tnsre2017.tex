@@ -4,29 +4,14 @@
 
 \documentclass[journal]{IEEEtran}
 
-% *** CITATION PACKAGES ***
-%
 \usepackage{cite}
-
-% *** GRAPHICS RELATED PACKAGES ***
-%
-\ifCLASSINFOpdf
-  \usepackage[pdftex]{graphicx}
-  \graphicspath{{../pdf/}{../jpeg/}}
-  \DeclareGraphicsExtensions{.pdf,.jpeg,.png}
-\else
-  \usepackage[dvips]{graphicx}
-  \graphicspath{{../eps/}}
-  \DeclareGraphicsExtensions{.eps}
-\fi
+\usepackage{graphicx}
+\DeclareGraphicsExtensions{.pdf,.jpeg,.png}
 \usepackage{amsmath}
 \interdisplaylinepenalty=2500
-
 \usepackage{array}
 \usepackage{fixltx2e}
-\usepackage{stfloats}
 \usepackage{url}
-% Basically, \url{my_url_here}.
 
 
 % correct bad hyphenation here
@@ -37,16 +22,7 @@
 % Definition of blocks:
 
 \title{EEG and MEG Inversion Using Convolutional and Recurrent Neural Networks}
-%
-%
-% author names and IEEE memberships
-% note positions of commas and nonbreaking spaces ( ~ ) LaTeX will not break
-% a structure at a ~ so this keeps an author's name from being broken across
-% two lines.
-% use \thanks{} to gain access to the first footnote area
-% a separate \thanks must be used for each paragraph as LaTeX2e's \thanks
-% was not built to handle multiple paragraphs
-%
+
 
 \author{Joaquin~J.~Casanova,~\IEEEmembership{Member,~IEEE,}
         Zachary~D.~Stoecker-Sylvia,~\IEEEmembership{Member,~IEEE,}
@@ -60,13 +36,13 @@ FL, 32611 USA e-mail: jcasa@ufl.edu}% <-this % stops a space
 \thanks{Manuscript received }}
 
 % The paper headers
-\markboth{Transaction on Neural Systems and Rehabilitation Engineering,~Vol.~XX, No. YY}%
+\markboth{Transactions on Medical Imaging,~Vol.~XX, No. YY}%
 {Casanova \MakeLowercase{\textit{et al.}}: EEG and MEG Dipole Localization Using Convolutional and Recurrent Neural Networks}
 \maketitle
 
 \begin{abstract}
 
-  Real-time localzation of neuronal activity has a number of uses, including brain-computer interfaces and medical diagnostics. Generally, this is done by taking measurements of the brain's magnetic and electric fields (magnetoencephalography [MEG] and electroencephalography [EEG]), and inverting the measurements. Most approaches are physically-based, and attempt to find the best estimate of the lead-field matrix, which relates the dipole activation to the field strength by minimizing the error of an estimate. To date, most approaches using the lead-field matrix are complicated and too slow in real time, aimed primarily at elucidating brain structural functional relationships from experimental data. We propose a new technique in which the location of peak neuronal current is estimated by treating EEG and MEG as a two-channel image, or time-series of images, which is processed by a neural network which returns the location of the dipole of peak magnitude. Four archtectures are tested: 2-layer perceptron, convolutional neural network (CNN), recurrent neural network (RNN), and CNN feeding RNN. In the absence of true measures of neuronal activity, we used two publicly available MEG/EEG datasets, and treated the estimates of the traditional minimum-norm estimate (MNE) as true estimates. We test the four variations of the network architecture, and in the best case (CNN only), we achieve test dataset errors (RMSE of max dipole location) of between XX and YY mm.
+  Real-time localzation of neuronal activity has a number of uses, including brain-computer interfaces and medical diagnostics. Generally, this is done by taking measurements of the brain's magnetic and electric fields (magnetoencephalography [MEG] and electroencephalography [EEG]), and inverting the measurements. Most approaches are physically-based, and attempt to find the best estimate of the lead-field matrix, which relates the dipole activation to the field strength by minimizing the error of an estimate. To date, most approaches using the lead-field matrix are complicated and too slow in real time, aimed primarily at elucidating brain structural functional relationships from experimental data. We propose a new technique in which the location of peak neuronal current is estimated by treating EEG and MEG as a two-channel image, or time-series of images, which is processed by a neural network which returns the location of the dipole of peak magnitude. Four archtectures are tested: 2-layer perceptron, convolutional neural network (CNN), recurrent neural network (RNN), and CNN feeding RNN. In the absence of true measures of neuronal activity, we used two publicly available MEG/EEG datasets, and treated the estimates of the traditional minimum-norm estimate (MNE) as true estimates. We test the four variations of the network architecture, and in the best case (CNN only), we achieve test dataset errors (RMSE of max dipole location) of 1.9 and 5.1 mm on two separate datasets of MEG/EEG timeseries from subjects with different types of stimulus.
   
 \end{abstract}
 
@@ -77,17 +53,6 @@ EEG, MEG, Localization, Neural networks.
 
 
 
-
-
-
-% For peer review papers, you can put extra information on the cover
-% page as needed:
-% \ifCLASSOPTIONpeerreview
-% \begin{center} \bfseries EDICS Category: 3-BBND \end{center}
-% \fi
-%
-% For peerreview papers, this IEEEtran command inserts a page break and
-% creates the second title. It will be ignored for other modes.
 \IEEEpeerreviewmaketitle
 
 
@@ -123,48 +88,37 @@ For both datasets, channels were preprocessed through lowpass filtering, followe
 \subsection{Description of Neural Networks} 
 \begin{figure*}[h!]
 \centering
-\includegraphics[width=7in]{mlp}
-% where an .eps filename suffix will be assumed under latex, 
-% and a .pdf suffix will be assumed for pdflatex; or what has been declared
-% via \DeclareGraphicsExtensions.
+\includegraphics[width=5in]{mlp}
 \caption{Block diagram of MLP neural network.}
 \label{fig:mlp}
 \end{figure*}
 
-\begin{figure*}[h!]
-\centering
-\includegraphics[width=7in]{cnn}
-% where an .eps filename suffix will be assumed under latex, 
-% and a .pdf suffix will be assumed for pdflatex; or what has been declared
-% via \DeclareGraphicsExtensions.
-\caption{Block diagram of CNN neural network.}
-\label{fig:cnn}
-\end{figure*}
+%\begin{figure*}[h!]
+%\centering
+%\includegraphics[width=5in]{cnn}
+%\caption{Block diagram of CNN neural network.}
+%\label{fig:cnn}
+%\end{figure*}
+
+%\begin{figure*}[h!]
+%\centering
+%\includegraphics[width=5in]{rnn}
+%\caption{Block diagram of RNN neural network.}
+%\label{fig:rnn}
+%\end{figure*}
 
 \begin{figure*}[h!]
 \centering
-\includegraphics[width=7in]{rnn}
-% where an .eps filename suffix will be assumed under latex, 
-% and a .pdf suffix will be assumed for pdflatex; or what has been declared
-% via \DeclareGraphicsExtensions.
-\caption{Block diagram of RNN neural network.}
-\label{fig:rnn}
-\end{figure*}
-
-\begin{figure*}[h!]
-\centering
-\includegraphics[width=7in]{cnnrnn}
-% where an .eps filename suffix will be assumed under latex, 
-% and a .pdf suffix will be assumed for pdflatex; or what has been declared
-% via \DeclareGraphicsExtensions.
+\includegraphics[width=5in]{cnnrnn}
 \caption{Block diagram of CNN+RNN neural network.}
 \label{fig:cnnrnn}
 \end{figure*}
 
 
-We considered four variations of the network structure, each of which was programmed using Google's Tensorflow API in Python (\url{tensorflow.com}). The simplest configuration was a multi-layer perceptron, where the PCA-transformed data is input as a vector at each timestep, and transformed by an input layer with ReLU activation functions, and then an output layer, with linear activation functions, to give the coordinate of the maximum current neuron at each timestep (Figure \ref{fig:mlp}). The next network type was a convolutional neural network, where the data at each timestep was interpolated to an 11 by 11 grid, such that the data forms a sequence of 2-channel (EEG and MEG) images. The grid size was chosen such that increasing the number of pixels had no marginal benefit on the model error. There were two convolutional layers, with kernel size 3 by 3. This was followed by a dense layer which is mapped to the output with a linear activation function (Figure \ref{fig:cnn}). We also considered a recurrent neural network, with long short term memory (LSTM) cells, with an input layer, recurrent layer, and output layer, returning the dipole location of the maximum current neuron over the entire timeseries, not at each timestep (Figure \ref{fig:rnn}). Finally, we considered a combination of the CNN and RNN networks (Figure \ref{fig:cnnrnn}). Network paameters are given in Table \ref{tab:params}. 
+We considered four variations of the network structure, each of which was programmed using Google's Tensorflow API in Python (\url{tensorflow.com}). The simplest configuration was a multi-layer perceptron, where the PCA-transformed data is input as a vector at each timestep, and transformed by an input layer with ReLU activation functions, and then an output layer, with linear activation functions, to give the coordinate of the maximum current neuron at each timestep (Fig. \ref{fig:mlp}). The next network type was a convolutional neural network, where the data at each timestep was interpolated to an 11 by 11 grid, such that the data forms a sequence of 2-channel (EEG and MEG) images. The grid size was chosen such that increasing the number of pixels had no marginal benefit on the model error. There were two convolutional layers, with kernel size 3 by 3. This was followed by a dense layer which is mapped to the output with a linear activation function. We also considered a recurrent neural network, with long short term memory (LSTM) cells, with an input layer, recurrent layer, and output layer, returning the dipole location of the maximum current neuron over the entire timeseries, not at each timestep. Finally, we considered a combination of the CNN and RNN networks (Fig. \ref{fig:cnnrnn}). Network parameters are given in Table \ref{tab:params}. 
 
 \begin{table*}[h!]
+  \centering
   \begin{tabular}{c||c|c|c}
     \hline
     Network & CNN & Hidden layer & RNN\\
@@ -185,42 +139,49 @@ We considered four variations of the network structure, each of which was progra
 
 \subsection{Training and testing}
 
-To train the networks, on each dataset the data was divided into randomly selected test, validation, and training sets, where the test set was 20\% of the total dataset, validation was 20\% of the remainder, and the remainder was divided into batches for training of 20\% each. Cost was the RMSE of the location of the dipole, where the true value was taken fromthe estimate given by the Minimum Norm Estimate found using the MNE Python package. Validation error was logged every 100 steps, and each batch was trained for 1250 steps (giving 5000 train steps total). We used Adam optimization to train the network parameters \cite{kingma2014adam} with a learning rate of 0.005.
+To train the networks, on each dataset the data was divided into randomly selected test, validation, and training sets, where the test set was 20\% of the total dataset, validation was 20\% of the remainder, and the remainder was divided into batches for training of 20\% each. Cost was the RMSE of the location of the dipole, where the true value was taken as the Minimum Norm Estimate found using the MNE Python package. Validation error was logged every 100 steps, and each batch was trained for 1250 steps (giving 5000 train steps total). We used Adam optimization to train the network parameters \cite{kingma2014adam} with a learning rate of 0.005.
 
 \section{Results}
 
-Training and validation curves are given in Figures \ref{fig:aud} and \ref{fig:faces}, for the auditory dataset and the faces dataset, respectively. The predicted and true locations of dipoles are shown for example batches in ...
+Training and validation curves are given in Figs. \ref{fig:aud} and \ref{fig:faces}, along with test dataset cost, for the auditory dataset and the faces dataset, respectively. For both datasets, CNN and MLP networks outperform the networks including an RNN. While they are capable of achieving low training cost, they tend to overfit, and thus do poorly on the test set (test cost of around 45 mm for the faces dataset, 30 mm for the auditory dataset). For reference, the human head is about 75 mm in diameter. On the other hand, simpler networks did better, with the CNN only network performing best (cost of 5.1 mm for the auditory set, and 1.9 mm for the faces dataset). Fewer parameters allowed for better generalization, and the CNN layer allows us to preserve spatial information critical for inversion.
 
-\begin{figure*}[h!]
+The poor generalization of the RNN networks led us to suspect that it may be too sensitive to noise in the location of the peak dipole. In other words, since we were using the MNE estimate of the dipole currents as truth, and these have some inherent error due to sensor noise and inversion error, the performance of the network to estimate the location may be poor. To test this, instead of comparing the neural network estimate to the peak dipole, we instead tried comparing it to the top 100 dipoles (which is approximately the top 5\%-10\%), and picking the closest one for calculating the cost. This has the effect of averaging out error in the dipoles estimated by MNE. Plots showing the training curves for this top-100 approach are shown in Figs. \ref{fig:aud100} and \ref{fig:faces100}. Clearly, this reduces the test, training, and validation costs, but the performance ranking of the the four networks remains the same.
+
+\begin{figure}[!t]
 \centering
-\includegraphics[width=7in]{aud1}
-% where an .eps filename suffix will be assumed under latex, 
-% and a .pdf suffix will be assumed for pdflatex; or what has been declared
-% via \DeclareGraphicsExtensions.
+\includegraphics[width=3.5in]{aud1}
 \caption{Training/validation results for auditory stimulus dataset (1 dipole).}
 \label{fig:aud}
-\end{figure*}
+\end{figure}
 
-\begin{figure*}[h!]
+\begin{figure}[!t]
 \centering
-\includegraphics[width=7in]{faces1}
-% where an .eps filename suffix will be assumed under latex, 
-% and a .pdf suffix will be assumed for pdflatex; or what has been declared
-% via \DeclareGraphicsExtensions.
+\includegraphics[width=3.5in]{faces1}
 \caption{Training/validation results for faces stimulus dataset (1 dipole).}
 \label{fig:faces}
-\end{figure*}
+\end{figure}
+
+\begin{figure}[!t]
+\centering
+\includegraphics[width=3.5in]{aud100}
+\caption{Training/validation results for auditory stimulus dataset (100 dipoles).}
+\label{fig:aud100}
+\end{figure}
+
+\begin{figure}[!t]
+\centering
+\includegraphics[width=3.5in]{faces100}
+\caption{Training/validation results for faces stimulus dataset (100 dipoles).}
+\label{fig:faces100}
+\end{figure}
 
 \section{Conclusion}
-We have presented a new technique for rapid inversion of MEG/EEG data.
+We have presented a new technique for rapid inversion of MEG/EEG data, using neural networks to estimate the location of the peak dipole, rather than the current distribution over the cortex. In examining four possible network architectures, it was found that the CNN networks perform best in determining the location of the peak dipole at each timestep. More complicated network architectures, or those without the CNN layers, performed worse, due to overfitting and loss of spatial information. Treating the EEG and MEG data as a two-channel image is an effective method for retaining patial field patterns, and is easily extensible to situations with more available sensors, such as NIRS. Future work may investigate using sequence-to-sequence neural machine translation to interpret timeseries.
 
 
 % use section* for acknowledgment
 \section*{Acknowledgment}
-
-
-The authors would like to thank...
-
+The authors would like to thank DARPA BAA XXX
 
 
 % references section
@@ -230,32 +191,23 @@ The authors would like to thank...
 %\begin{IEEEbiography}[{\includegraphics[width=1in,height=1.25in,clip,keepaspectratio]{mshell}}]{Michael Shell}
 % or if you just want to reserve a space for a photo:
 
-\begin{IEEEbiography}{}
-\end{IEEEbiography}
-
 % if you will not have a photo at all:
-\begin{IEEEbiographynophoto}{}
+\begin{IEEEbiographynophoto}{Joaquin Casanova (S'05--M'09)}
+  Dr. Casanova is a Research Assistant Professor in Electrical and Computer Engineering at the University of Florida. He received the B.S. and M.S. degrees in agricultural and biological engineering and the Ph.D. degree in electrical engineering from the University of Florida, Gainesville, in 2006, 2007, and 2010, respectively. His research focuses on electromagnetic sensors, machine learning, medicine, and agriculture. Dr. Casanova is a member of the American Society of Agricultural and Biological Engineers.
 \end{IEEEbiographynophoto}
 
-% insert where needed to balance the two columns on the last page with
-% biographies
-%\newpage
-
-\begin{IEEEbiographynophoto}{Jane Doe}
-Biography text here.
+\begin{IEEEbiographynophoto}{Zachary D. Stoecker-Sylvia}
+  
 \end{IEEEbiographynophoto}
 
-% You can push biographies down or up by placing
-% a \vfill before or after them. The appropriate
-% use of \vfill depends on what kind of text is
-% on the last page and whether or not the columns
-% are being equalized.
 
-%\vfill
+\begin{IEEEbiographynophoto}{Ryan Miyamoto}
+  
+\end{IEEEbiographynophoto}
 
-% Can be used to pull up biographies so that the bottom of the last one
-% is flush with the other column.
-%\enlargethispage{-5in}
+\begin{IEEEbiographynophoto}{Jenshan Lin}
+  
+\end{IEEEbiographynophoto}
 
 
 

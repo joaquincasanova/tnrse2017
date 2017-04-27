@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.12.27)  24 APR 2017 16:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.12.27)  27 APR 2017 09:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -224,44 +224,38 @@ Package fixltx2e Warning: fixltx2e is not required with releases after 2015
 (fixltx2e)                All fixes are now in the LaTeX kernel.
 (fixltx2e)                See the latexrelease package for details.
 
-) (/usr/share/texlive/texmf-dist/tex/latex/sttools/stfloats.sty
-Package: stfloats 2016/02/08 v2.0 Improve float mechanism and baselineskip sett
-ings
-\@dblbotnum=\count107
-\c@dblbotnumber=\count108
-)
-(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip11
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 ) (./tnsre2017.aux)
 \openout1 = `tnsre2017.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
 
 -- Lines per column: 58 (exact).
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count109
+\scratchcounter=\count107
 \scratchdimen=\dimen139
 \scratchbox=\box30
-\nofMPsegments=\count110
-\nofMParguments=\count111
+\nofMPsegments=\count108
+\nofMParguments=\count109
 \everyMPshowfont=\toks22
-\MPscratchCnt=\count112
+\MPscratchCnt=\count110
 \MPscratchDim=\dimen140
-\MPnumerator=\count113
-\makeMPintoPDFobject=\count114
+\MPnumerator=\count111
+\makeMPintoPDFobject=\count112
 \everyMPtoPDFconversion=\toks23
 ) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
@@ -317,35 +311,17 @@ e
 <mlp.png, id=10, 1638.12pt x 1059.96pt>
 File: mlp.png Graphic file (type png)
  <use mlp.png>
-Package pdftex.def Info: mlp.png used on input line 126.
-(pdftex.def)             Requested size: 505.89pt x 327.33884pt.
+Package pdftex.def Info: mlp.png used on input line 91.
+(pdftex.def)             Requested size: 361.34999pt x 233.80652pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<cnn.png, id=11, 1638.12pt x 1059.96pt>
-File: cnn.png Graphic file (type png)
- <use cnn.png>
-Package pdftex.def Info: cnn.png used on input line 136.
-(pdftex.def)             Requested size: 505.89pt x 327.33884pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<rnn.png, id=12, 1638.12pt x 1059.96pt>
-File: rnn.png Graphic file (type png)
- <use rnn.png>
-Package pdftex.def Info: rnn.png used on input line 146.
-(pdftex.def)             Requested size: 505.89pt x 327.33884pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<cnnrnn.png, id=13, 1638.12pt x 1059.96pt>
+<cnnrnn.png, id=11, 1638.12pt x 1059.96pt>
 File: cnnrnn.png Graphic file (type png)
  <use cnnrnn.png>
-Package pdftex.def Info: cnnrnn.png used on input line 156.
-(pdftex.def)             Requested size: 505.89pt x 327.33884pt.
+Package pdftex.def Info: cnnrnn.png used on input line 112.
+(pdftex.def)             Requested size: 361.34999pt x 233.80652pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -353,45 +329,71 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<aud1.png, id=14, 578.16pt x 433.62pt>
+<aud1.png, id=12, 607.7907pt x 615.7404pt>
 File: aud1.png Graphic file (type png)
  <use aud1.png>
-Package pdftex.def Info: aud1.png used on input line 196.
-(pdftex.def)             Requested size: 505.89pt x 379.41656pt.
+Package pdftex.def Info: aud1.png used on input line 152.
+(pdftex.def)             Requested size: 252.94499pt x 256.25095pt.
 
+Overfull \hbox (0.94499pt too wide) in paragraph at lines 152--153
+ [][] 
+ []
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<faces1.png, id=16, 578.16pt x 433.62pt>
+<faces1.png, id=14, 607.7907pt x 615.7404pt>
 File: faces1.png Graphic file (type png)
  <use faces1.png>
-Package pdftex.def Info: faces1.png used on input line 206.
-(pdftex.def)             Requested size: 505.89pt x 379.41656pt.
+Package pdftex.def Info: faces1.png used on input line 159.
+(pdftex.def)             Requested size: 252.94499pt x 256.25095pt.
 
+Overfull \hbox (0.94499pt too wide) in paragraph at lines 159--160
+ [][] 
+ []
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+<aud100.png, id=15, 607.7907pt x 615.7404pt>
+File: aud100.png Graphic file (type png)
+ <use aud100.png>
+Package pdftex.def Info: aud100.png used on input line 166.
+(pdftex.def)             Requested size: 252.94499pt x 256.25095pt.
 
-(./tnsre2017.bbl [2]) [3 <./mlp.png (PNG copy)>] [4 <./cnn.png (PNG copy)>]
-[5 <./rnn.png (PNG copy)>] [6 <./cnnrnn.png (PNG copy)>] [7 <./aud1.png>]
-[8 <./faces1.png>] (./tnsre2017.aux) ) 
+Overfull \hbox (0.94499pt too wide) in paragraph at lines 166--167
+ [][] 
+ []
+
+<faces100.png, id=16, 607.7907pt x 615.7404pt>
+File: faces100.png Graphic file (type png)
+ <use faces100.png>
+Package pdftex.def Info: faces100.png used on input line 173.
+(pdftex.def)             Requested size: 252.94499pt x 256.25095pt.
+
+Overfull \hbox (0.94499pt too wide) in paragraph at lines 173--174
+ [][] 
+ []
+
+[2] (./tnsre2017.bbl
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [3 <./mlp.png (PNG copy)> <./cnnrnn.png (PNG copy)>] [4 <./aud1.png> <./faces1
+.png> <./aud100.png> <./faces100.png>]) [5
+
+] (./tnsre2017.aux) ) 
 Here is how much of TeX's memory you used:
- 3231 strings out of 493029
- 49088 string characters out of 6136233
- 125226 words of memory out of 5000000
- 6713 multiletter control sequences out of 15000+600000
+ 3204 strings out of 493029
+ 48638 string characters out of 6136233
+ 122501 words of memory out of 5000000
+ 6692 multiletter control sequences out of 15000+600000
  44060 words of font info for 81 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 38i,8n,28p,1494b,295s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/
-dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></u
-sr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/f
-onts/type1/urw/times/utmri8a.pfb>
-Output written on tnsre2017.pdf (8 pages, 443591 bytes).
+ 38i,7n,23p,1582b,299s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc
+}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr
+/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/
+texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fon
+ts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/ti
+mes/utmri8a.pfb>
+Output written on tnsre2017.pdf (5 pages, 557409 bytes).
 PDF statistics:
- 61 PDF objects out of 1000 (max. 8388607)
- 37 compressed objects within 1 object stream
+ 52 PDF objects out of 1000 (max. 8388607)
+ 29 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  31 words of extra memory for PDF output out of 10000 (max. 10000000)
 
