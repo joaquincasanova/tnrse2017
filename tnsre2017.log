@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.12.27)  27 APR 2017 09:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.12.27)  10 MAY 2017 08:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -373,9 +373,32 @@ Overfull \hbox (0.94499pt too wide) in paragraph at lines 173--174
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [3 <./mlp.png (PNG copy)> <./cnnrnn.png (PNG copy)>] [4 <./aud1.png> <./faces1
-.png> <./aud100.png> <./faces100.png>]) [5
-
-] (./tnsre2017.aux) ) 
+.png> <./aud100.png> <./faces100.png>])
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no € in font ptmr7t!
+Missing character: There is no ™ in font ptmr7t!
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no € in font ptmr7t!
+Missing character: There is no ™ in font ptmr7t!
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no € in font ptmr7t!
+Missing character: There is no ™ in font ptmr7t!
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no € in font ptmr7t!
+Missing character: There is no ™ in font ptmr7t!
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no € in font ptmr7t!
+Missing character: There is no ™ in font ptmr7t!
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no € in font ptmr7t!
+Missing character: There is no ™ in font ptmr7t!
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no € in font ptmr7t!
+Missing character: There is no “ in font ptmr7t!
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no € in font ptmr7t!
+Missing character: There is no “ in font ptmr7t!
+ [5] (./tnsre2017.aux) ) 
 Here is how much of TeX's memory you used:
  3204 strings out of 493029
  48638 string characters out of 6136233
@@ -384,13 +407,13 @@ Here is how much of TeX's memory you used:
  44060 words of font info for 81 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  38i,7n,23p,1582b,299s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc
-}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr
-/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/
-texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fon
-ts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/ti
-mes/utmri8a.pfb>
-Output written on tnsre2017.pdf (5 pages, 557409 bytes).
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.
+enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
+usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw
+/times/utmri8a.pfb>
+Output written on tnsre2017.pdf (5 pages, 559535 bytes).
 PDF statistics:
  52 PDF objects out of 1000 (max. 8388607)
  29 compressed objects within 1 object stream
