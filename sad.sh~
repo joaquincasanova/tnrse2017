@@ -1,0 +1,10 @@
+#!/bin/sh
+
+for f in $(ls *.csv)
+do
+
+    echo $f
+    sed 's/[\[\]]//' $f > $f 
+done
+
+    
