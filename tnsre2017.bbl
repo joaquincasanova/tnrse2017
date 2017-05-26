@@ -23,24 +23,24 @@
 
 \bibitem{mellinger2007meg}
 J.~Mellinger, G.~Schalk, C.~Braun, H.~Preissl, W.~Rosenstiel, N.~Birbaumer, and
-  A.~K{\"u}bler, ``An meg-based brain--computer interface (bci),''
+  A.~K{\"u}bler, ``An {MEG}-based brain--computer interface ({BCI}),''
   \emph{Neuroimage}, vol.~36, no.~3, pp. 581--593, 2007.
 
 \bibitem{da2008impact}
-F.~H.~L. da~Silva, ``The impact of eeg/meg signal processing and modeling in
+F.~H.~L. da~Silva, ``The impact of {EEG/MEG} signal processing and modeling in
   the diagnostic and management of epilepsy,'' \emph{IEEE Reviews in Biomedical
   Engineering}, vol.~1, pp. 143--156, 2008.
 
 \bibitem{sharon2007advantage}
 D.~Sharon, M.~S. H{\"a}m{\"a}l{\"a}inen, R.~B. Tootell, E.~Halgren, and J.~W.
-  Belliveau, ``The advantage of combining meg and eeg: comparison to fmri in
-  focally stimulated visual cortex,'' \emph{Neuroimage}, vol.~36, no.~4, pp.
+  Belliveau, ``The advantage of combining {MEG} and {EEG}: comparison to f{MRI}
+  in focally stimulated visual cortex,'' \emph{Neuroimage}, vol.~36, no.~4, pp.
   1225--1235, 2007.
 
 \bibitem{grech2008review}
 R.~Grech, T.~Cassar, J.~Muscat, K.~P. Camilleri, S.~G. Fabri, M.~Zervakis,
   P.~Xanthopoulos, V.~Sakkalis, and B.~Vanrumste, ``Review on solving the
-  inverse problem in eeg source analysis,'' \emph{Journal of neuroengineering
+  inverse problem in {EEG} source analysis,'' \emph{Journal of neuroengineering
   and rehabilitation}, vol.~5, no.~1, p.~1, 2008.
 
 \bibitem{mosher1992multiple}
@@ -57,14 +57,9 @@ H.~Buchner, G.~Knoll, M.~Fuchs, A.~Rien{\"a}cker, R.~Beckmann, M.~Wagner,
 
 \bibitem{galka2004solution}
 A.~Galka, O.~Yamashita, T.~Ozaki, R.~Biscay, and P.~Vald{\'e}s-Sosa, ``A
-  solution to the dynamical inverse problem of eeg generation using
+  solution to the dynamical inverse problem of {EEG} generation using
   spatiotemporal kalman filtering,'' \emph{NeuroImage}, vol.~23, no.~2, pp.
   435--453, 2004.
-
-\bibitem{somersalo2003non}
-E.~Somersalo, A.~Voutilainen, and J.~Kaipio, ``Non-stationary
-  magnetoencephalography by bayesian filtering of dipole models,''
-  \emph{Inverse Problems}, vol.~19, no.~5, p. 1047, 2003.
 
 \bibitem{taulu2005applications}
 S.~Taulu, J.~Simola, and M.~Kajola, ``Applications of the signal space
@@ -79,9 +74,9 @@ K.~Sekihara, S.~S. Nagarajan, D.~Poeppel, A.~Marantz, and Y.~Miyashita,
 
 \bibitem{van2000eeg}
 G.~Van~Hoey, J.~De~Clercq, B.~Vanrumste, R.~Van~de Walle, I.~Lemahieu,
-  M.~D'Hav{\'e}, and P.~Boon, ``Eeg dipole source localization using artificial
-  neural networks,'' \emph{Physics in medicine and biology}, vol.~45, no.~4, p.
-  997, 2000.
+  M.~D'Hav{\'e}, and P.~Boon, ``{EEG} dipole source localization using
+  artificial neural networks,'' \emph{Physics in medicine and biology},
+  vol.~45, no.~4, p. 997, 2000.
 
 \bibitem{lecun1998gradient}
 Y.~LeCun, L.~Bottou, Y.~Bengio, and P.~Haffner, ``Gradient-based learning
@@ -99,8 +94,9 @@ S.~Venugopalan, H.~Xu, J.~Donahue, M.~Rohrbach, R.~Mooney, and K.~Saenko,
 
 \bibitem{gramfort2014mne}
 A.~Gramfort, M.~Luessi, E.~Larson, D.~A. Engemann, D.~Strohmeier, C.~Brodbeck,
-  L.~Parkkonen, and M.~S. H{\"a}m{\"a}l{\"a}inen, ``Mne software for processing
-  meg and eeg data,'' \emph{Neuroimage}, vol.~86, pp. 446--460, 2014.
+  L.~Parkkonen, and M.~S. H{\"a}m{\"a}l{\"a}inen, ``{MNE} software for
+  processing {MEG} and {EEG} data,'' \emph{Neuroimage}, vol.~86, pp. 446--460,
+  2014.
 
 \bibitem{wakeman2015multi}
 D.~G. Wakeman and R.~N. Henson, ``A multi-subject, multi-modal human
@@ -108,9 +104,9 @@ D.~G. Wakeman and R.~N. Henson, ``A multi-subject, multi-modal human
 
 \bibitem{gramfort2013meg}
 A.~Gramfort, M.~Luessi, E.~Larson, D.~A. Engemann, D.~Strohmeier, C.~Brodbeck,
-  R.~Goj, M.~Jas, T.~Brooks, L.~Parkkonen \emph{et~al.}, ``Meg and eeg data
-  analysis with mne-python,'' \emph{Frontiers in neuroscience}, vol.~7, p. 267,
-  2013.
+  R.~Goj, M.~Jas, T.~Brooks, L.~Parkkonen \emph{et~al.}, ``{MEG} and {EEG} data
+  analysis with {MNE}-{P}ython,'' \emph{Frontiers in neuroscience}, vol.~7, p.
+  267, 2013.
 
 \bibitem{kingma2014adam}
 D.~Kingma and J.~Ba, ``Adam: A method for stochastic optimization,''
