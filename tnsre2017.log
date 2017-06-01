@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.12.27)  26 MAY 2017 12:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.12.27)  1 JUN 2017 11:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -332,82 +332,83 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<aud1.png, id=12, 647.5392pt x 615.7404pt>
+<aud1.png, id=12, 578.16pt x 615.7404pt>
 File: aud1.png Graphic file (type png)
  <use aud1.png>
 Package pdftex.def Info: aud1.png used on input line 169.
-(pdftex.def)             Requested size: 252.94499pt x 240.523pt.
+(pdftex.def)             Requested size: 252.94499pt x 269.38576pt.
 
 Overfull \hbox (0.94499pt too wide) in paragraph at lines 169--170
  [][] 
  []
 
-<faces1.png, id=14, 681.5061pt x 615.7404pt>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<faces1.png, id=14, 567.3195pt x 615.7404pt>
 File: faces1.png Graphic file (type png)
  <use faces1.png>
-Package pdftex.def Info: faces1.png used on input line 176.
-(pdftex.def)             Requested size: 252.94499pt x 228.53442pt.
+Package pdftex.def Info: faces1.png used on input line 177.
+(pdftex.def)             Requested size: 252.94499pt x 274.53445pt.
 
-Overfull \hbox (0.94499pt too wide) in paragraph at lines 176--177
+Overfull \hbox (0.94499pt too wide) in paragraph at lines 177--178
  [][] 
  []
 
-<aud100.png, id=15, 607.7907pt x 615.7404pt>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<aud100.png, id=15, 578.16pt x 615.7404pt>
 File: aud100.png Graphic file (type png)
  <use aud100.png>
-Package pdftex.def Info: aud100.png used on input line 183.
-(pdftex.def)             Requested size: 252.94499pt x 256.25095pt.
+Package pdftex.def Info: aud100.png used on input line 185.
+(pdftex.def)             Requested size: 252.94499pt x 269.38576pt.
 
-Overfull \hbox (0.94499pt too wide) in paragraph at lines 183--184
+Overfull \hbox (0.94499pt too wide) in paragraph at lines 185--186
  [][] 
  []
 
-<faces100.png, id=16, 607.7907pt x 615.7404pt>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<faces100.png, id=16, 578.16pt x 615.7404pt>
 File: faces100.png Graphic file (type png)
  <use faces100.png>
-Package pdftex.def Info: faces100.png used on input line 190.
-(pdftex.def)             Requested size: 252.94499pt x 256.25095pt.
+Package pdftex.def Info: faces100.png used on input line 192.
+(pdftex.def)             Requested size: 252.94499pt x 269.38576pt.
 
-Overfull \hbox (0.94499pt too wide) in paragraph at lines 190--191
+Overfull \hbox (0.94499pt too wide) in paragraph at lines 192--193
  [][] 
  []
 
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 [2]
-
-LaTeX Warning: Text page 3 contains only floats.
-
-
-Overfull \vbox (11.08502pt too high) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Warning: Text page 3 contains only floats.
+ [3 <./mlp.png (PNG copy)> <./cnnrnn.png (PNG copy)>] (./tnsre2017.bbl [4 <./au
+d1.png> <./faces1.png>]) [5
 
-
-Overfull \vbox (11.08502pt too high) has occurred while \output is active []
-
-
-[3 <./mlp.png (PNG copy)> <./cnnrnn.png (PNG copy)>] (./tnsre2017.bbl
-Underfull \vbox (badness 1028) has occurred while \output is active []
-
- [4 <./aud1.png> <./faces1.png> <./aud100.png> <./faces100.png>]) [5
-
-] (./tnsre2017.aux) ) 
+ <./aud100.png> <./faces100.png>] (./tnsre2017.aux) ) 
 Here is how much of TeX's memory you used:
  3203 strings out of 493029
  48627 string characters out of 6136233
- 123506 words of memory out of 5000000
+ 124506 words of memory out of 5000000
  6692 multiletter control sequences out of 15000+600000
  42953 words of font info for 80 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 38i,7n,23p,1579b,299s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc
-}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr
-/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/
-texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fon
-ts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/ti
-mes/utmri8a.pfb>
-Output written on tnsre2017.pdf (5 pages, 563652 bytes).
+ 38i,7n,23p,1582b,299s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-
+dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times
+/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></
+usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on tnsre2017.pdf (5 pages, 516123 bytes).
 PDF statistics:
  52 PDF objects out of 1000 (max. 8388607)
  29 compressed objects within 1 object stream

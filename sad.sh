@@ -1,6 +1,6 @@
 #!/bin/sh
-
-for f in $(ls *.csv)
+cd data
+for f in $(ls tf1*.csv)
 do
 
     echo $f
@@ -9,5 +9,5 @@ do
     echo $g
     sed 's/\[//' $f | sed 's/\]//' > $g 
 done
-
+cd ../data
     
