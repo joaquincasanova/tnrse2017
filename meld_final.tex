@@ -2,7 +2,7 @@
 
 
 
-\documentclass[draft]{IEEEtran}
+\documentclass[journal,12pt,onecolumn,draftclsnofoot]{IEEEtran}
 
 \usepackage{cite}
 \usepackage{graphicx}
@@ -98,28 +98,28 @@ For both datasets, channels were preprocessed through lowpass filtering, followe
 \subsection{Description of Neural Networks} 
 \begin{figure*}[h!]
 \centering
-\includegraphics[width=5in]{mlp}
+\includegraphics[width=5in]{finalplots/mlp}
 \caption{Block diagram of MLP neural network.}
 \label{fig:mlp}
 \end{figure*}
 
 \begin{figure*}[h!]
 \centering
-\includegraphics[width=5in]{cnn}
+\includegraphics[width=5in]{finalplots/cnn}
 \caption{Block diagram of CNN neural network.}
 \label{fig:cnn}
 \end{figure*}
 
 \begin{figure*}[h!]
 \centering
-\includegraphics[width=5in]{rnn}
+\includegraphics[width=5in]{finalplots/rnn}
 \caption{Block diagram of RNN neural network.}
 \label{fig:rnn}
 \end{figure*}
 
 \begin{figure*}[h!]
 \centering
-\includegraphics[width=5in]{cnnrnn}
+\includegraphics[width=5in]{finalplots/cnnrnn}
 \caption{Block diagram of CNN+RNN neural network.}
 \label{fig:cnnrnn}
 \end{figure*}
@@ -180,7 +180,7 @@ To train the networks, on each dataset the data was divided into randomly select
 
 \begin{figure}[h!]
 \centering
-\includegraphics[width=3.5in]{aud1}
+\includegraphics[width=3.5in]{finalplots/aud1}
 \caption{Training/validation results for auditory stimulus dataset (1 dipole).}
 \label{fig:aud}
 \end{figure}
@@ -188,24 +188,40 @@ To train the networks, on each dataset the data was divided into randomly select
 
 \begin{figure}[h!]
 \centering
-\includegraphics[width=3.5in]{faces1}
+\includegraphics[width=3.5in]{finalplots/faces1}
 \caption{Training/validation results for faces stimulus dataset (1 dipole).}
 \label{fig:faces}
 \end{figure}
 
-Training and validation curves are given in Figs. \ref{fig:aud} and \ref{fig:faces}, along with test dataset cost, for the auditory dataset and the faces dataset, respectively. Mean and standard deviation of test cost are given in Teble \ref{tab:results}. For both datasets, CNN and MLP networks outperform the networks including an RNN. While they are capable of achieving low training cost, they tend to overfit, and thus do poorly on the test set (test cost of around 45 mm for the faces dataset, 30 mm for the auditory dataset). For reference, the human head is about 75 mm in diameter. See Figs \ref{} and \ref{} for a plot of training location estimates and test location estimates, compared to the true values.
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=3.5in]{finalplots/tf1_0_subject_aud_pca_all_True_rand_True_cnn_True_rnn_False_locate_1_treat_None_train_1000}
+\caption{Train step 1000 estimated locations (blue circles) and true location (red xs) for auditory test.}
+\label{fig:audloc}
+\end{figure}
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=3.5in]{finalplots/tf1_0_subject_aud_pca_all_True_rand_True_cnn_True_rnn_False_locate_1_treat_None}
+\caption{Test results estimated locations and true location for auditory test.}
+\label{fig:audloctest}
+\end{figure}
+
+Training and validation curves are given in Figs. \ref{fig:aud} and \ref{fig:faces}, along with test dataset cost, for the auditory dataset and the faces dataset, respectively. Mean and standard deviation of test cost are given in Teble \ref{tab:results}. For both datasets, CNN and MLP networks outperform the networks including an RNN. While they are capable of achieving low training cost, they tend to overfit, and thus do poorly on the test set (test cost of around 45 mm for the faces dataset, 30 mm for the auditory dataset). For reference, the human head is about 75 mm in diameter. See Figs \ref{fig:audloc} and \ref{fig:audloctest} for a plot of training location estimates and test location estimates, compared to the true values.
 
 On the other hand, simpler networks did better, with the CNN only network performing best (cost of 5.1 mm for the auditory set, and 1.9 mm for the faces dataset). Fewer parameters allowed for better generalization, and the CNN layer allows us to preserve spatial information critical for inversion.
 \begin{figure}[h!]
 \centering
-\includegraphics[width=3.5in]{aud100}
+\includegraphics[width=3.5in]{finalplots/aud100}
 \caption{Training/validation results for auditory stimulus dataset (Best of 100 dipoles).}
 \label{fig:aud100}
 \end{figure}
 
 \begin{figure}[h!]
 \centering
-\includegraphics[width=3.5in]{faces100}
+\includegraphics[width=3.5in]{finalplots/faces100}
 \caption{Training/validation results for faces stimulus dataset (Best of 100 dipoles).}
 \label{fig:faces100}
 \end{figure}
