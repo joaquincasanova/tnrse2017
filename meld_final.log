@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.12.27)  28 JUL 2017 10:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2017.7.13)  31 JUL 2017 18:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **meld_final.tex
 (./meld_final.tex
-LaTeX2e <2016/02/01>
-Babel <3.9q> and hyphenation patterns for 81 language(s) loaded.
+LaTeX2e <2017-04-15>
+Babel <3.11> and hyphenation patterns for 3 language(s) loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/IEEEtran/IEEEtran.cls
 Document Class: IEEEtran 2015/08/26 V1.8b by Michael Shell
 -- See the "IEEEtran_HOWTO" manual for usage information.
@@ -114,39 +114,31 @@ LaTeX Info: Redefining \nocite on input line 332.
 Package: cite 2015/02/27  v 5.5
 )
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks15
 )
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2016/01/03 v1.0q Standard LaTeX Graphics (DPC,SPQR)
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
-File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
-Package graphics Info: Driver file: pdftex.def on input line 95.
+Package graphics Info: Driver file: pdftex.def on input line 99.
 
-(/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
-File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
-
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
-Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
-)
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
-Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
-)
-\Gread@gobject=\count94
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2017/06/24 v1.0g Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen126
 \Gin@req@width=\dimen127
 )
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
-Package: amsmath 2016/03/03 v2.15a AMS math features
+Package: amsmath 2016/11/05 v2.16a AMS math features
 \@mathmargin=\skip44
 
 For additional information on amsmath, use the `?' option.
@@ -163,32 +155,32 @@ Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen129
 )
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
-Package: amsopn 1999/12/14 v2.01 operator names
+Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count95
-LaTeX Info: Redefining \frac on input line 199.
-\uproot@=\count96
-\leftroot@=\count97
-LaTeX Info: Redefining \overline on input line 297.
-\classnum@=\count98
-\DOTSCASE@=\count99
-LaTeX Info: Redefining \ldots on input line 394.
-LaTeX Info: Redefining \dots on input line 397.
-LaTeX Info: Redefining \cdots on input line 518.
+\inf@bad=\count94
+LaTeX Info: Redefining \frac on input line 213.
+\uproot@=\count95
+\leftroot@=\count96
+LaTeX Info: Redefining \overline on input line 375.
+\classnum@=\count97
+\DOTSCASE@=\count98
+LaTeX Info: Redefining \ldots on input line 472.
+LaTeX Info: Redefining \dots on input line 475.
+LaTeX Info: Redefining \cdots on input line 596.
 \Mathstrutbox@=\box28
 \strutbox@=\box29
 \big@size=\dimen130
-LaTeX Font Info:    Redeclaring font encoding OML on input line 630.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 631.
-\macc@depth=\count100
-\c@MaxMatrixCols=\count101
+LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
+\macc@depth=\count99
+\c@MaxMatrixCols=\count100
 \dotsspace@=\muskip10
-\c@parentequation=\count102
-\dspbrk@lvl=\count103
+\c@parentequation=\count101
+\dspbrk@lvl=\count102
 \tag@help=\toks17
-\row@=\count104
-\column@=\count105
-\maxfields@=\count106
+\row@=\count103
+\column@=\count104
+\maxfields@=\count105
 \andhelp@=\toks18
 \eqnshift@=\dimen131
 \alignsep@=\dimen132
@@ -200,11 +192,11 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 631.
 \multlinegap=\skip45
 \multlinetaggap=\skip46
 \mathdisplay@stack=\toks20
-LaTeX Info: Redefining \[ on input line 2735.
-LaTeX Info: Redefining \] on input line 2736.
+LaTeX Info: Redefining \[ on input line 2817.
+LaTeX Info: Redefining \] on input line 2818.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
-Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
+Package: array 2016/10/06 v2.4d Tabular extension package (FMi)
 \col@sep=\dimen137
 \extrarowheight=\dimen138
 \NC@list=\toks21
@@ -212,13 +204,15 @@ Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
 \backup@length=\skip48
 )
 (/usr/share/texlive/texmf-dist/tex/latex/base/fixltx2e.sty
-Package: fixltx2e 2015/06/22 v2.0b fixes to LaTeX (obsolete)
+Package: fixltx2e 2016/12/29 v2.1a fixes to LaTeX (obsolete)
+Applying: [2015/01/01] Old fixltx2e package on input line 46.
 
 
 Package fixltx2e Warning: fixltx2e is not required with releases after 2015
 (fixltx2e)                All fixes are now in the LaTeX kernel.
 (fixltx2e)                See the latexrelease package for details.
 
+Already applied: [0000/00/00] Old fixltx2e package on input line 53.
 ) (/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip11
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
@@ -239,61 +233,69 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
 LaTeX Font Info:    ... okay on input line 21.
 
 -- Lines per column: 32 (exact).
-(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count107
+\scratchcounter=\count106
 \scratchdimen=\dimen139
 \scratchbox=\box30
-\nofMPsegments=\count108
-\nofMParguments=\count109
+\nofMPsegments=\count107
+\nofMParguments=\count108
 \everyMPshowfont=\toks22
-\MPscratchCnt=\count110
+\MPscratchCnt=\count109
 \MPscratchDim=\dimen140
-\MPnumerator=\count111
-\makeMPintoPDFobject=\count112
+\MPnumerator=\count110
+\makeMPintoPDFobject=\count111
 \everyMPtoPDFconversion=\toks23
-) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
-Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
 )
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)))
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
 
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
-Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
 )
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2017/03/19 v0.25 Utility functions of pdfTeX for LuaTeX (HO
+)
+
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
-Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
-Package ifpdf Info: pdfTeX in PDF mode is detected.
+Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
 )
 Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
 )
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
-Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
-
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
-Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
-
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
-Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
-))
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
-Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
-
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
-Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
-
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
-Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
-Package etexcmds Info: Could not find \expanded.
-(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
-(etexcmds)             that some package has redefined \expanded.
-(etexcmds)             In the latter case, load this package earlier.
-)))
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+38.
 Package grfext Info: Graphics extension search list:
-(grfext)             [.pdf,.jpeg,.png,.eps]
-(grfext)             \AppendGraphicsExtensions on input line 452.
+(grfext)             [.pdf,.jpeg,.jpg,.png,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
 
 (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
@@ -301,144 +303,303 @@ e
 ))
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 ** ATTENTION: \IEEEPARstart is disabled in draft mode (line 66).
-[2] [3]
-Overfull \hbox (2.41623pt too wide) in paragraph at lines 96--97
+[2]
+<finalplots/coil_preamp.png, id=12, 700.6175pt x 362.35374pt>
+File: finalplots/coil_preamp.png Graphic file (type png)
+<use finalplots/coil_preamp.png>
+Package pdftex.def Info: finalplots/coil_preamp.png  used on input line 95. on 
+input line 95.
+Package pdftex.def Info: Requested size: 361.34999pt x 186.88795pt on input lin
+e 95.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<finalplots/drive_feedback.png, id=14, 742.4538pt x 552.6246pt>
+File: finalplots/drive_feedback.png Graphic file (type png)
+<use finalplots/drive_feedback.png>
+Package pdftex.def Info: finalplots/drive_feedback.png  used on input line 104.
+ on input line 104.
+Package pdftex.def Info: Requested size: 361.34999pt x 268.9586pt on input line
+ 104.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<finalplots/pcbs.jpg, id=15, 2055.68pt x 1541.76pt>
+File: finalplots/pcbs.jpg Graphic file (type jpg)
+<use finalplots/pcbs.jpg>
+Package pdftex.def Info: finalplots/pcbs.jpg  used on input line 112. on input 
+line 112.
+Package pdftex.def Info: Requested size: 361.34999pt x 271.01183pt on input lin
+e 112.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<finalplots/helmholtz_in_shield.jpg, id=16, 2055.68pt x 1541.76pt>
+File: finalplots/helmholtz_in_shield.jpg Graphic file (type jpg)
+<use finalplots/helmholtz_in_shield.jpg>
+Package pdftex.def Info: finalplots/helmholtz_in_shield.jpg  used on input line
+ 119. on input line 119.
+Package pdftex.def Info: Requested size: 361.34999pt x 271.01183pt on input lin
+e 119.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<finalplots/2p57pp_30Hz_3Vdc_50mVpp_phase90.png, id=17, 803.0pt x 481.8pt>
+File: finalplots/2p57pp_30Hz_3Vdc_50mVpp_phase90.png Graphic file (type png)
+<use finalplots/2p57pp_30Hz_3Vdc_50mVpp_phase90.png>
+Package pdftex.def Info: finalplots/2p57pp_30Hz_3Vdc_50mVpp_phase90.png  used o
+n input line 126. on input line 126.
+Package pdftex.def Info: Requested size: 361.34999pt x 216.81534pt on input lin
+e 126.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[3] [4 <./finalplots/coil_preamp.png> <./finalplots/drive_feedback.png (PNG cop
+y)>]
+Overfull \hbox (2.41623pt too wide) in paragraph at lines 141--142
 []\OT1/ptm/m/n/12 For both datasets, chan-nels were pre-pro-cessed through low-
 pass fil-ter-ing, fol-lowed by EOG/ECG
  []
 
-<finalplots/mlp.png, id=15, 1638.12pt x 1059.96pt>
+<finalplots/mlp.png, id=25, 1638.12pt x 1059.96pt>
 File: finalplots/mlp.png Graphic file (type png)
- <use finalplots/mlp.png>
-Package pdftex.def Info: finalplots/mlp.png used on input line 101.
-(pdftex.def)             Requested size: 361.34999pt x 233.80652pt.
+<use finalplots/mlp.png>
+Package pdftex.def Info: finalplots/mlp.png  used on input line 147. on input l
+ine 147.
+Package pdftex.def Info: Requested size: 361.34999pt x 233.80652pt on input lin
+e 147.
+[5 <./finalplots/pcbs.jpg>]
 
-<finalplots/cnn.png, id=16, 1638.12pt x 1059.96pt>
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<finalplots/cnn.png, id=30, 1638.12pt x 1059.96pt>
 File: finalplots/cnn.png Graphic file (type png)
- <use finalplots/cnn.png>
-Package pdftex.def Info: finalplots/cnn.png used on input line 108.
-(pdftex.def)             Requested size: 361.34999pt x 233.80652pt.
-
+<use finalplots/cnn.png>
+Package pdftex.def Info: finalplots/cnn.png  used on input line 154. on input l
+ine 154.
+Package pdftex.def Info: Requested size: 361.34999pt x 233.80652pt on input lin
+e 154.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<finalplots/rnn.png, id=17, 1638.12pt x 1059.96pt>
+<finalplots/rnn.png, id=31, 1638.12pt x 1059.96pt>
 File: finalplots/rnn.png Graphic file (type png)
- <use finalplots/rnn.png>
-Package pdftex.def Info: finalplots/rnn.png used on input line 115.
-(pdftex.def)             Requested size: 361.34999pt x 233.80652pt.
-
+<use finalplots/rnn.png>
+Package pdftex.def Info: finalplots/rnn.png  used on input line 161. on input l
+ine 161.
+Package pdftex.def Info: Requested size: 361.34999pt x 233.80652pt on input lin
+e 161.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<finalplots/cnnrnn.png, id=18, 1638.12pt x 1059.96pt>
+<finalplots/cnnrnn.png, id=32, 1638.12pt x 1059.96pt>
 File: finalplots/cnnrnn.png Graphic file (type png)
-
 <use finalplots/cnnrnn.png>
-Package pdftex.def Info: finalplots/cnnrnn.png used on input line 122.
-(pdftex.def)             Requested size: 361.34999pt x 233.80652pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[4 <./finalplots/mlp.png (PNG copy)>] [5 <./finalplots/cnn.png (PNG copy)> <./f
-inalplots/rnn.png (PNG copy)>]
+Package pdftex.def Info: finalplots/cnnrnn.png  used on input line 168. on inpu
+t line 168.
+Package pdftex.def Info: Requested size: 361.34999pt x 233.80652pt on input lin
+e 168.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[6 <./finalplots/cnnrnn.png (PNG copy)>]
-<finalplots/aud1.png, id=29, 755.2215pt x 529.7391pt>
+[6 <./finalplots/helmholtz_in_shield.jpg> <./finalplots/2p57pp_30Hz_3Vdc_50mVpp
+_phase90.png (PNG copy)>] [7 <./finalplots/mlp.png (PNG copy)> <./finalplots/cn
+n.png (PNG copy)>] [8 <./finalplots/rnn.png (PNG copy)> <./finalplots/cnnrnn.pn
+g (PNG copy)>]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<finalplots/aud1.png, id=43, 755.2215pt x 529.7391pt>
 File: finalplots/aud1.png Graphic file (type png)
-
 <use finalplots/aud1.png>
-Package pdftex.def Info: finalplots/aud1.png used on input line 183.
-(pdftex.def)             Requested size: 252.94499pt x 177.4172pt.
-
+Package pdftex.def Info: finalplots/aud1.png  used on input line 229. on input 
+line 229.
+Package pdftex.def Info: Requested size: 361.34999pt x 253.46355pt on input lin
+e 229.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<finalplots/faces1.png, id=31, 753.7761pt x 531.9072pt>
+<finalplots/faces1.png, id=44, 753.7761pt x 531.9072pt>
 File: finalplots/faces1.png Graphic file (type png)
-
 <use finalplots/faces1.png>
-Package pdftex.def Info: finalplots/faces1.png used on input line 191.
-(pdftex.def)             Requested size: 252.94499pt x 178.49234pt.
-
+Package pdftex.def Info: finalplots/faces1.png  used on input line 237. on inpu
+t line 237.
+Package pdftex.def Info: Requested size: 361.34999pt x 254.99602pt on input lin
+e 237.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
-
 
 <finalplots/tf1_0_subject_aud_pca_all_True_rand_True_cnn_True_rnn_False_locate_
-1_treat_None_train_1000.png, id=32, 578.16pt x 433.62pt>
+1_treat_None_train_1000.png, id=45, 578.16pt x 433.62pt>
 File: finalplots/tf1_0_subject_aud_pca_all_True_rand_True_cnn_True_rnn_False_lo
 cate_1_treat_None_train_1000.png Graphic file (type png)
-
 <use finalplots/tf1_0_subject_aud_pca_all_True_rand_True_cnn_True_rnn_False_loc
 ate_1_treat_None_train_1000.png>
 Package pdftex.def Info: finalplots/tf1_0_subject_aud_pca_all_True_rand_True_cn
-n_True_rnn_False_locate_1_treat_None_train_1000.png used on input line 199.
-(pdftex.def)             Requested size: 252.94499pt x 189.70828pt.
-
+n_True_rnn_False_locate_1_treat_None_train_1000.png  used on input line 245. on
+ input line 245.
+Package pdftex.def Info: Requested size: 361.34999pt x 271.01183pt on input lin
+e 245.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-
 <finalplots/tf1_0_subject_aud_pca_all_True_rand_True_cnn_True_rnn_False_locate_
-1_treat_None.png, id=33, 578.16pt x 433.62pt>
+1_treat_None.png, id=46, 578.16pt x 433.62pt>
 File: finalplots/tf1_0_subject_aud_pca_all_True_rand_True_cnn_True_rnn_False_lo
 cate_1_treat_None.png Graphic file (type png)
-
 <use finalplots/tf1_0_subject_aud_pca_all_True_rand_True_cnn_True_rnn_False_loc
 ate_1_treat_None.png>
 Package pdftex.def Info: finalplots/tf1_0_subject_aud_pca_all_True_rand_True_cn
-n_True_rnn_False_locate_1_treat_None.png used on input line 207.
-(pdftex.def)             Requested size: 252.94499pt x 189.70828pt.
-
+n_True_rnn_False_locate_1_treat_None.png  used on input line 253. on input line
+ 253.
+Package pdftex.def Info: Requested size: 361.34999pt x 271.01183pt on input lin
+e 253.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<finalplots/aud100.png, id=34, 753.7761pt x 527.571pt>
+[9]
+<finalplots/aud100.png, id=50, 753.7761pt x 527.571pt>
 File: finalplots/aud100.png Graphic file (type png)
-
 <use finalplots/aud100.png>
-Package pdftex.def Info: finalplots/aud100.png used on input line 217.
-(pdftex.def)             Requested size: 252.94499pt x 177.03725pt.
- [7]
+Package pdftex.def Info: finalplots/aud100.png  used on input line 263. on inpu
+t line 263.
+Package pdftex.def Info: Requested size: 361.34999pt x 252.91725pt on input lin
+e 263.
+ [10 <./finalplots/aud1.png>]
+
+LaTeX Warning: Text page 11 contains only floats.
+
+[11 <./finalplots/faces1.png> <./finalplots/tf1_0_subject_aud_pca_all_True_rand
+_True_cnn_True_rnn_False_locate_1_treat_None_train_1000.png>]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<finalplots/faces100.png, id=39, 753.7761pt x 527.571pt>
+<finalplots/faces100.png, id=60, 753.7761pt x 527.571pt>
 File: finalplots/faces100.png Graphic file (type png)
-
 <use finalplots/faces100.png>
-Package pdftex.def Info: finalplots/faces100.png used on input line 224.
-(pdftex.def)             Requested size: 252.94499pt x 177.03725pt.
-
+Package pdftex.def Info: finalplots/faces100.png  used on input line 270. on in
+put line 270.
+Package pdftex.def Info: Requested size: 361.34999pt x 252.91725pt on input lin
+e 270.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[8 <./finalplots/aud1.png> <./finalplots/faces1.png>] [9 <./finalplots/tf1_0_su
-bject_aud_pca_all_True_rand_True_cnn_True_rnn_False_locate_1_treat_None_train_1
-000.png> <./finalplots/tf1_0_subject_aud_pca_all_True_rand_True_cnn_True_rnn_Fa
-lse_locate_1_treat_None.png>] [10 <./finalplots/aud100.png> <./finalplots/faces
-100.png>] (./meld_final.bbl [11]) [12] (./meld_final.aux) ) 
+<finalplots/aud1la.png, id=61, 756.6669pt x 523.9575pt>
+File: finalplots/aud1la.png Graphic file (type png)
+<use finalplots/aud1la.png>
+Package pdftex.def Info: finalplots/aud1la.png  used on input line 278. on inpu
+t line 278.
+Package pdftex.def Info: Requested size: 361.34999pt x 250.21754pt on input lin
+e 278.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<finalplots/faces1ff.png, id=62, 753.7761pt x 532.6299pt>
+File: finalplots/faces1ff.png Graphic file (type png)
+<use finalplots/faces1ff.png>
+Package pdftex.def Info: finalplots/faces1ff.png  used on input line 285. on in
+put line 285.
+Package pdftex.def Info: Requested size: 361.34999pt x 255.34247pt on input lin
+e 285.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<finalplots/stereotax1.jpg, id=63, 2055.68pt x 1541.76pt>
+File: finalplots/stereotax1.jpg Graphic file (type jpg)
+<use finalplots/stereotax1.jpg>
+Package pdftex.def Info: finalplots/stereotax1.jpg  used on input line 296. on 
+input line 296.
+Package pdftex.def Info: Requested size: 361.34999pt x 271.01183pt on input lin
+e 296.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<finalplots/norat5dbpink.png, id=64, 578.16pt x 433.62pt>
+File: finalplots/norat5dbpink.png Graphic file (type png)
+<use finalplots/norat5dbpink.png>
+Package pdftex.def Info: finalplots/norat5dbpink.png  used on input line 303. o
+n input line 303.
+Package pdftex.def Info: Requested size: 361.34999pt x 271.01183pt on input lin
+e 303.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<finalplots/rat5dbpink.png, id=65, 578.16pt x 433.62pt>
+File: finalplots/rat5dbpink.png Graphic file (type png)
+<use finalplots/rat5dbpink.png>
+Package pdftex.def Info: finalplots/rat5dbpink.png  used on input line 310. on 
+input line 310.
+Package pdftex.def Info: Requested size: 361.34999pt x 271.01183pt on input lin
+e 310.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<finalplots/rat-120dbpink.png, id=66, 578.16pt x 433.62pt>
+File: finalplots/rat-120dbpink.png Graphic file (type png)
+<use finalplots/rat-120dbpink.png>
+Package pdftex.def Info: finalplots/rat-120dbpink.png  used on input line 317. 
+on input line 317.
+Package pdftex.def Info: Requested size: 361.34999pt x 271.01183pt on input lin
+e 317.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<finalplots/train_real_test_real_valid.png, id=67, 932.48375pt x 560.0925pt>
+File: finalplots/train_real_test_real_valid.png Graphic file (type png)
+<use finalplots/train_real_test_real_valid.png>
+Package pdftex.def Info: finalplots/train_real_test_real_valid.png  used on inp
+ut line 325. on input line 325.
+Package pdftex.def Info: Requested size: 361.34999pt x 217.04214pt on input lin
+e 325.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<finalplots/train_synth_test_real_valid.png, id=68, 930.47626pt x 555.07375pt>
+File: finalplots/train_synth_test_real_valid.png Graphic file (type png)
+<use finalplots/train_synth_test_real_valid.png>
+Package pdftex.def Info: finalplots/train_synth_test_real_valid.png  used on in
+put line 332. on input line 332.
+Package pdftex.def Info: Requested size: 361.34999pt x 215.56314pt on input lin
+e 332.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[12 <./finalplots/tf1_0_subject_aud_pca_all_True_rand_True_cnn_True_rnn_False_l
+ocate_1_treat_None.png>]
+
+LaTeX Warning: Text page 13 contains only floats.
+
+[13 <./finalplots/aud100.png> <./finalplots/faces100.png>]
+
+LaTeX Warning: Text page 14 contains only floats.
+
+[14 <./finalplots/aud1la.png> <./finalplots/faces1ff.png>] (./meld_final.bbl
+[15 <./finalplots/stereotax1.jpg>] [16 <./finalplots/norat5dbpink.png>]
+[17 <./finalplots/rat5dbpink.png>]) [18 <./finalplots/rat-120dbpink.png> <./fin
+alplots/train_real_test_real_valid.png>] [19 <./finalplots/train_synth_test_rea
+l_valid.png>] (./meld_final.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
 Here is how much of TeX's memory you used:
- 3235 strings out of 493029
- 50212 string characters out of 6136233
- 115697 words of memory out of 5000000
- 6713 multiletter control sequences out of 15000+600000
+ 3274 strings out of 494931
+ 52024 string characters out of 6180851
+ 108581 words of memory out of 5000000
+ 6509 multiletter control sequences out of 15000+600000
  41808 words of font info for 81 fonts, out of 8000000 for 9000
- 1144 hyphenation exceptions out of 8191
- 38i,7n,23p,1402b,297s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/
-texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw
-/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.p
-fb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on meld_final.pdf (12 pages, 724268 bytes).
+ 17 hyphenation exceptions out of 8191
+ 41i,7n,25p,1402b,303s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/u
+tmri8a.pfb>
+Output written on meld_final.pdf (19 pages, 4636813 bytes).
 PDF statistics:
- 77 PDF objects out of 1000 (max. 8388607)
- 42 compressed objects within 1 object stream
+ 121 PDF objects out of 1000 (max. 8388607)
+ 58 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 51 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 116 words of extra memory for PDF output out of 10000 (max. 10000000)
 

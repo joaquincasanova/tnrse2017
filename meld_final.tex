@@ -6,7 +6,7 @@
 
 \usepackage{cite}
 \usepackage{graphicx}
-\DeclareGraphicsExtensions{.pdf,.jpeg,.png}
+\DeclareGraphicsExtensions{.pdf,.jpeg,.jpg,.png}
 \usepackage{amsmath}
 \interdisplaylinepenalty=2500
 \usepackage{array}
@@ -46,7 +46,7 @@ FL, 32611 USA e-mail: jcasa@ufl.edu}% <-this % stops a space
   
   Most MEG/EEG inversion approaches are physics-based, and attempt to find the best estimate of the lead-field matrix, which relates the dipole activation to the field strength by minimizing the error of an estimate. To date, most approaches using the lead-field matrix are complicated and too slow in real time, aimed primarily at elucidating brain structural functional relationships from experimental data. We propose a new technique in which the location of peak neuronal current is estimated by treating EEG and MEG as a two-channel image, or time-series of images, which is processed by a neural network which returns the location of the dipole of peak magnitude. Four architectures are tested: 2-layer perceptron, convolutional neural network (CNN), recurrent neural network (RNN), and CNN feeding RNN. In the absence of true measures of neuronal activity, we used two publicly available MEG/EEG datasets, and treated the estimates of the traditional minimum-norm estimate (MNE) as true estimates. We test the four variations of the network architecture, and in the best case (CNN only), we achieve test dataset errors (RMSE of max dipole location) of 1.9 and 5.1 mm on two separate datasets of MEG/EEG time series from subjects with different types of stimulus.
 
-  Finally, live rat tests were conducted, using the fluxgate circuit and inversion algorithm. These experiments are described in detail and results are presented.
+  Finally, live rat tests were conducted, using the fluxgate circuit and inversion algorithm. These experiments are described in detail and results are presented. Results indicate that the fluxgates' sensitivity was too low and their ability to compensate for external fields was insufficient. The data obtained on a rat with stimulus was no more helpful in localizing the dipole than in a rat with no stimulus.
   
 \end{abstract}
 
@@ -66,7 +66,11 @@ Fluxgates, Electrophysical imaging, Brain, Neural networks, Dipole.
 \IEEEPARstart{T}{here} is a great need for interpretation of brain signals for both use in control of devices, for prosthetics, for example, or for disease diagnostics. Magnetoencephalography (MEG), the measurement of the brain's magnetic field, is typically done using cryogenic superconducting quantum interference devices (SQUID) on a dense grid surrounding the skull, and has been used in brain-computer interfaces \cite{mellinger2007meg}. Additionally, electroencephalography (EEG), is also used for BCI as well as medical diagnostics and study of brain stucture and function \cite{da2008impact}. Particularly for the latter, there is great utility in using the external measurements of MEG and EEG to determine which parts of the brain are most electrically active, a problem known as localization or inversion. Functional magnetic resonance imaging (fMRI) can be used but instead measures blood flow, and is thus not a direct measurement of electrical activity \cite{sharon2007advantage}.
 
 MEG ...
-
+squid
+\cite{ilmoniemi1984four}
+\cite{preusser2009microfabricated}
+\cite{primdahl1979fluxgate}
+\cite{sasada2014fundamental}
 
 Classically, MEG/EEG inversion has followed one of a few approaches, with incremental enhancements as sophistication and computational power has increased. \cite{grech2008review} provides an excellent review of techniques. \cite{mosher1992multiple} established the orignal framework of the dipole in a sphere model, in which a lead-field matrix based on magnetostatic and electrostatic equations, and the positions of dipoles, transforms a vector of dipole magnitudes into a vector of magnetic flux and electric potential at sensor locations. The problem of localization becomes a problem of finding the locations and magnitudes of dipoles that minimize the square error of predicted versus observed fields. Using this formalism and a finite-element model, \cite{buchner1997inverse} localized dipoles from MEG data. \cite{galka2004solution} used Kalman filtering to solve the dynamical inverse problem. The signal-space separation method transforms the data into basis functions in signal space to better filter background noise sources \cite{taulu2005applications}. Beamformer techniques have also been applied for MEG/EEG inversion \cite{sekihara2001reconstructing}. More recently, EEG has been inverted using artificial neural networks \cite{van2000eeg}.
 
@@ -76,13 +80,54 @@ Neural networks have proven an important tool for accurate predictions from nois
 
 Our proposed idea is to apply the combined CNN/RNN framework to sequences of MEG/EEG data, and predict the location of only the peak dipole. In this way we simplify the problem, and with approporiately trained networks, we could make quick predicts from data, possibly in real time. To demonstrate our technique, we use publicly available datasets, and use the dipole currents predicted by a well established technique (MNE) as the true value to which we compare our estimates and train our network \cite{gramfort2014mne}. Further, we investigate four variations of the network architecture (2-layer MLP, RNN, CNN, and CNN with RNN), to establish the advantages and disadvantages of each.
 
-Rat test ...
+Finally, we tested both the sensors and the inversion algorithm, using an auditory test on a live rat and compared the results to measurements from an electrocorticography (ECoG) array.
 
 \section{Methods}
 
 In this section, we describe our methodology, including sensor architecture, datasets, preprocessing, and neural network architectures, and animal test.
 
 \subsection{Fluxgate}
+
+Fluxgate development initially began
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=5in]{finalplots/coil_preamp}
+\caption{}
+\label{fig:coil_preamp}
+\end{figure}
+
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=5in]{finalplots/drive_feedback}
+\caption{}
+\label{fig:drive_feedback}
+\end{figure}
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=5in]{finalplots/pcbs}
+\caption{}
+\label{fig:pcbs}
+\end{figure}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=5in]{finalplots/helmholtz_in_shield}
+\caption{}
+\label{fig:fg}
+\end{figure}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=5in]{finalplots/2p57pp_30Hz_3Vdc_50mVpp_phase90}
+\caption{}
+\label{fig:test}
+\end{figure}
+
 
 \subsection{Datasets}
 
@@ -96,38 +141,39 @@ The second dataset \cite{gramfort2013meg} is included with MNE, and consists of 
 For both datasets, channels were preprocessed through lowpass filtering, followed by EOG/ECG artifact removal using direct measurements of EOG or ECG and/or independent component analysis. Data was epoched (cut into trials) but not averaged over each type of stimulus - each trial is considered as a separate datapoint. Further, prior to input to the neural network, the data was transformed by principle component analysis, to avoid numerical problems due to the small sensor units (fT and $\mu$V).
 
 \subsection{Description of Neural Networks} 
-\begin{figure*}[h!]
+
+\begin{figure}[!h]
 \centering
 \includegraphics[width=5in]{finalplots/mlp}
 \caption{Block diagram of MLP neural network.}
 \label{fig:mlp}
-\end{figure*}
+\end{figure}
 
-\begin{figure*}[h!]
+\begin{figure}[h!]
 \centering
 \includegraphics[width=5in]{finalplots/cnn}
 \caption{Block diagram of CNN neural network.}
 \label{fig:cnn}
-\end{figure*}
+\end{figure}
 
-\begin{figure*}[h!]
+\begin{figure}[h!]
 \centering
 \includegraphics[width=5in]{finalplots/rnn}
 \caption{Block diagram of RNN neural network.}
 \label{fig:rnn}
-\end{figure*}
+\end{figure}
 
-\begin{figure*}[h!]
+\begin{figure}[h!]
 \centering
 \includegraphics[width=5in]{finalplots/cnnrnn}
 \caption{Block diagram of CNN+RNN neural network.}
 \label{fig:cnnrnn}
-\end{figure*}
+\end{figure}
 
 
 We considered four variations of the network structure, each of which was programmed using Google's Tensorflow API in Python (\url{tensorflow.com}). The simplest configuration was a multi-layer perceptron, where the PCA-transformed data is input as a vector at each timestep, and transformed by an input layer with ReLU activation functions, and then an output layer, with linear activation functions, to give the coordinate of the maximum current neuron at each timestep (Fig. \ref{fig:mlp}). The next network type was a convolutional neural network, where the data at each timestep was interpolated to an 11 by 11 grid, such that the data forms a sequence of 2-channel (EEG and MEG) images. The grid size was chosen such that increasing the number of pixels had no marginal benefit on the model error. There were two convolutional layers, with kernel size 3 by 3. This was followed by a dense layer which is mapped to the output with a linear activation function. We also considered a recurrent neural network, with long short term memory (LSTM) cells, with an input layer, recurrent layer, and output layer, returning the dipole location of the maximum current neuron over the entire timeseries, not at each timestep. Finally, we considered a combination of the CNN and RNN networks (Fig. \ref{fig:cnnrnn}). Network parameters are given in Table \ref{tab:params}. 
 
-\begin{table*}[h!]
+\begin{table}[h!]
   \centering
   \begin{tabular}{c||c|c|c}
     \hline
@@ -144,7 +190,7 @@ We considered four variations of the network structure, each of which was progra
   \end{tabular}
   \caption{Network parameters.}
   \label{tab:params}
-\end{table*}
+\end{table}
 
 
 \subsection{Training and testing}
@@ -158,7 +204,7 @@ To train the networks, on each dataset the data was divided into randomly select
 \subsection{Fluxgate}
 
 \subsection{Inversion}
-\begin{table*}[h!]
+\begin{table}[h!]
   \centering
   \begin{tabular}{c||c|c|c|c}
     \hline
@@ -176,11 +222,11 @@ To train the networks, on each dataset the data was divided into randomly select
   \end{tabular}
   \caption{Test set RMSE from 5 cross-validation runs (mean, standard deviation)}
   \label{tab:results}
-\end{table*}
+\end{table}
 
 \begin{figure}[h!]
 \centering
-\includegraphics[width=3.5in]{finalplots/aud1}
+\includegraphics[width=5in]{finalplots/aud1}
 \caption{Training/validation results for auditory stimulus dataset (1 dipole).}
 \label{fig:aud}
 \end{figure}
@@ -188,7 +234,7 @@ To train the networks, on each dataset the data was divided into randomly select
 
 \begin{figure}[h!]
 \centering
-\includegraphics[width=3.5in]{finalplots/faces1}
+\includegraphics[width=5in]{finalplots/faces1}
 \caption{Training/validation results for faces stimulus dataset (1 dipole).}
 \label{fig:faces}
 \end{figure}
@@ -196,7 +242,7 @@ To train the networks, on each dataset the data was divided into randomly select
 
 \begin{figure}[h!]
 \centering
-\includegraphics[width=3.5in]{finalplots/tf1_0_subject_aud_pca_all_True_rand_True_cnn_True_rnn_False_locate_1_treat_None_train_1000}
+\includegraphics[width=5in]{finalplots/tf1_0_subject_aud_pca_all_True_rand_True_cnn_True_rnn_False_locate_1_treat_None_train_1000}
 \caption{Train step 1000 estimated locations (blue circles) and true location (red xs) for auditory test.}
 \label{fig:audloc}
 \end{figure}
@@ -204,7 +250,7 @@ To train the networks, on each dataset the data was divided into randomly select
 
 \begin{figure}[h!]
 \centering
-\includegraphics[width=3.5in]{finalplots/tf1_0_subject_aud_pca_all_True_rand_True_cnn_True_rnn_False_locate_1_treat_None}
+\includegraphics[width=5in]{finalplots/tf1_0_subject_aud_pca_all_True_rand_True_cnn_True_rnn_False_locate_1_treat_None}
 \caption{Test results estimated locations and true location for auditory test.}
 \label{fig:audloctest}
 \end{figure}
@@ -214,30 +260,86 @@ Training and validation curves are given in Figs. \ref{fig:aud} and \ref{fig:fac
 On the other hand, simpler networks did better, with the CNN only network performing best (cost of 5.1 mm for the auditory set, and 1.9 mm for the faces dataset). Fewer parameters allowed for better generalization, and the CNN layer allows us to preserve spatial information critical for inversion.
 \begin{figure}[h!]
 \centering
-\includegraphics[width=3.5in]{finalplots/aud100}
+\includegraphics[width=5in]{finalplots/aud100}
 \caption{Training/validation results for auditory stimulus dataset (Best of 100 dipoles).}
 \label{fig:aud100}
 \end{figure}
 
 \begin{figure}[h!]
 \centering
-\includegraphics[width=3.5in]{finalplots/faces100}
+\includegraphics[width=5in]{finalplots/faces100}
 \caption{Training/validation results for faces stimulus dataset (Best of 100 dipoles).}
 \label{fig:faces100}
 \end{figure}
 
 The poor generalization of the RNN networks led us to suspect that it may be too sensitive to noise in the location of the peak dipole. In other words, since we were using the MNE estimate of the dipole currents as truth, and these have some inherent error due to sensor noise and inversion error, the performance of the network to estimate the location may be poor. To test this, instead of comparing the neural network estimate to the peak dipole, we instead tried comparing it to the top 100 dipoles (which is approximately the top 5\%-10\%), and picking the closest one for calculating the cost. This has the effect of averaging out error in the dipoles estimated by MNE. Plots showing the training curves for this top-100 approach are shown in Figs. \ref{fig:aud100} and \ref{fig:faces100}. Clearly, this reduces the test, training, and validation costs, but the performance ranking of the the four networks remains the same.
+\begin{figure}[h!]
+\centering
+\includegraphics[width=5in]{finalplots/aud1la}
+\caption{Training/validation results for auditory stimulus dataset, left/auditory stimulus.}
+\label{fig:aud1la}
+\end{figure}
 
-Additionally, we tried narrowing the training, so it was limited to specific treatments. That is, train a specific network just using the left/auditory stimulus, for example ...
+\begin{figure}[h!]
+\centering
+\includegraphics[width=5in]{finalplots/faces1ff}
+\caption{Training/validation results for faces stimulus dataset, face/familiar stimulus.}
+\label{fig:faces1ff}
+\end{figure}
+
+Additionally, we tried narrowing the training, so it was limited to specific treatments. That is, train a specific network just using the left/auditory stimulus, for example, demonstrated in Figs. \ref{fig:aud1la} and \ref{fig:faces1ff}. This had a negative to no effect on the test set accuracies.
 
 \subsection{Animal test}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=5in]{finalplots/stereotax1}
+\caption{}
+\label{fig:stereotax1}
+\end{figure}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=5in]{finalplots/norat5dbpink}
+\caption{}
+\label{fig:norat5dbpink}
+\end{figure}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=5in]{finalplots/rat5dbpink}
+\caption{}
+\label{fig:rat5dbpink}
+\end{figure}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=5in]{finalplots/rat-120dbpink}
+\caption{}
+\label{fig:rat-120dbpink}
+\end{figure}
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=5in]{finalplots/train_real_test_real_valid}
+\caption{}
+\label{fig:realreal}
+\end{figure}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=5in]{finalplots/train_synth_test_real_valid}
+\caption{}
+\label{fig:synthreal}
+\end{figure}
 
 \section{Conclusion}
 We have presented a new technique for rapid inversion of MEG/EEG data, using neural networks to estimate the location of the peak dipole, rather than the current distribution over the cortex. In examining four possible network architectures, it was found that the CNN networks perform best in determining the location of the peak dipole at each timestep. More complicated network architectures, or those without the CNN layers, performed worse, due to overfitting and loss of spatial information. Treating the EEG and MEG data as a two-channel image is an effective method for retaining patial field patterns, and is easily extensible to situations with more available sensors, such as NIRS. Future work may investigate using sequence-to-sequence neural machine translation to interpret timeseries.
 
 \iffalse
-% use section* for acknowledgment
-\section*{Acknowledgment}
+% use section for acknowledgment
+\section{Acknowledgment}
 The authors would like to thank DARPA for their support through contract W911NF-16-C-0057, as well as the MNE (\url{https://martinos.org/mne/stable/index.html}) project and OpenFMRI (\url{https://openfmri.org/}) project for software and datasets.
 \fi
 

@@ -1,5 +1,5 @@
-This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
-Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+This is BibTeX, Version 0.99d (TeX Live 2017/Debian)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: meld_final.aux
 The style file: IEEEtran.bst
 Reallocated singl_function (elt_size=4) to 100 items from 50.
@@ -13,44 +13,44 @@ Database file #1: ./casanova_ieee.bib
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
 
 Done.
-You've used 17 entries,
+You've used 21 entries,
             4087 wiz_defined-function locations,
-            927 strings with 11151 characters,
-and the built_in function-call counts, 15072 in all, are:
-= -- 1225
-> -- 463
-< -- 136
-+ -- 250
-- -- 88
-* -- 761
-:= -- 2215
-add.period$ -- 34
-call.type$ -- 17
-change.case$ -- 17
-chr.to.int$ -- 288
-cite$ -- 17
-duplicate$ -- 1060
-empty$ -- 1050
-format.name$ -- 104
-if$ -- 3488
+            953 strings with 11856 characters,
+and the built_in function-call counts, 18332 in all, are:
+= -- 1508
+> -- 528
+< -- 168
++ -- 286
+- -- 98
+* -- 917
+:= -- 2708
+add.period$ -- 43
+call.type$ -- 21
+change.case$ -- 21
+chr.to.int$ -- 354
+cite$ -- 21
+duplicate$ -- 1296
+empty$ -- 1298
+format.name$ -- 117
+if$ -- 4254
 int.to.chr$ -- 0
-int.to.str$ -- 17
-missing$ -- 196
-newline$ -- 74
-num.names$ -- 17
-pop$ -- 426
+int.to.str$ -- 21
+missing$ -- 234
+newline$ -- 86
+num.names$ -- 21
+pop$ -- 500
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 1148
+skip$ -- 1407
 stack$ -- 0
-substring$ -- 703
-swap$ -- 932
-text.length$ -- 40
+substring$ -- 867
+swap$ -- 1135
+text.length$ -- 50
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 17
+type$ -- 21
 warning$ -- 0
-while$ -- 64
-width$ -- 19
-write$ -- 198
+while$ -- 81
+width$ -- 23
+write$ -- 240
