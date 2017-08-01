@@ -65,12 +65,7 @@ Fluxgates, Electrophysical imaging, Brain, Neural networks, Dipole.
 
 \IEEEPARstart{T}{here} is a great need for interpretation of brain signals for both use in control of devices, for prosthetics, for example, or for disease diagnostics. Magnetoencephalography (MEG), the measurement of the brain's magnetic field, is typically done using cryogenic superconducting quantum interference devices (SQUID) on a dense grid surrounding the skull, and has been used in brain-computer interfaces \cite{mellinger2007meg}. Additionally, electroencephalography (EEG), is also used for BCI as well as medical diagnostics and study of brain stucture and function \cite{da2008impact}. Particularly for the latter, there is great utility in using the external measurements of MEG and EEG to determine which parts of the brain are most electrically active, a problem known as localization or inversion. Functional magnetic resonance imaging (fMRI) can be used but instead measures blood flow, and is thus not a direct measurement of electrical activity \cite{sharon2007advantage}.
 
-MEG ...
-squid
-\cite{ilmoniemi1984four}
-\cite{preusser2009microfabricated}
-\cite{primdahl1979fluxgate}
-\cite{sasada2014fundamental}
+MEG traditionally uses superconducting quantum interference devices (SQUID) which must be cryogenically cooled but can get subfemtotesla noise floor \cite{ilmoniemi1984four}. This is necessary because neuronal magnetic fields are about a pico tesla or less. Optical magnetometers are not cryogenic, subfemtotesla, and have been miniturized effectively \cite{preusser2009microfabricated}, Oceanit wanted to pursueue the fluxgate \cite{primdahl1979fluxgate} as a measurement method. The fluxgate is a noncryogenic technique that uses the change in magnetic permeability of a magnetic material due to external fields to sense small fields. With novel materials, picotesla-level noise floor is possible \cite{sasada2014fundamental}.
 
 Classically, MEG/EEG inversion has followed one of a few approaches, with incremental enhancements as sophistication and computational power has increased. \cite{grech2008review} provides an excellent review of techniques. \cite{mosher1992multiple} established the orignal framework of the dipole in a sphere model, in which a lead-field matrix based on magnetostatic and electrostatic equations, and the positions of dipoles, transforms a vector of dipole magnitudes into a vector of magnetic flux and electric potential at sensor locations. The problem of localization becomes a problem of finding the locations and magnitudes of dipoles that minimize the square error of predicted versus observed fields. Using this formalism and a finite-element model, \cite{buchner1997inverse} localized dipoles from MEG data. \cite{galka2004solution} used Kalman filtering to solve the dynamical inverse problem. The signal-space separation method transforms the data into basis functions in signal space to better filter background noise sources \cite{taulu2005applications}. Beamformer techniques have also been applied for MEG/EEG inversion \cite{sekihara2001reconstructing}. More recently, EEG has been inverted using artificial neural networks \cite{van2000eeg}.
 
@@ -88,12 +83,13 @@ In this section, we describe our methodology, including sensor architecture, dat
 
 \subsection{Fluxgate}
 
-Fluxgate development initially began
+Fluxgate development initially began at UF. We had wanted to pursue Aichi steel magnetic wire as a core material following work in the literature
+\cite{sasada2014fundamental}, but this was unavailable, so we used a magnetic ribbon from Metglas. The circuit consisted of a tube of ribbon which was periodically driven to saturation by a drive coil; a sense coil of up to 1200 turns of 38 AWG wire picked up changes in flux due to external fields' saturation of the core; this sense voltage was preamplified and demodulated (see Figs. \ref{fig:coil_preamp} and \ref{fig:drive_feedback}). A feedback circuit enabled cancellation of low-frequency components due to the geomagnetic field. This sensor was fabricated and then tested in a magnetically-shielded volume (Fig. \ref{fig:helmholtz_in_shield}). Fig. \ref{fig:test} shows characteristice results - the fluxgate could detect fields at frequencies less than 300 Hz on the order of 1 nT peak. At this point Oceanit obtained the elusive Aichi steel and built a sensor using that material which had a noise floor of several pT.
 
 \begin{figure}[h!]
 \centering
 \includegraphics[width=5in]{finalplots/coil_preamp}
-\caption{}
+\caption{Coil and preamp circuit.}
 \label{fig:coil_preamp}
 \end{figure}
 
@@ -102,7 +98,7 @@ Fluxgate development initially began
 \begin{figure}[h!]
 \centering
 \includegraphics[width=5in]{finalplots/drive_feedback}
-\caption{}
+\caption{Drive and feedback circuit}
 \label{fig:drive_feedback}
 \end{figure}
 
@@ -110,21 +106,21 @@ Fluxgate development initially began
 \begin{figure}[h!]
 \centering
 \includegraphics[width=5in]{finalplots/pcbs}
-\caption{}
+\caption{PCBs, from left to right: sense, drive, feedback, and Helmholtz driver}
 \label{fig:pcbs}
 \end{figure}
 
 \begin{figure}[h!]
 \centering
 \includegraphics[width=5in]{finalplots/helmholtz_in_shield}
-\caption{}
-\label{fig:fg}
+\caption{Our reference setup: 6 layers of mu-metal shielding, with a Helmholtz coil inside.}
+\label{fig:helmholtz_in_shield}
 \end{figure}
 
 \begin{figure}[h!]
 \centering
 \includegraphics[width=5in]{finalplots/2p57pp_30Hz_3Vdc_50mVpp_phase90}
-\caption{}
+\caption{Example test results: a 2.57 nTpp field was applied and measured at 30 Hz.}
 \label{fig:test}
 \end{figure}
 
@@ -199,9 +195,9 @@ To train the networks, on each dataset the data was divided into randomly select
 
 \subsection{Animal test}
 
-\section{Results}
+To test the sensors and inversion algorithm, we conducted tests on live rats, using ECoG as the true measurement. Four sensors were arrayed every 60 degrees around the rate head in a stereotax (Fig. \ref{fig:stereotax}). While sedated with ketamine, two tests were conducted. In one, pink noise was played at -120, -15, -10, -5, 0, and 5 dB, with rat and without; in the second, tones were played from 1-16 kHz in half-octave intervals at the same power levels. Data was collected at 48816 Hz, decimated to 1017 Hz, lowpassed to 300 Hz and highpassed to 0.2 Hz, mains filtered, epoched into trials, and averaged across trials with the same treatment level. The inversion model was either trained and tested using real ECoG data or trained with synthetic data from a simple dipole model in a rat-brain volume, and tested with real data. 
 
-\subsection{Fluxgate}
+\section{Results}
 
 \subsection{Inversion}
 \begin{table}[h!]
@@ -291,51 +287,67 @@ Additionally, we tried narrowing the training, so it was limited to specific tre
 
 \subsection{Animal test}
 
+We found that the ECoG could pick up responses easily while the MEG sensed nothing and was overwhelmed by noise (see Figs \ref{fig:norat5dbpink} and \ref{fig:rat5dbpink}, for example). For testing the inversion, we must consider carefully how we stucture our test. ECoG data provided a surrogate for true neuron current - the location of the maximum ECoG element corresponds to the location of the maximum dipole. If we train and test using real data, the results are artificially good, because the resolution of the ECoG is so high (750um) and it is a small part of the brain (4x4 sensor grid), so the localization error is also small. It would only be good if the NN distance error ($\sqrt{3}$ * RMSE) was much less than 750$\mu$m. If we train on synthetic data, with a larger, coarser grid, then test with real data, we can get a more realistic estimate of the localization error of the NN, because the model will be trained to consider the entire brain as a possible space for neurons. In this case, the NN distance error should be less than the grid spacing of the synthetic training data (7.5mm on a 2x2x4 grid). However, we need a reliable way to encode the no stimulus condition - it’s basically noise but could be misinterpreted. Figs. \ref{fig:realreal} and \ref{fig:synthreal} show the validation curves. Since errors were greater than the grid distance in both cases, it can be considered a failure. Further, results are very similar for rat or no rat. This indicates the localization is largely due to the interference from the speaker on the sensors. Too few and insufficiently sensitive sensors are the primary culprits.
+
 \begin{figure}[h!]
 \centering
 \includegraphics[width=5in]{finalplots/stereotax1}
-\caption{}
-\label{fig:stereotax1}
+\caption{Stereotax with plastic rat skull for demonstration. Actual test photos were prohibited by the protocol.}
+\label{fig:stereotax}
 \end{figure}
 
 \begin{figure}[h!]
 \centering
 \includegraphics[width=5in]{finalplots/norat5dbpink}
-\caption{}
+\caption{Example data: no rat, 5dB pink noise.}
 \label{fig:norat5dbpink}
 \end{figure}
 
 \begin{figure}[h!]
 \centering
 \includegraphics[width=5in]{finalplots/rat5dbpink}
-\caption{}
+\caption{Rat, 5dB pink noise.}
 \label{fig:rat5dbpink}
 \end{figure}
 
 \begin{figure}[h!]
 \centering
 \includegraphics[width=5in]{finalplots/rat-120dbpink}
-\caption{}
+\caption{Rat, -120dB pink noise (silence)}
 \label{fig:rat-120dbpink}
+\end{figure}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=5in]{finalplots/rat5db1k}
+\caption{Example data: rat, 5dB pink 1 kHz.}
+\label{fig:rat5db1k}
+\end{figure}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=5in]{finalplots/rat5db16k}
+\caption{Rat, 5dB 16 kHz.}
+\label{fig:rat5db16k}
 \end{figure}
 
 
 \begin{figure}[h!]
 \centering
 \includegraphics[width=5in]{finalplots/train_real_test_real_valid}
-\caption{}
+\caption{Model validation curves trained on real data and tested on real.}
 \label{fig:realreal}
 \end{figure}
 
 \begin{figure}[h!]
 \centering
 \includegraphics[width=5in]{finalplots/train_synth_test_real_valid}
-\caption{}
+\caption{Model validation curves trained on synthetic data and tested on real.}
 \label{fig:synthreal}
 \end{figure}
 
 \section{Conclusion}
-We have presented a new technique for rapid inversion of MEG/EEG data, using neural networks to estimate the location of the peak dipole, rather than the current distribution over the cortex. In examining four possible network architectures, it was found that the CNN networks perform best in determining the location of the peak dipole at each timestep. More complicated network architectures, or those without the CNN layers, performed worse, due to overfitting and loss of spatial information. Treating the EEG and MEG data as a two-channel image is an effective method for retaining patial field patterns, and is easily extensible to situations with more available sensors, such as NIRS. Future work may investigate using sequence-to-sequence neural machine translation to interpret timeseries.
+We have presented a new technique for rapid inversion of MEG/EEG data, using neural networks to estimate the location of the peak dipole, rather than the current distribution over the cortex. In examining four possible network architectures, it was found that the CNN networks perform best in determining the location of the peak dipole at each timestep. More complicated network architectures, or those without the CNN layers, performed worse, due to overfitting and loss of spatial information. Treating the EEG and MEG data as a two-channel image is an effective method for retaining patial field patterns, and is easily extensible to situations with more available sensors, such as NIRS. Future work may investigate using sequence-to-sequence neural machine translation to interpret timeseries. However, the sensors were insufficiently sensitive and too few to properly localize neuronal activity.
 
 \iffalse
 % use section for acknowledgment

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2017.7.13)  31 JUL 2017 18:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2017.7.13)  1 AUG 2017 08:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -303,61 +303,57 @@ e
 ))
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 ** ATTENTION: \IEEEPARstart is disabled in draft mode (line 66).
-[2]
-<finalplots/coil_preamp.png, id=12, 700.6175pt x 362.35374pt>
+[2] [3]
+<finalplots/coil_preamp.png, id=15, 700.6175pt x 362.35374pt>
 File: finalplots/coil_preamp.png Graphic file (type png)
 <use finalplots/coil_preamp.png>
-Package pdftex.def Info: finalplots/coil_preamp.png  used on input line 95. on 
-input line 95.
+Package pdftex.def Info: finalplots/coil_preamp.png  used on input line 91. on 
+input line 91.
 Package pdftex.def Info: Requested size: 361.34999pt x 186.88795pt on input lin
-e 95.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<finalplots/drive_feedback.png, id=14, 742.4538pt x 552.6246pt>
+e 91.
+<finalplots/drive_feedback.png, id=17, 742.4538pt x 552.6246pt>
 File: finalplots/drive_feedback.png Graphic file (type png)
 <use finalplots/drive_feedback.png>
-Package pdftex.def Info: finalplots/drive_feedback.png  used on input line 104.
- on input line 104.
+Package pdftex.def Info: finalplots/drive_feedback.png  used on input line 100.
+ on input line 100.
 Package pdftex.def Info: Requested size: 361.34999pt x 268.9586pt on input line
- 104.
+ 100.
+
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<finalplots/pcbs.jpg, id=15, 2055.68pt x 1541.76pt>
+<finalplots/pcbs.jpg, id=18, 2055.68pt x 1541.76pt>
 File: finalplots/pcbs.jpg Graphic file (type jpg)
 <use finalplots/pcbs.jpg>
-Package pdftex.def Info: finalplots/pcbs.jpg  used on input line 112. on input 
-line 112.
+Package pdftex.def Info: finalplots/pcbs.jpg  used on input line 108. on input 
+line 108.
 Package pdftex.def Info: Requested size: 361.34999pt x 271.01183pt on input lin
-e 112.
+e 108.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<finalplots/helmholtz_in_shield.jpg, id=16, 2055.68pt x 1541.76pt>
+<finalplots/helmholtz_in_shield.jpg, id=19, 2055.68pt x 1541.76pt>
 File: finalplots/helmholtz_in_shield.jpg Graphic file (type jpg)
 <use finalplots/helmholtz_in_shield.jpg>
 Package pdftex.def Info: finalplots/helmholtz_in_shield.jpg  used on input line
- 119. on input line 119.
+ 115. on input line 115.
 Package pdftex.def Info: Requested size: 361.34999pt x 271.01183pt on input lin
-e 119.
+e 115.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<finalplots/2p57pp_30Hz_3Vdc_50mVpp_phase90.png, id=17, 803.0pt x 481.8pt>
+<finalplots/2p57pp_30Hz_3Vdc_50mVpp_phase90.png, id=20, 803.0pt x 481.8pt>
 File: finalplots/2p57pp_30Hz_3Vdc_50mVpp_phase90.png Graphic file (type png)
 <use finalplots/2p57pp_30Hz_3Vdc_50mVpp_phase90.png>
 Package pdftex.def Info: finalplots/2p57pp_30Hz_3Vdc_50mVpp_phase90.png  used o
-n input line 126. on input line 126.
+n input line 122. on input line 122.
 Package pdftex.def Info: Requested size: 361.34999pt x 216.81534pt on input lin
-e 126.
+e 122.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[3] [4 <./finalplots/coil_preamp.png> <./finalplots/drive_feedback.png (PNG cop
-y)>]
-Overfull \hbox (2.41623pt too wide) in paragraph at lines 141--142
+[4 <./finalplots/coil_preamp.png>]
+Overfull \hbox (2.41623pt too wide) in paragraph at lines 137--138
 []\OT1/ptm/m/n/12 For both datasets, chan-nels were pre-pro-cessed through low-
 pass fil-ter-ing, fol-lowed by EOG/ECG
  []
@@ -365,241 +361,264 @@ pass fil-ter-ing, fol-lowed by EOG/ECG
 <finalplots/mlp.png, id=25, 1638.12pt x 1059.96pt>
 File: finalplots/mlp.png Graphic file (type png)
 <use finalplots/mlp.png>
-Package pdftex.def Info: finalplots/mlp.png  used on input line 147. on input l
-ine 147.
+Package pdftex.def Info: finalplots/mlp.png  used on input line 143. on input l
+ine 143.
 Package pdftex.def Info: Requested size: 361.34999pt x 233.80652pt on input lin
-e 147.
-[5 <./finalplots/pcbs.jpg>]
+e 143.
+[5 <./finalplots/drive_feedback.png (PNG copy)>]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 <finalplots/cnn.png, id=30, 1638.12pt x 1059.96pt>
 File: finalplots/cnn.png Graphic file (type png)
 <use finalplots/cnn.png>
-Package pdftex.def Info: finalplots/cnn.png  used on input line 154. on input l
-ine 154.
+Package pdftex.def Info: finalplots/cnn.png  used on input line 150. on input l
+ine 150.
 Package pdftex.def Info: Requested size: 361.34999pt x 233.80652pt on input lin
-e 154.
+e 150.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 <finalplots/rnn.png, id=31, 1638.12pt x 1059.96pt>
 File: finalplots/rnn.png Graphic file (type png)
 <use finalplots/rnn.png>
-Package pdftex.def Info: finalplots/rnn.png  used on input line 161. on input l
-ine 161.
+Package pdftex.def Info: finalplots/rnn.png  used on input line 157. on input l
+ine 157.
 Package pdftex.def Info: Requested size: 361.34999pt x 233.80652pt on input lin
-e 161.
+e 157.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 <finalplots/cnnrnn.png, id=32, 1638.12pt x 1059.96pt>
 File: finalplots/cnnrnn.png Graphic file (type png)
 <use finalplots/cnnrnn.png>
-Package pdftex.def Info: finalplots/cnnrnn.png  used on input line 168. on inpu
-t line 168.
+Package pdftex.def Info: finalplots/cnnrnn.png  used on input line 164. on inpu
+t line 164.
 Package pdftex.def Info: Requested size: 361.34999pt x 233.80652pt on input lin
-e 168.
+e 164.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[6 <./finalplots/helmholtz_in_shield.jpg> <./finalplots/2p57pp_30Hz_3Vdc_50mVpp
-_phase90.png (PNG copy)>] [7 <./finalplots/mlp.png (PNG copy)> <./finalplots/cn
-n.png (PNG copy)>] [8 <./finalplots/rnn.png (PNG copy)> <./finalplots/cnnrnn.pn
+[6 <./finalplots/pcbs.jpg>]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[7 <./finalplots/helmholtz_in_shield.jpg> <./finalplots/2p57pp_30Hz_3Vdc_50mVpp
+_phase90.png (PNG copy)>] [8 <./finalplots/mlp.png (PNG copy)> <./finalplots/cn
+n.png (PNG copy)>] [9 <./finalplots/rnn.png (PNG copy)> <./finalplots/cnnrnn.pn
 g (PNG copy)>]
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<finalplots/aud1.png, id=43, 755.2215pt x 529.7391pt>
+<finalplots/aud1.png, id=46, 755.2215pt x 529.7391pt>
 File: finalplots/aud1.png Graphic file (type png)
 <use finalplots/aud1.png>
-Package pdftex.def Info: finalplots/aud1.png  used on input line 229. on input 
-line 229.
+Package pdftex.def Info: finalplots/aud1.png  used on input line 225. on input 
+line 225.
 Package pdftex.def Info: Requested size: 361.34999pt x 253.46355pt on input lin
-e 229.
+e 225.
+
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<finalplots/faces1.png, id=44, 753.7761pt x 531.9072pt>
+<finalplots/faces1.png, id=47, 753.7761pt x 531.9072pt>
 File: finalplots/faces1.png Graphic file (type png)
 <use finalplots/faces1.png>
-Package pdftex.def Info: finalplots/faces1.png  used on input line 237. on inpu
-t line 237.
+Package pdftex.def Info: finalplots/faces1.png  used on input line 233. on inpu
+t line 233.
 Package pdftex.def Info: Requested size: 361.34999pt x 254.99602pt on input lin
-e 237.
+e 233.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 <finalplots/tf1_0_subject_aud_pca_all_True_rand_True_cnn_True_rnn_False_locate_
-1_treat_None_train_1000.png, id=45, 578.16pt x 433.62pt>
+1_treat_None_train_1000.png, id=48, 578.16pt x 433.62pt>
 File: finalplots/tf1_0_subject_aud_pca_all_True_rand_True_cnn_True_rnn_False_lo
 cate_1_treat_None_train_1000.png Graphic file (type png)
 <use finalplots/tf1_0_subject_aud_pca_all_True_rand_True_cnn_True_rnn_False_loc
 ate_1_treat_None_train_1000.png>
 Package pdftex.def Info: finalplots/tf1_0_subject_aud_pca_all_True_rand_True_cn
-n_True_rnn_False_locate_1_treat_None_train_1000.png  used on input line 245. on
- input line 245.
+n_True_rnn_False_locate_1_treat_None_train_1000.png  used on input line 241. on
+ input line 241.
 Package pdftex.def Info: Requested size: 361.34999pt x 271.01183pt on input lin
-e 245.
+e 241.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 <finalplots/tf1_0_subject_aud_pca_all_True_rand_True_cnn_True_rnn_False_locate_
-1_treat_None.png, id=46, 578.16pt x 433.62pt>
+1_treat_None.png, id=49, 578.16pt x 433.62pt>
 File: finalplots/tf1_0_subject_aud_pca_all_True_rand_True_cnn_True_rnn_False_lo
 cate_1_treat_None.png Graphic file (type png)
 <use finalplots/tf1_0_subject_aud_pca_all_True_rand_True_cnn_True_rnn_False_loc
 ate_1_treat_None.png>
 Package pdftex.def Info: finalplots/tf1_0_subject_aud_pca_all_True_rand_True_cn
-n_True_rnn_False_locate_1_treat_None.png  used on input line 253. on input line
- 253.
+n_True_rnn_False_locate_1_treat_None.png  used on input line 249. on input line
+ 249.
 Package pdftex.def Info: Requested size: 361.34999pt x 271.01183pt on input lin
-e 253.
+e 249.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[9]
-<finalplots/aud100.png, id=50, 753.7761pt x 527.571pt>
-File: finalplots/aud100.png Graphic file (type png)
-<use finalplots/aud100.png>
-Package pdftex.def Info: finalplots/aud100.png  used on input line 263. on inpu
-t line 263.
-Package pdftex.def Info: Requested size: 361.34999pt x 252.91725pt on input lin
-e 263.
- [10 <./finalplots/aud1.png>]
+[10]
 
 LaTeX Warning: Text page 11 contains only floats.
 
-[11 <./finalplots/faces1.png> <./finalplots/tf1_0_subject_aud_pca_all_True_rand
-_True_cnn_True_rnn_False_locate_1_treat_None_train_1000.png>]
+[11 <./finalplots/aud1.png> <./finalplots/faces1.png>]
+<finalplots/aud100.png, id=58, 753.7761pt x 527.571pt>
+File: finalplots/aud100.png Graphic file (type png)
+<use finalplots/aud100.png>
+Package pdftex.def Info: finalplots/aud100.png  used on input line 259. on inpu
+t line 259.
+Package pdftex.def Info: Requested size: 361.34999pt x 252.91725pt on input lin
+e 259.
+
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<finalplots/faces100.png, id=60, 753.7761pt x 527.571pt>
+<finalplots/faces100.png, id=59, 753.7761pt x 527.571pt>
 File: finalplots/faces100.png Graphic file (type png)
 <use finalplots/faces100.png>
-Package pdftex.def Info: finalplots/faces100.png  used on input line 270. on in
-put line 270.
+Package pdftex.def Info: finalplots/faces100.png  used on input line 266. on in
+put line 266.
 Package pdftex.def Info: Requested size: 361.34999pt x 252.91725pt on input lin
-e 270.
+e 266.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<finalplots/aud1la.png, id=61, 756.6669pt x 523.9575pt>
+<finalplots/aud1la.png, id=60, 756.6669pt x 523.9575pt>
 File: finalplots/aud1la.png Graphic file (type png)
 <use finalplots/aud1la.png>
-Package pdftex.def Info: finalplots/aud1la.png  used on input line 278. on inpu
-t line 278.
+Package pdftex.def Info: finalplots/aud1la.png  used on input line 274. on inpu
+t line 274.
 Package pdftex.def Info: Requested size: 361.34999pt x 250.21754pt on input lin
-e 278.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<finalplots/faces1ff.png, id=62, 753.7761pt x 532.6299pt>
-File: finalplots/faces1ff.png Graphic file (type png)
-<use finalplots/faces1ff.png>
-Package pdftex.def Info: finalplots/faces1ff.png  used on input line 285. on in
-put line 285.
-Package pdftex.def Info: Requested size: 361.34999pt x 255.34247pt on input lin
-e 285.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<finalplots/stereotax1.jpg, id=63, 2055.68pt x 1541.76pt>
-File: finalplots/stereotax1.jpg Graphic file (type jpg)
-<use finalplots/stereotax1.jpg>
-Package pdftex.def Info: finalplots/stereotax1.jpg  used on input line 296. on 
-input line 296.
-Package pdftex.def Info: Requested size: 361.34999pt x 271.01183pt on input lin
-e 296.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<finalplots/norat5dbpink.png, id=64, 578.16pt x 433.62pt>
-File: finalplots/norat5dbpink.png Graphic file (type png)
-<use finalplots/norat5dbpink.png>
-Package pdftex.def Info: finalplots/norat5dbpink.png  used on input line 303. o
-n input line 303.
-Package pdftex.def Info: Requested size: 361.34999pt x 271.01183pt on input lin
-e 303.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<finalplots/rat5dbpink.png, id=65, 578.16pt x 433.62pt>
-File: finalplots/rat5dbpink.png Graphic file (type png)
-<use finalplots/rat5dbpink.png>
-Package pdftex.def Info: finalplots/rat5dbpink.png  used on input line 310. on 
-input line 310.
-Package pdftex.def Info: Requested size: 361.34999pt x 271.01183pt on input lin
-e 310.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<finalplots/rat-120dbpink.png, id=66, 578.16pt x 433.62pt>
-File: finalplots/rat-120dbpink.png Graphic file (type png)
-<use finalplots/rat-120dbpink.png>
-Package pdftex.def Info: finalplots/rat-120dbpink.png  used on input line 317. 
-on input line 317.
-Package pdftex.def Info: Requested size: 361.34999pt x 271.01183pt on input lin
-e 317.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<finalplots/train_real_test_real_valid.png, id=67, 932.48375pt x 560.0925pt>
-File: finalplots/train_real_test_real_valid.png Graphic file (type png)
-<use finalplots/train_real_test_real_valid.png>
-Package pdftex.def Info: finalplots/train_real_test_real_valid.png  used on inp
-ut line 325. on input line 325.
-Package pdftex.def Info: Requested size: 361.34999pt x 217.04214pt on input lin
-e 325.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<finalplots/train_synth_test_real_valid.png, id=68, 930.47626pt x 555.07375pt>
-File: finalplots/train_synth_test_real_valid.png Graphic file (type png)
-<use finalplots/train_synth_test_real_valid.png>
-Package pdftex.def Info: finalplots/train_synth_test_real_valid.png  used on in
-put line 332. on input line 332.
-Package pdftex.def Info: Requested size: 361.34999pt x 215.56314pt on input lin
-e 332.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
+e 274.
 [12 <./finalplots/tf1_0_subject_aud_pca_all_True_rand_True_cnn_True_rnn_False_l
-ocate_1_treat_None.png>]
+ocate_1_treat_None_train_1000.png>]
 
 LaTeX Warning: Text page 13 contains only floats.
 
-[13 <./finalplots/aud100.png> <./finalplots/faces100.png>]
+[13 <./finalplots/tf1_0_subject_aud_pca_all_True_rand_True_cnn_True_rnn_False_l
+ocate_1_treat_None.png> <./finalplots/aud100.png>]
 
-LaTeX Warning: Text page 14 contains only floats.
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[14 <./finalplots/aud1la.png> <./finalplots/faces1ff.png>] (./meld_final.bbl
-[15 <./finalplots/stereotax1.jpg>] [16 <./finalplots/norat5dbpink.png>]
-[17 <./finalplots/rat5dbpink.png>]) [18 <./finalplots/rat-120dbpink.png> <./fin
-alplots/train_real_test_real_valid.png>] [19 <./finalplots/train_synth_test_rea
-l_valid.png>] (./meld_final.aux)
+<finalplots/faces1ff.png, id=71, 753.7761pt x 532.6299pt>
+File: finalplots/faces1ff.png Graphic file (type png)
+<use finalplots/faces1ff.png>
+Package pdftex.def Info: finalplots/faces1ff.png  used on input line 281. on in
+put line 281.
+Package pdftex.def Info: Requested size: 361.34999pt x 255.34247pt on input lin
+e 281.
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
- ) 
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no € in font ptmr7t!
+Missing character: There is no ™ in font ptmr7t!
+[14 <./finalplots/faces100.png>]
+
+LaTeX Warning: Text page 15 contains only floats.
+
+[15 <./finalplots/aud1la.png> <./finalplots/faces1ff.png>]
+<finalplots/stereotax1.jpg, id=81, 2055.68pt x 1541.76pt>
+File: finalplots/stereotax1.jpg Graphic file (type jpg)
+<use finalplots/stereotax1.jpg>
+Package pdftex.def Info: finalplots/stereotax1.jpg  used on input line 294. on 
+input line 294.
+Package pdftex.def Info: Requested size: 361.34999pt x 271.01183pt on input lin
+e 294.
+<finalplots/norat5dbpink.png, id=82, 578.16pt x 433.62pt>
+File: finalplots/norat5dbpink.png Graphic file (type png)
+<use finalplots/norat5dbpink.png>
+Package pdftex.def Info: finalplots/norat5dbpink.png  used on input line 301. o
+n input line 301.
+Package pdftex.def Info: Requested size: 361.34999pt x 271.01183pt on input lin
+e 301.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<finalplots/rat5dbpink.png, id=83, 578.16pt x 433.62pt>
+File: finalplots/rat5dbpink.png Graphic file (type png)
+<use finalplots/rat5dbpink.png>
+Package pdftex.def Info: finalplots/rat5dbpink.png  used on input line 308. on 
+input line 308.
+Package pdftex.def Info: Requested size: 361.34999pt x 271.01183pt on input lin
+e 308.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<finalplots/rat-120dbpink.png, id=84, 578.16pt x 433.62pt>
+File: finalplots/rat-120dbpink.png Graphic file (type png)
+<use finalplots/rat-120dbpink.png>
+Package pdftex.def Info: finalplots/rat-120dbpink.png  used on input line 315. 
+on input line 315.
+Package pdftex.def Info: Requested size: 361.34999pt x 271.01183pt on input lin
+e 315.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<finalplots/rat5db1k.png, id=85, 578.16pt x 433.62pt>
+File: finalplots/rat5db1k.png Graphic file (type png)
+<use finalplots/rat5db1k.png>
+Package pdftex.def Info: finalplots/rat5db1k.png  used on input line 322. on in
+put line 322.
+Package pdftex.def Info: Requested size: 361.34999pt x 271.01183pt on input lin
+e 322.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<finalplots/rat5db16k.png, id=86, 578.16pt x 433.62pt>
+File: finalplots/rat5db16k.png Graphic file (type png)
+<use finalplots/rat5db16k.png>
+Package pdftex.def Info: finalplots/rat5db16k.png  used on input line 329. on i
+nput line 329.
+Package pdftex.def Info: Requested size: 361.34999pt x 271.01183pt on input lin
+e 329.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<finalplots/train_real_test_real_valid.png, id=87, 932.48375pt x 560.0925pt>
+File: finalplots/train_real_test_real_valid.png Graphic file (type png)
+<use finalplots/train_real_test_real_valid.png>
+Package pdftex.def Info: finalplots/train_real_test_real_valid.png  used on inp
+ut line 337. on input line 337.
+Package pdftex.def Info: Requested size: 361.34999pt x 217.04214pt on input lin
+e 337.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<finalplots/train_synth_test_real_valid.png, id=88, 930.47626pt x 555.07375pt>
+File: finalplots/train_synth_test_real_valid.png Graphic file (type png)
+<use finalplots/train_synth_test_real_valid.png>
+Package pdftex.def Info: finalplots/train_synth_test_real_valid.png  used on in
+put line 344. on input line 344.
+Package pdftex.def Info: Requested size: 361.34999pt x 215.56314pt on input lin
+e 344.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[16 <./finalplots/stereotax1.jpg>] (./meld_final.bbl [17 <./finalplots/norat5db
+pink.png>] [18 <./finalplots/rat5dbpink.png>] [19 <./finalplots/rat-120dbpink.p
+ng>]) [20 <./finalplots/rat5db1k.png>] [21 <./finalplots/rat5db16k.png> <./fina
+lplots/train_real_test_real_valid.png>] [22 <./finalplots/train_synth_test_real
+_valid.png>] (./meld_final.aux) ) 
 Here is how much of TeX's memory you used:
- 3274 strings out of 494931
- 52024 string characters out of 6180851
- 108581 words of memory out of 5000000
- 6509 multiletter control sequences out of 15000+600000
+ 3286 strings out of 494931
+ 52320 string characters out of 6180851
+ 108603 words of memory out of 5000000
+ 6519 multiletter control sequences out of 15000+600000
  41808 words of font info for 81 fonts, out of 8000000 for 9000
  17 hyphenation exceptions out of 8191
- 41i,7n,25p,1402b,303s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/ty
-pe1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/u
-tmri8a.pfb>
-Output written on meld_final.pdf (19 pages, 4636813 bytes).
+ 41i,7n,25p,1673b,303s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips
+/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi
+12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb>
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/urw/times/utmri8a.pfb>
+Output written on meld_final.pdf (22 pages, 4925710 bytes).
 PDF statistics:
- 121 PDF objects out of 1000 (max. 8388607)
- 58 compressed objects within 1 object stream
+ 142 PDF objects out of 1000 (max. 8388607)
+ 70 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 116 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 126 words of extra memory for PDF output out of 10000 (max. 10000000)
 
