@@ -21,19 +21,16 @@
 \begin{document}
 % Definition of blocks:
 
-\title{EEG and MEG Inversion Using Convolutional and Recurrent Neural Networks}
+\title{MELD Final Report: EEG and MEG Inversion Using Convolutional and Recurrent Neural Networks}
 
 
-\author{Joaquin~J.~Casanova,~\IEEEmembership{Member,~IEEE,}
-        Zachary~D.~Stoecker-Sylvia,
-        Ryan~Y.~Miyamoto,~\IEEEmembership{Member,~IEEE,}
-        and~Jenshan~Lin,~\IEEEmembership{Fellow,~IEEE}% <-this % stops a space
-\thanks{J. Casanova and J. Lin are with the Department
-of Electrical and Computer Engineering, University of Florida, Gainesville,
-FL, 32611 USA e-mail: jcasa@ufl.edu}% <-this % stops a space
-\thanks{R. Miyamoto and Z. Stoecker-Sylvia are with Oceanit.}% <-this % stops a space
+\author{Joaquin~J.~Casanova and~Jenshan~Lin, University of Florida}% <-this % stops a space
+%\thanks{J. Casanova and J. Lin are with the Department
+%of Electrical and Computer Engineering, University of Florida, Gainesville,
+%FL, 32611 USA e-mail: jcasa@ufl.edu}% <-this % stops a space
+%\thanks{R. Miyamoto and Z. Stoecker-Sylvia are with Oceanit.}% <-this % stops a space
 
-\thanks{Manuscript received }}
+%\thanks{Manuscript received }}
 
 % The paper headers
 \markboth{MELD Final Report}%
@@ -287,7 +284,7 @@ Additionally, we tried narrowing the training, so it was limited to specific tre
 
 \subsection{Animal test}
 
-We found that the ECoG could pick up responses easily while the MEG sensed nothing and was overwhelmed by noise (see Figs \ref{fig:norat5dbpink} and \ref{fig:rat5dbpink}, for example). For testing the inversion, we must consider carefully how we stucture our test. ECoG data provided a surrogate for true neuron current - the location of the maximum ECoG element corresponds to the location of the maximum dipole. If we train and test using real data, the results are artificially good, because the resolution of the ECoG is so high (750um) and it is a small part of the brain (4x4 sensor grid), so the localization error is also small. It would only be good if the NN distance error ($\sqrt{3}$ * RMSE) was much less than 750$\mu$m. If we train on synthetic data, with a larger, coarser grid, then test with real data, we can get a more realistic estimate of the localization error of the NN, because the model will be trained to consider the entire brain as a possible space for neurons. In this case, the NN distance error should be less than the grid spacing of the synthetic training data (7.5mm on a 2x2x4 grid). However, we need a reliable way to encode the no stimulus condition - it’s basically noise but could be misinterpreted. Figs. \ref{fig:realreal} and \ref{fig:synthreal} show the validation curves. Since errors were greater than the grid distance in both cases, it can be considered a failure. Further, results are very similar for rat or no rat. This indicates the localization is largely due to the interference from the speaker on the sensors. Too few and insufficiently sensitive sensors are the primary culprits.
+We found that the ECoG could pick up responses easily while the MEG sensed nothing and was overwhelmed by noise (see Figs \ref{fig:norat5dbpink} and \ref{fig:rat5dbpink}, for example). For testing the inversion, we must consider carefully how we stucture our test. ECoG data provided a surrogate for true neuron current - the location of the maximum ECoG element corresponds to the location of the maximum dipole. If we train and test using real data, the results are artificially good, because the resolution of the ECoG is so high (750$\mu$m) and it is a small part of the brain (4x4 sensor grid), so the localization error is also small. It would only be good if the NN distance error ($\sqrt{3}$ * RMSE) was much less than 750$\mu$m. If we train on synthetic data, with a larger, coarser grid, then test with real data, we can get a more realistic estimate of the localization error of the NN, because the model will be trained to consider the entire brain as a possible space for neurons. In this case, the NN distance error should be less than the grid spacing of the synthetic training data (7.5mm on a 2x2x4 grid). However, we need a reliable way to encode the no stimulus condition - it’s basically noise but could be misinterpreted. Figs. \ref{fig:realreal} and \ref{fig:synthreal} show the validation curves. Since errors were greater than the grid distance in both cases, it can be considered a failure. Further, results are very similar for rat or no rat. This indicates the localization is largely due to the interference from the speaker on the sensors. Too few and insufficiently sensitive sensors are the primary culprits.
 
 \begin{figure}[h!]
 \centering
