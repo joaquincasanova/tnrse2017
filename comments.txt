@@ -66,15 +66,17 @@ Another weakness of the paper is that there's no comparison with other existing 
 $$Need to think of a comparison we can make. If not, why not?
 $$We used MNE as the truth.
 $$Other inversion methods available to us:
-$$Source localization with single dipole fit
-$$Source localization with dSPM
+$$Source localization with single dipole fit --->treat as truth? Single dipole fit is not the same as max dipole, which is what we found.
+$$Source localization with dSPM 
 $$Source localization with sLORETA
-$$Implementing a comparison may require a great deal of effort and explaination. Worth it?
+$$Source localization with MNE --> Maybe use this as truth.
+
+$$Implementing a comparison may require a great deal of effort and explanation. Worth it? Try 
 
 Some specific question:
 Does the results are obtained from a EEG/MEG data of a single subject only? this seems to be the case as mentioned in page 2 col 1 line 10-13. If it's from only one subject, how the finding and conclusion in this paper can be generalized and applicable to other subjects as well.
 
-$$Multiple subjects were considered in the auditority dataset, and the faces dataset is an entirely different subject. We could also consider subject 8.
+$$Multiple subjects were considered in the auditority dataset, and the faces dataset is an entirely different subject. We could also consider subject 8. I think I already processed this.
 
 some minor writing errors:
 page 1 col 1 line 50 "is great" --> "is a great" ?
