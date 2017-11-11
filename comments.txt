@@ -1,0 +1,119 @@
+
+
+BEGINNING OF COMMENTS TO THE AUTHOR(S)
++++++++++++++++++++++++++++++++++++++++
+
+Recommended Decision by Associate Editor:  Reject
+
+Comments to Author(s) by Associate Editor:
+Associate Editor
+Comments to the Author:
+All of reviewers think the paper contains some interesting contents. However, the second reviewer points out that some of the paper is not convincing enough since the detailed description of the proposed methods is too brief. He also think too many information regarding the evaluation and results are still missing. It is pointed out by the third reviewer that how important an EEG and MEG inversion is important is missing. And from Fig 4 and 3, it can seen that error increases or flat, which further means no training at all. Based on comments of reviewers, I recommend for reject.
+
++++++++++++++++++++++
+
+Individual Reviews:
+
+Reviewer(s)' Comments to Author(s):
+
+Reviewer: 1
+
+Comments to the Author
+This paper proposes a scalable deblocking filter architecture, which
+adopts a different macroblock level parallelization strategy.
+Experimental results show that proposed method can accelerate the deblocking filter
+
+5.Please refer the recent papers:
+
+$$There were no criticisms from reviewer one. Rather, some of his papers were listed, and he summarized our paper.
+
+$$These are all from C. Yan.
+$$I inserted the abstracts for reference.
+
+
+"Supervised Hash Coding with Deep Neural Network for Environment Perception of Intelligent Vehicles", IEEE Transactions on Intelligent Transportation Systems.
+
+"Effective Uyghur Language Text Detection in Complex Background Images for Traffic Prompt Identification", IEEE Transactions on Intelligent Transportation Systems.
+
+Text detection in complex background images is a challenging task for intelligent vehicles. Actually, almost all the widely-used systems focus on commonly used languages while for some minority languages, such as the Uyghur language, text detection is paid less attention. In this paper, we propose an effective Uyghur language text detection system in complex background images. First, a new channel-enhanced maximally stable extremal regions (MSERs) algorithm is put forward to detect component candidates. Second, a two-layer filtering mechanism is designed to remove most non-character regions. Third, the remaining component regions are connected into short chains, and the short chains are extended by a novel extension algorithm to connect the missed MSERs. Finally, a two-layer chain elimination filter is proposed to prune the non-text chains. To evaluate the system, we build a new data set by various Uyghur texts with complex backgrounds. Extensive experimental comparisons show that our system is obviously effective for Uyghur language text detection in complex background images. The F-measure is 85%, which is much better than the state-of-the-art performance of 75.5%.
+
+"A Highly Parallel Framework for HEVC Coding Unit Partitioning Tree Decision on Many-core Processors", IEEE Signal Processing letters,
+
+High Efficiency Video Coding (HEVC) uses a very flexible tree structure to organize coding units, which leads to a superior coding efficiency compared with previous video coding standards. However, such a flexible coding unit tree structure also places a great challenge for encoders. In order to fully exploit the coding efficiency brought by this structure, huge amount of computational complexity is needed for an encoder to decide the optimal coding unit tree for each image block. One way to achieve this is to use parallel computing enabled by many-core processors. In this paper, we analyze the challenge to use many-core processors to make coding unit tree decision. Through in-depth understanding of the dependency among different coding units, we propose a parallel framework to decide coding unit trees. Experimental results show that, on the Tile64 platform, our proposed method achieves averagely more than 11 and 16 times speedup for 1920x1080 and 2560x1600 video sequences, respectively, without any coding efficiency degradation.
+
+"Efficient Parallel Framework for HEVC Motion Estimation on Many-core Processors", IEEE Transactions on Circuits and Systems for Video Technology
+
+High Efficiency Video Coding (HEVC) provides superior coding efficiency than previous video coding standards at the cost of increasing encoding complexity. The complexity increase of motion estimation (ME) procedure is rather significant, especially when considering the complicated partitioning structure of HEVC. To fully exploit the coding efficiency brought by HEVC requires a huge amount of computations. In this paper, we analyze the ME structure in HEVC and propose a parallel framework to decouple ME for different partitions on many-core processors. Based on local parallel method (LPM), we first use the directed acyclic graph (DAG)-based order to parallelize coding tree units (CTUs) and adopt improved LPM (ILPM) within each CTU (DAGILPM), which exploits the CTU-level and prediction unit (PU)-level parallelism. Then, we find that there exist completely independent PUs (CIPUs) and partially independent PUs (PIPUs). When the degree of parallelism (DP) is smaller than the maximum DP of DAGILPM, we process the CIPUs and PIPUs, which further increases the DP. The data dependencies and coding efficiency stay the same as LPM. Experiments show that on a 64-core system, compared with serial execution, our proposed scheme achieves more than 30 and 40 times speedup for 1920 × 1080 and 2560 × 1600 video sequences, respectively.
+6.This paper uses a classical filtering method - Kalman filter.
+
+Reviewer: 2
+
+Comments to the Author
+
+The paper is somewhat well written in terms of the english usage with only few minor errors here and there.
+
+Unfortunately, the detail description of proposed methods and their evaluation is too brief which doesn't make it convincing enough. Although it may be acceptable to describe the method concisely given that it's a short paper and CNN/RNN and related techiques can be considered as common approaches, too many information regarding the evaluation and results are still missing.
+
+It's still unclear how and why one model can be considered better than the others.
+For instance, the author doesn't explain clearly what RSME means (page 2 line 12 col 2?) which seems to be the main measure of the performance.
+
+The lack of detail makes it difficult  to interpret the figures shown (Fig 3 - 6). How the readings in those figures can lead to the conclusion that CNN only is the best compares to others is still not clear.
+
+$$ Need to more clearly explain our "truth" data, and our error metric. The plots show the CNN only network achieves lower training and test errors and is thus superior, while others rapidly overtrainand and fail to generalize.
+
+Another weakness of the paper is that there's no comparison with other existing methods of EEG/MEG for localization as reviewed in the paper as well (1st paragraph in page 1 col 2). It's difficult to know whether the proposed method is promising or can produce a better result or more accurate prediction from state of arts.
+
+$$Need to think of a comparison we can make. If not, why not?
+$$We used MNE as the truth.
+$$Other inversion methods available to us:
+$$Source localization with single dipole fit
+$$Source localization with dSPM
+$$Source localization with sLORETA
+$$Implementing a comparison may require a great deal of effort and explaination. Worth it?
+
+Some specific question:
+Does the results are obtained from a EEG/MEG data of a single subject only? this seems to be the case as mentioned in page 2 col 1 line 10-13. If it's from only one subject, how the finding and conclusion in this paper can be generalized and applicable to other subjects as well.
+
+$$Multiple subjects were considered in the auditority dataset, and the faces dataset is an entirely different subject. We could also consider subject 8.
+
+some minor writing errors:
+page 1 col 1 line 50 "is great" --> "is a great" ?
+
+       col 2 line 46 "approporiately" --> "appropriately"
+             line 47 "predict" --> "prediction" ?
+page 2 col 2 line 26 "Teble" --> "Table"
+             line 51 "the the" (double article)
+
+Terms/abbreviations like MLP or RMSE are missing introduction/description.
+
+page 3 col 1 line 59 "patial" --> "spatial"? or "partial"?
+
+Reviewer: 3
+
+Comments to the Author
+The authors have presented EEG/MEG inversion using CNN and RNN and their combination.
+
+How important an EEG and MEG inversion is important is missing.
+
+$$ Expand introduction discussion 
+
+Rapid inversion was claimed. Yet no proof was given. CNN and RNN usually have high computational resources and time.
+
+$$ Only resource intensive in training; once the network parameters are trained, it is a simple to implement.
+
+Usually error reduces on training progresses, however, Figs 4 and 3 it seems that error increases or flat. This means no training at all.
+
+$$ Error decreases for the methods we indicate are best; the minimum error possible is the quantization error of the fMRI grid, so a good performing inversion method would have localization error close to this quantization error.
+
+Where does dipole come from while  Authors are evaluating performance using error.
+How is dipole significant.
+
+$$ Explain in introduction the meaning and significance of the dipole.
+
+The outcome of the report does not show us an innovative idea.
+
+$$ This method has not been previously applied to EEG/MEG inversion, thus it is innovative.
+
+
++++++++++++++++++++++++++++++++++++++++
+END OF COMMENTS TO THE AUTHOR(S)

@@ -1,0 +1,86 @@
+
+
+BEGINNING OF COMMENTS TO THE AUTHOR(S)
++++++++++++++++++++++++++++++++++++++++
+
+Recommended Decision by Associate Editor:  Reject
+
+Comments to Author(s) by Associate Editor:
+Associate Editor
+Comments to the Author:
+All of reviewers think the paper contains some interesting contents. However, the second reviewer points out that some of the paper is not convincing enough since the detailed description of the proposed methods is too brief. He also think too many information regarding the evaluation and results are still missing. It is pointed out by the third reviewer that how important an EEG and MEG inversion is important is missing. And from Fig 4 and 3, it can seen that error increases or flat, which further means no training at all. Based on comments of reviewers, I recommend for reject.
+
++++++++++++++++++++++
+
+Individual Reviews:
+
+Reviewer(s)' Comments to Author(s):
+
+Reviewer: 1
+
+Comments to the Author
+This paper proposes a scalable deblocking filter architecture, which
+adopts a different macroblock level parallelization strategy.
+Experimental results show that proposed method can accelerate the deblocking filter
+
+5.Please refer the recent papers:
+"Supervised Hash Coding with Deep Neural Network for Environment Perception of Intelligent Vehicles", IEEE Transactions on Intelligent Transportation Systems.
+
+"Effective Uyghur Language Text Detection in Complex Background Images for Traffic Prompt Identification", IEEE Transactions on Intelligent Transportation Systems.
+
+"A Highly Parallel Framework for HEVC Coding Unit Partitioning Tree Decision on Many-core Processors", IEEE Signal Processing letters,
+
+"Efficient Parallel Framework for HEVC Motion Estimation on Many-core Processors", IEEE Transactions on Circuits and Systems for Video Technology
+
+6.This paper uses a classical filtering method - Kalman filter.
+
+
+Reviewer: 2
+
+Comments to the Author
+
+The paper is somewhat well written in terms of the english usage with only few minor errors here and there.
+
+Unfortunately, the detail description of proposed methods and their evaluation is too brief which doesn't make it convincing enough. Although it may be acceptable to describe the method concisely given that it's a short paper and CNN/RNN and related techiques can be considered as common approaches, too many information regarding the evaluation and results are still missing.
+
+It's still unclear how and why one model can be considered better than the others.
+For instance, the author doesn't explain clearly what RSME means (page 2 line 12 col 2?) which seems to be the main measure of the performance.
+
+The lack of detail makes it difficult  to interpret the figures shown (Fig 3 - 6). How the readings in those figures can lead to the conclusion that CNN only is the best compares to others is still not clear.
+
+Another weakness of the paper is that there's no comparison with other existing methods of EEG/MEG for localization as reviewed in the paper as well (1st paragraph in page 1 col 2). It's difficult to know whether the proposed method is promising or can produce a better result or more accurate prediction from state of arts.
+
+Some specific question:
+Does the results are obtained from a EEG/MEG data of a single subject only? this seems to be the case as mentioned in page 2 col 1 line 10-13. If it's from only one subject, how the finding and conclusion in this paper can be generalized and applicable to other subjects as well.
+
+some minor writing errors:
+page 1 col 1 line 50 "is great" --> "is a great" ?
+
+       col 2 line 46 "approporiately" --> "appropriately"
+             line 47 "predict" --> "prediction" ?
+page 2 col 2 line 26 "Teble" --> "Table"
+             line 51 "the the" (double article)
+
+Terms/abbreviations like MLP or RMSE are missing introduction/description.
+
+page 3 col 1 line 59 "patial" --> "spatial"? or "partial"?
+
+Reviewer: 3
+
+Comments to the Author
+The authors have presented EEG/MEG inversion using CNN and RNN and their combination.
+
+How important an EEG and MEG inversion is important is missing.
+
+Rapid inversion was claimed. Yet no proof was given. CNN and RNN usually have high computational resources and time.
+
+Usually error reduces on training progresses, however, Figs 4 and 3 it seems that error increases or flat. This means no training at all.
+
+Where does dipole come from while  Authors are evaluating performance using error.
+How is dipole significant.
+
+The outcome of the report does not show us an innovative idea.
+
+
++++++++++++++++++++++++++++++++++++++++
+END OF COMMENTS TO THE AUTHOR(S)
