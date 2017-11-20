@@ -7,6 +7,7 @@
 \usepackage{cite}
 \usepackage{graphicx}
 \DeclareGraphicsExtensions{.pdf,.jpeg,.png}
+\graphicspath{{/home/jcasa/meld/tnrse2017/finalplots/}}
 \usepackage{amsmath}
 \interdisplaylinepenalty=2500
 \usepackage{array}
@@ -154,52 +155,92 @@ To train the networks, on each dataset the data was divided into randomly select
     Subject & MLP & CNN & RNN & CNN+RNN\\
     \hline
     \hline
-    Auditory (1 dipole) & 5.387, 0.227 & 5.076, 0.134 & 35.270, 2.677 & 34.167, 2.373 \\
+    Auditory (1 dipole) & 5.606, 0.330 & 4.981, 0.387 & 37.647, 3.408 & 33.879, 4.572 \\
     \hline
-    Faces (1 dipole) &  1.905, 0.023 & 1.895, 0.018 & 47.299, 2.249 & 42.576, 1.3027 \\
+    Faces, subject \#7 (1 dipole) &  1.920, 0.015 & 1.917, 0.018 & 47.391, 4.828 & 42.955, 1.410 \\
     \hline
-    Auditory (Best of 100 dipoles) & 2.450, 0.404 & 2.138, 0.186 & 10.763, 0.645 & 9.752, 0.527 \\
+    Faces, subject \#8 (1 dipole) &  1.137, 0.062 & 1.235, 0.030 & 25.745, 1.103 & 19.754, 0.814 \\
     \hline
-    Faces (Best of 100 dipoles) &  1.165, 0.012 & 1.121, 0.038 & 19.418, 1.600 & 17.820, 1.374 \\
+    Auditory (Best of 100 dipoles) & 2.206, 0.179 & 2.176, 0.133 & 11.994, 2.915 & 10.200, 1.570 \\
+    \hline
+    Faces, subject \#7 (Best of 100 dipoles) &  1.149, 0.030 & 1.137, 0.023 & 18.589, 2.200 & 17.787, 0.747 \\
+    \hline
+    Faces, subject \#8 (Best of 100 dipoles) &  0.683, 0.068 & 0.632, 0.023 & 8.560, 1.116 & 9.043, 1.714 \\
     \hline
   \end{tabular}
   \caption{Test set RMSE from 5 cross-validation runs (mean, standard deviation)}
   \label{tab:results}
 \end{table*}
 
-\begin{figure}[h!]
+\begin{figure*}[h!]
 \centering
-\includegraphics[width=3.5in]{aud1}
+\includegraphics[width=7.25in]{aud1}
 \caption{Training/validation results for auditory stimulus dataset (1 dipole).}
 \label{fig:aud}
-\end{figure}
+\end{figure*}
 
 
-\begin{figure}[h!]
+\begin{figure*}[h!]
 \centering
-\includegraphics[width=3.5in]{faces1}
-\caption{Training/validation results for faces stimulus dataset (1 dipole).}
+\includegraphics[width=7.25in]{faces1}
+\caption{Training/validation results for faces stimulus dataset on subject \#7 (1 dipole).}
 \label{fig:faces}
-\end{figure}
+\end{figure*}
+
+\begin{figure*}[h!]
+\centering
+\includegraphics[width=7.25in]{faces1_8}
+\caption{Training/validation results for faces stimulus dataset on subject \#8 (1 dipole).}
+\label{fig:faces_8}
+\end{figure*}
 
 Training and validation curves are given in Figs. \ref{fig:aud} and \ref{fig:faces}, along with test dataset cost, for the auditory dataset and the faces dataset, respectively. Mean and standard deviation of test cost are given in Table \ref{tab:results}. For both datasets, CNN and MLP networks outperform the networks including an RNN. While they are capable of achieving low training cost, they tend to overfit, and thus do poorly on the test set (test cost of around 45 mm for the faces dataset, 30 mm for the auditory dataset). For reference, the human head is about 75 mm in diameter. On the other hand, simpler networks did better, with the CNN only network performing best (cost of 5.1 mm for the auditory set, and 1.9 mm for the faces dataset). \textbf{This indicates a high degree of accuracy in locating the peak neuronal current, since this error in the spatial location of the dipole is near the minimum grid size use by MNE; in other words, it is at the level of the discretization error of our teuth measurements. MNE relies on a voxel grid ...} Fewer parameters allowed for better generalization, and the CNN layer allows us to preserve spatial information critical for inversion. \textbf{Say something about the traing curves; why is CNN superior, based on curves}
-\begin{figure}[h!]
+\begin{figure*}[h!]
 \centering
-\includegraphics[width=3.5in]{aud100}
+\includegraphics[width=7.25in]{aud100}
 \caption{Training/validation results for auditory stimulus dataset (Best of 100 dipoles).}
 \label{fig:aud100}
-\end{figure}
+\end{figure*}
 
-\begin{figure}[h!]
+\begin{figure*}[h!]
 \centering
-\includegraphics[width=3.5in]{faces100}
-\caption{Training/validation results for faces stimulus dataset (Best of 100 dipoles).}
+\includegraphics[width=7.25in]{faces100}
+\caption{Training/validation results for faces stimulus dataset, subject \#7 (Best of 100 dipoles).}
 \label{fig:faces100}
-\end{figure}
+\end{figure*}
+
+\begin{figure*}[h!]
+\centering
+\includegraphics[width=7.25in]{faces100_8}
+\caption{Training/validation results for faces stimulus dataset, subject \#8 (Best of 100 dipoles).}
+\label{fig:faces100_8}
+\end{figure*}
 
 The poor generalization of the RNN networks led us to suspect that it may be too sensitive to noise in the location of the peak dipole. In other words, since we were using the MNE estimate of the dipole currents as truth, and these have some inherent error due to sensor noise and inversion error, the performance of the network to estimate the location may be poor. To test this, instead of comparing the neural network estimate to the peak dipole, we instead tried comparing it to the top 100 dipoles (which is approximately the top 5\%-10\%), and picking the closest one for calculating the cost. This has the effect of averaging out error in the dipoles estimated by MNE. Plots showing the training curves for this top-100 approach are shown in Figs. \ref{fig:aud100} and \ref{fig:faces100}. Clearly, this reduces the test, training, and validation costs, but the performance ranking of the four networks remains the same.
 
+\textbf{Include treatment-by-treatment test results}
 
+\begin{figure*}[h!]
+\centering
+\includegraphics[width=7.25in]{aud1la}
+\caption{Training/validation results for auditory stimulus dataset, only considering the left/auditory treatment (1 dipole).}
+\label{fig:aud1la}
+\end{figure*}
+
+
+\begin{figure*}[h!]
+\centering
+\includegraphics[width=7.25in]{faces1ff}
+\caption{Training/validation results for faces stimulus dataset on subject \#7, only considering the famous face treatment (1 dipole).}
+\label{fig:faces1ff}
+\end{figure*}
+
+\begin{figure*}[h!]
+\centering
+\includegraphics[width=7.25in]{faces1_8}
+\caption{Training/validation results for faces stimulus dataset on subject \#8, only considering the famous face treatment (1 dipole).}
+\label{fig:faces1ff_8}
+\end{figure*}
 \section{Conclusion}
 We have presented a new technique for rapid inversion of MEG/EEG data, using neural networks to estimate the location of the peak dipole, rather than the current distribution over the cortex. \textbf{While training the network can take a long time, once the network parameters are known, applying the network to another set of inputs provides results in seconds, rather than the minutes required by MNE or other inversion techniques. This opens up the possibility of real-time neuronal diagnostics in a clinical setting.} In examining four possible network architectures, it was found that the CNN networks perform best in determining the location of the peak dipole at each timestep. More complicated network architectures, or those without the CNN layers, performed worse, due to overfitting and loss of spatial information. Treating the EEG and MEG data as a two-channel image is an effective method for retaining spatial field patterns, and is easily extensible to situations with more available sensors, such as NIRS. Future work may investigate using sequence-to-sequence neural machine translation to interpret timeseries.
 
