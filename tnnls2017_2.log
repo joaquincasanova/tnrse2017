@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.25)  20 NOV 2017 13:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.25)  22 NOV 2017 09:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -25,18 +25,13 @@ File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 -- Using 8.5in x 11in (letter) paper.
 -- Using PDF output.
 \@IEEEnormalsizeunitybaselineskip=\dimen105
--- This is a 10 point document.
+-- This is a 12 point document.
 \CLASSINFOnormalsizebaselineskip=\dimen106
 \CLASSINFOnormalsizeunitybaselineskip=\dimen107
 \IEEEnormaljot=\dimen108
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <5> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
-
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <7> not available
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <6> not available
 (Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
 
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
@@ -54,24 +49,24 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <10> not available
 (Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
 
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <11> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <11> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
-
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <12> not available
 (Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
 
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17> not available
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <17> not available
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <14> not available
 (Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
 
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <20> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <20> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <22> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <22> not available
 (Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
 
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <24> not available
@@ -243,7 +238,7 @@ LaTeX Font Info:    ... okay on input line 22.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 22.
 LaTeX Font Info:    ... okay on input line 22.
 
--- Lines per column: 58 (exact).
+-- Lines per column: 32 (exact).
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count107
@@ -304,89 +299,78 @@ Package grfext Info: Graphics extension search list:
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-Underfull \vbox (badness 10000) has occurred while \output is active []
+** ATTENTION: \IEEEPARstart is disabled in draft mode (line 63).
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] [3]
+Overfull \hbox (2.41623pt too wide) in paragraph at lines 88--89
+[]\OT1/ptm/m/n/12 For both datasets, chan-nels were pre-pro-cessed through low-
+pass fil-ter-ing, fol-lowed by EOG/ECG
+ []
 
- [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
-
-
-]
-</home/jcasa/meld/tnrse2017/finalplots/mlp.png, id=10, 1638.12pt x 1059.96pt>
+</home/jcasa/meld/tnrse2017/finalplots/mlp.png, id=15, 1638.12pt x 1059.96pt>
 File: /home/jcasa/meld/tnrse2017/finalplots/mlp.png Graphic file (type png)
 
 <use /home/jcasa/meld/tnrse2017/finalplots/mlp.png>
 Package pdftex.def Info: /home/jcasa/meld/tnrse2017/finalplots/mlp.png used on 
-input line 94.
+input line 93.
 (pdftex.def)             Requested size: 361.34999pt x 233.80652pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-</home/jcasa/meld/tnrse2017/finalplots/cnn.png, id=11, 1638.12pt x 1059.96pt>
+ [4]
+</home/jcasa/meld/tnrse2017/finalplots/cnn.png, id=20, 1638.12pt x 1059.96pt>
 File: /home/jcasa/meld/tnrse2017/finalplots/cnn.png Graphic file (type png)
 
 <use /home/jcasa/meld/tnrse2017/finalplots/cnn.png>
 Package pdftex.def Info: /home/jcasa/meld/tnrse2017/finalplots/cnn.png used on 
-input line 102.
+input line 101.
 (pdftex.def)             Requested size: 361.34999pt x 233.80652pt.
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-</home/jcasa/meld/tnrse2017/finalplots/rnn.png, id=12, 1638.12pt x 1059.96pt>
+</home/jcasa/meld/tnrse2017/finalplots/rnn.png, id=21, 1638.12pt x 1059.96pt>
 File: /home/jcasa/meld/tnrse2017/finalplots/rnn.png Graphic file (type png)
 
 <use /home/jcasa/meld/tnrse2017/finalplots/rnn.png>
 Package pdftex.def Info: /home/jcasa/meld/tnrse2017/finalplots/rnn.png used on 
-input line 109.
+input line 108.
 (pdftex.def)             Requested size: 361.34999pt x 233.80652pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-</home/jcasa/meld/tnrse2017/finalplots/cnnrnn.png, id=13, 1638.12pt x 1059.96pt
+</home/jcasa/meld/tnrse2017/finalplots/cnnrnn.png, id=22, 1638.12pt x 1059.96pt
 >
 File: /home/jcasa/meld/tnrse2017/finalplots/cnnrnn.png Graphic file (type png)
  <use /home/jcasa/meld/tnrse2017/finalplots/cnnrnn.png>
 Package pdftex.def Info: /home/jcasa/meld/tnrse2017/finalplots/cnnrnn.png used 
-on input line 116.
+on input line 115.
 (pdftex.def)             Requested size: 361.34999pt x 233.80652pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-</home/jcasa/meld/tnrse2017/finalplots/aud1.png, id=14, 1174.3875pt x 615.7404p
+[5 </home/jcasa/meld/tnrse2017/finalplots/mlp.png (PNG copy)> </home/jcasa/meld
+/tnrse2017/finalplots/cnn.png (PNG copy)>] [6 </home/jcasa/meld/tnrse2017/final
+plots/rnn.png (PNG copy)> </home/jcasa/meld/tnrse2017/finalplots/cnnrnn.png (PN
+G copy)>] [7]
+</home/jcasa/meld/tnrse2017/finalplots/aud1.png, id=33, 1174.3875pt x 615.7404p
 t>
 File: /home/jcasa/meld/tnrse2017/finalplots/aud1.png Graphic file (type png)
  <use /home/jcasa/meld/tnrse2017/finalplots/aud1.png>
 Package pdftex.def Info: /home/jcasa/meld/tnrse2017/finalplots/aud1.png used on
- input line 177.
+ input line 175.
 (pdftex.def)             Requested size: 523.95749pt x 274.71297pt.
 
-Overfull \hbox (7.95749pt too wide) in paragraph at lines 177--178
+Overfull \hbox (54.20247pt too wide) in paragraph at lines 175--176
  [][] 
  []
 
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-</home/jcasa/meld/tnrse2017/finalplots/faces1.png, id=16, 1172.9421pt x 615.740
+</home/jcasa/meld/tnrse2017/finalplots/faces1.png, id=35, 1172.9421pt x 615.740
 4pt>
 File: /home/jcasa/meld/tnrse2017/finalplots/faces1.png Graphic file (type png)
  <use /home/jcasa/meld/tnrse2017/finalplots/faces1.png>
 Package pdftex.def Info: /home/jcasa/meld/tnrse2017/finalplots/faces1.png used 
-on input line 185.
+on input line 183.
 (pdftex.def)             Requested size: 523.95749pt x 275.05121pt.
 
-Overfull \hbox (7.95749pt too wide) in paragraph at lines 185--186
+Overfull \hbox (54.20247pt too wide) in paragraph at lines 183--184
  [][] 
  []
 
@@ -394,16 +378,16 @@ Overfull \hbox (7.95749pt too wide) in paragraph at lines 185--186
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-</home/jcasa/meld/tnrse2017/finalplots/faces1_8.png, id=17, 1167.8832pt x 615.7
+</home/jcasa/meld/tnrse2017/finalplots/faces1_8.png, id=36, 1167.8832pt x 615.7
 404pt>
 File: /home/jcasa/meld/tnrse2017/finalplots/faces1_8.png Graphic file (type png
 )
  <use /home/jcasa/meld/tnrse2017/finalplots/faces1_8.png>
 Package pdftex.def Info: /home/jcasa/meld/tnrse2017/finalplots/faces1_8.png use
-d on input line 192.
+d on input line 190.
 (pdftex.def)             Requested size: 523.95749pt x 276.24442pt.
 
-Overfull \hbox (7.95749pt too wide) in paragraph at lines 192--193
+Overfull \hbox (54.20247pt too wide) in paragraph at lines 190--191
  [][] 
  []
 
@@ -411,36 +395,33 @@ Overfull \hbox (7.95749pt too wide) in paragraph at lines 192--193
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-</home/jcasa/meld/tnrse2017/finalplots/aud100.png, id=18, 1166.4378pt x 604.899
+</home/jcasa/meld/tnrse2017/finalplots/aud100.png, id=37, 1166.4378pt x 604.899
 9pt>
 File: /home/jcasa/meld/tnrse2017/finalplots/aud100.png Graphic file (type png)
  <use /home/jcasa/meld/tnrse2017/finalplots/aud100.png>
 Package pdftex.def Info: /home/jcasa/meld/tnrse2017/finalplots/aud100.png used 
-on input line 200.
+on input line 198.
 (pdftex.def)             Requested size: 523.95749pt x 271.72247pt.
 
-Overfull \hbox (7.95749pt too wide) in paragraph at lines 200--201
+Overfull \hbox (54.20247pt too wide) in paragraph at lines 198--199
  [][] 
  []
 
-[2]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
+[8 </home/jcasa/meld/tnrse2017/finalplots/aud1.png>]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-</home/jcasa/meld/tnrse2017/finalplots/faces100.png, id=23, 1169.3286pt x 615.7
+</home/jcasa/meld/tnrse2017/finalplots/faces100.png, id=42, 1169.3286pt x 615.7
 404pt>
 File: /home/jcasa/meld/tnrse2017/finalplots/faces100.png Graphic file (type png
 )
  <use /home/jcasa/meld/tnrse2017/finalplots/faces100.png>
 Package pdftex.def Info: /home/jcasa/meld/tnrse2017/finalplots/faces100.png use
-d on input line 207.
+d on input line 205.
 (pdftex.def)             Requested size: 523.95749pt x 275.90619pt.
 
-Overfull \hbox (7.95749pt too wide) in paragraph at lines 207--208
+Overfull \hbox (54.20247pt too wide) in paragraph at lines 205--206
  [][] 
  []
 
@@ -448,130 +429,102 @@ Overfull \hbox (7.95749pt too wide) in paragraph at lines 207--208
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-</home/jcasa/meld/tnrse2017/finalplots/faces100_8.png, id=24, 1168.6059pt x 615
+</home/jcasa/meld/tnrse2017/finalplots/faces100_8.png, id=43, 1168.6059pt x 615
 .7404pt>
 File: /home/jcasa/meld/tnrse2017/finalplots/faces100_8.png Graphic file (type p
 ng)
  <use /home/jcasa/meld/tnrse2017/finalplots/faces100_8.png>
 Package pdftex.def Info: /home/jcasa/meld/tnrse2017/finalplots/faces100_8.png u
-sed on input line 214.
+sed on input line 212.
 (pdftex.def)             Requested size: 523.95749pt x 276.0753pt.
 
-Overfull \hbox (7.95749pt too wide) in paragraph at lines 214--215
+Overfull \hbox (54.20247pt too wide) in paragraph at lines 212--213
  [][] 
  []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [3 </home/jcasa/meld/tnrse2017/finalplots/mlp.png (PNG copy)> </home/jcasa/mel
-d/tnrse2017/finalplots/cnn.png (PNG copy)>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [4 </home/jcasa/meld/tnrse2017/finalplots/rnn.png (PNG copy)> </home/jcasa/mel
-d/tnrse2017/finalplots/cnnrnn.png (PNG copy)>]
-</home/jcasa/meld/tnrse2017/finalplots/aud1la.png, id=31, 1175.1102pt x 641.034
+[9 </home/jcasa/meld/tnrse2017/finalplots/faces1.png>]
+</home/jcasa/meld/tnrse2017/finalplots/aud1la.png, id=48, 1175.1102pt x 641.034
 9pt>
 File: /home/jcasa/meld/tnrse2017/finalplots/aud1la.png Graphic file (type png)
  <use /home/jcasa/meld/tnrse2017/finalplots/aud1la.png>
 Package pdftex.def Info: /home/jcasa/meld/tnrse2017/finalplots/aud1la.png used 
-on input line 225.
+on input line 221.
 (pdftex.def)             Requested size: 523.95749pt x 285.83183pt.
 
-Overfull \hbox (7.95749pt too wide) in paragraph at lines 225--226
+Overfull \hbox (54.20247pt too wide) in paragraph at lines 221--222
  [][] 
  []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-</home/jcasa/meld/tnrse2017/finalplots/faces1ff.png, id=32, 1175.1102pt x 641.0
+</home/jcasa/meld/tnrse2017/finalplots/faces1ff.png, id=49, 1175.1102pt x 641.0
 349pt>
 File: /home/jcasa/meld/tnrse2017/finalplots/faces1ff.png Graphic file (type png
 )
  <use /home/jcasa/meld/tnrse2017/finalplots/faces1ff.png>
 Package pdftex.def Info: /home/jcasa/meld/tnrse2017/finalplots/faces1ff.png use
-d on input line 233.
+d on input line 229.
 (pdftex.def)             Requested size: 523.95749pt x 285.83183pt.
 
-Overfull \hbox (7.95749pt too wide) in paragraph at lines 233--234
+Overfull \hbox (54.20247pt too wide) in paragraph at lines 229--230
  [][] 
  []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-File: /home/jcasa/meld/tnrse2017/finalplots/faces1_8.png Graphic file (type png
-)
-<use /home/jcasa/meld/tnrse2017/finalplots/faces1_8.png>
-Package pdftex.def Info: /home/jcasa/meld/tnrse2017/finalplots/faces1_8.png use
-d on input line 240.
-(pdftex.def)             Requested size: 523.95749pt x 276.24442pt.
 
-Overfull \hbox (7.95749pt too wide) in paragraph at lines 240--241
+</home/jcasa/meld/tnrse2017/finalplots/faces1ff_8.png, id=50, 1175.1102pt x 641
+.0349pt>
+File: /home/jcasa/meld/tnrse2017/finalplots/faces1ff_8.png Graphic file (type p
+ng)
+ <use /home/jcasa/meld/tnrse2017/finalplots/faces1ff_8.png>
+Package pdftex.def Info: /home/jcasa/meld/tnrse2017/finalplots/faces1ff_8.png u
+sed on input line 236.
+(pdftex.def)             Requested size: 523.95749pt x 285.83183pt.
+
+Overfull \hbox (54.20247pt too wide) in paragraph at lines 236--237
  [][] 
  []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[5 </home/jcasa/meld/tnrse2017/finalplots/aud1.png> </home/jcasa/meld/tnrse2017
-/finalplots/faces1.png>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [6 </home/jcasa/meld/tnrse2017/finalplots/faces1_8.png> </home/jcasa/meld/tnrs
-e2017/finalplots/aud100.png>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-(./tnnls2017_2.bbl [7 </home/jcasa/meld/tnrse2017/finalplots/faces100.png> </ho
-me/jcasa/meld/tnrse2017/finalplots/faces100_8.png>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [8 </home/jcasa/meld/tnrse2017/finalplots/aud1la.png> </home/jcasa/meld/tnrse2
-017/finalplots/faces1ff.png>])
+[10 </home/jcasa/meld/tnrse2017/finalplots/faces1_8.png>] [11 </home/jcasa/meld
+/tnrse2017/finalplots/aud100.png>] (./tnnls2017_2.bbl [12 </home/jcasa/meld/tnr
+se2017/finalplots/faces100.png>] [13 </home/jcasa/meld/tnrse2017/finalplots/fac
+es100_8.png>]) [14 </home/jcasa/meld/tnrse2017/finalplots/aud1la.png>]
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no ™ in font ptmr7t!
- [9]
+ [15 </home/jcasa/meld/tnrse2017/finalplots/faces1ff.png>] [16 </home/jcasa/mel
+d/tnrse2017/finalplots/faces1ff_8.png>]
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no “ in font ptmr7t!
- [10
-
-] (./tnnls2017_2.aux) ) 
+ [17] (./tnnls2017_2.aux) ) 
 Here is how much of TeX's memory you used:
- 3243 strings out of 493029
- 51036 string characters out of 6136234
- 125613 words of memory out of 5000000
- 6723 multiletter control sequences out of 15000+600000
- 45167 words of font info for 82 fonts, out of 8000000 for 9000
+ 3258 strings out of 493029
+ 51375 string characters out of 6136234
+ 115790 words of memory out of 5000000
+ 6731 multiletter control sequences out of 15000+600000
+ 44022 words of font info for 83 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 38i,7n,23p,1584b,299s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.e
-nc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></u
-sr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texliv
-e/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/f
-onts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/
-times/utmri8a.pfb>
-Output written on tnnls2017_2.pdf (10 pages, 1255725 bytes).
+ 38i,7n,23p,1604b,303s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/
+8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb
+></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/te
+xlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/urw/times/utmri8a.pfb>
+Output written on tnnls2017_2.pdf (17 pages, 1371107 bytes).
 PDF statistics:
- 79 PDF objects out of 1000 (max. 8388607)
- 41 compressed objects within 1 object stream
+ 99 PDF objects out of 1000 (max. 8388607)
+ 53 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 61 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 66 words of extra memory for PDF output out of 10000 (max. 10000000)
 
