@@ -30,7 +30,15 @@
   year={2001},
   publisher={Elsevier}
 }
-
+@article{darvas2004mapping,
+  title={Mapping human brain function with MEG and EEG: methods and validation},
+  author={Darvas, Felix and Pantazis, D and Kucukaltun-Yildirim, E and Leahy, RM},
+  journal={NeuroImage},
+  volume={23},
+  pages={S289--S299},
+  year={2004},
+  publisher={Elsevier}
+}
 biomems
 @article{chin2000permanent,
   title={Permanent magnet films for applications in microelectromechanical systems},
