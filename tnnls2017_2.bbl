@@ -25,13 +25,13 @@
 S.~Knake, E.~Halgren, H.~Shiraishi, K.~Hara, H.~Hamer, P.~Grant, V.~Carr,
   D.~Foxe, S.~Camposano, E.~Busa \emph{et~al.}, ``The value of multichannel meg
   and eeg in the presurgical evaluation of 70 epilepsy patients,''
-  \emph{Epilepsy research}, vol.~69, no.~1, pp. 80--86, 2006.
+  \emph{Epilepsy {r}esearch}, vol.~69, no.~1, pp. 80--86, 2006.
 
 \bibitem{de2001localization}
 A.~De~Jongh, J.~De~Munck, J.~Baayen, E.~Jonkman, R.~Heethaar, and B.~Van~Dijk,
   ``The localization of spontaneous brain activity: first results in patients
-  with cerebral tumors,'' \emph{Clinical Neurophysiology}, vol. 112, no.~2, pp.
-  378--385, 2001.
+  with cerebral tumors,'' \emph{Clinical {N}europhysiology}, vol. 112, no.~2,
+  pp. 378--385, 2001.
 
 \bibitem{mellinger2007meg}
 J.~Mellinger, G.~Schalk, C.~Braun, H.~Preissl, W.~Rosenstiel, N.~Birbaumer, and
@@ -53,6 +53,11 @@ D.~Sharon, M.~S. H{\"a}m{\"a}l{\"a}inen, R.~B. Tootell, E.~Halgren, and J.~W.
 J.~C. Mosher, P.~S. Lewis, and R.~M. Leahy, ``Multiple dipole modeling and
   localization from spatio-temporal meg data,'' \emph{IEEE Transactions on
   Biomedical Engineering}, vol.~39, no.~6, pp. 541--557, 1992.
+
+\bibitem{mne}
+``{Source localization with MNE/dSPM/sLORETA},''
+  \url{https://www.martinos.org/mne/stable/auto_tutorials/plot_mne_dspm_source_localization.html},
+  accessed: 2017-11-27.
 
 \bibitem{grech2008review}
 R.~Grech, T.~Cassar, J.~Muscat, K.~P. Camilleri, S.~G. Fabri, M.~Zervakis,
@@ -113,8 +118,8 @@ A.~Gramfort, M.~Luessi, E.~Larson, D.~A. Engemann, D.~Strohmeier, C.~Brodbeck,
 \bibitem{leahy1998study}
 R.~Leahy, J.~Mosher, M.~Spencer, M.~Huang, and J.~Lewine, ``A study of dipole
   localization accuracy for meg and eeg using a human skull phantom,''
-  \emph{Electroencephalography and clinical neurophysiology}, vol. 107, no.~2,
-  pp. 159--173, 1998.
+  \emph{Electroencephalography and {C}linical {N}europhysiology}, vol. 107,
+  no.~2, pp. 159--173, 1998.
 
 \bibitem{wakeman2015multi}
 D.~G. Wakeman and R.~N. Henson, ``A multi-subject, multi-modal human
@@ -123,8 +128,8 @@ D.~G. Wakeman and R.~N. Henson, ``A multi-subject, multi-modal human
 \bibitem{gramfort2013meg}
 A.~Gramfort, M.~Luessi, E.~Larson, D.~A. Engemann, D.~Strohmeier, C.~Brodbeck,
   R.~Goj, M.~Jas, T.~Brooks, L.~Parkkonen \emph{et~al.}, ``{MEG} and {EEG} data
-  analysis with {MNE}-{P}ython,'' \emph{Frontiers in neuroscience}, vol.~7, p.
-  267, 2013.
+  analysis with {MNE}-{P}ython,'' \emph{Frontiers in {N}euroscience}, vol.~7,
+  p. 267, 2013.
 
 \bibitem{kingma2014adam}
 D.~Kingma and J.~Ba, ``Adam: A method for stochastic optimization,''

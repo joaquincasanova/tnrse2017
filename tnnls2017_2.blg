@@ -13,44 +13,44 @@ Database file #1: ./casanova_ieee.bib
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
 
 Done.
-You've used 20 entries,
+You've used 21 entries,
             4087 wiz_defined-function locations,
-            946 strings with 11900 characters,
-and the built_in function-call counts, 18237 in all, are:
-= -- 1477
-> -- 575
+            950 strings with 12071 characters,
+and the built_in function-call counts, 18549 in all, are:
+= -- 1500
+> -- 576
 < -- 167
-+ -- 310
++ -- 311
 - -- 110
-* -- 923
-:= -- 2662
-add.period$ -- 40
-call.type$ -- 20
-change.case$ -- 20
+* -- 932
+:= -- 2711
+add.period$ -- 42
+call.type$ -- 21
+change.case$ -- 22
 chr.to.int$ -- 354
-cite$ -- 20
-duplicate$ -- 1275
-empty$ -- 1263
+cite$ -- 21
+duplicate$ -- 1306
+empty$ -- 1298
 format.name$ -- 129
-if$ -- 4226
+if$ -- 4298
 int.to.chr$ -- 0
-int.to.str$ -- 20
-missing$ -- 239
-newline$ -- 83
+int.to.str$ -- 21
+missing$ -- 246
+newline$ -- 86
 num.names$ -- 20
-pop$ -- 518
+pop$ -- 540
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 1385
+skip$ -- 1410
 stack$ -- 0
-substring$ -- 860
-swap$ -- 1132
+substring$ -- 863
+swap$ -- 1147
 text.length$ -- 49
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 20
+type$ -- 21
 warning$ -- 0
 while$ -- 79
-width$ -- 22
-write$ -- 231
+width$ -- 23
+write$ -- 238
