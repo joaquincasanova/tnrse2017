@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.25)  27 NOV 2017 13:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.25)  1 DEC 2017 08:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -309,90 +309,80 @@ e
 ))
 ** ATTENTION: \IEEEPARstart is disabled in draft mode (line 64).
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-</home/jcasa/meld/tnrse2017/finalplots/cartoon.png, id=9, 963.6pt x 722.7pt>
-File: /home/jcasa/meld/tnrse2017/finalplots/cartoon.png Graphic file (type png)
-
-
-<use /home/jcasa/meld/tnrse2017/finalplots/cartoon.png>
-Package pdftex.def Info: /home/jcasa/meld/tnrse2017/finalplots/cartoon.png used
- on input line 70.
-(pdftex.def)             Requested size: 361.34999pt x 271.01183pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-</home/jcasa/meld/tnrse2017/finalplots/mne.png, id=11, 963.6pt x 722.7pt>
-File: /home/jcasa/meld/tnrse2017/finalplots/mne.png Graphic file (type png)
-
-<use /home/jcasa/meld/tnrse2017/finalplots/mne.png>
-Package pdftex.def Info: /home/jcasa/meld/tnrse2017/finalplots/mne.png used on 
-input line 77.
-(pdftex.def)             Requested size: 487.8225pt x 365.85936pt.
-
-Overfull \hbox (18.06747pt too wide) in paragraph at lines 77--78
- [][] 
- []
+</home/jcasa/meld/tnrse2017/finalplots/3cartoons.png, id=9, 1787.67876pt x 1532
+.72626pt>
+File: /home/jcasa/meld/tnrse2017/finalplots/3cartoons.png Graphic file (type pn
+g)
+ <use /home/jcasa/meld/tnrse2017/finalplots/3cartoons.png>
+Package pdftex.def Info: /home/jcasa/meld/tnrse2017/finalplots/3cartoons.png us
+ed on input line 70.
+(pdftex.def)             Requested size: 361.34999pt x 309.81407pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[2] [3 </home/jcasa/meld/tnrse2017/finalplots/cartoon.png>] [4 </home/jcasa/mel
-d/tnrse2017/finalplots/mne.png>] [5]
-</home/jcasa/meld/tnrse2017/finalplots/mlp.png, id=26, 1638.12pt x 1059.96pt>
+[2] [3 </home/jcasa/meld/tnrse2017/finalplots/3cartoons.png>] [4]
+</home/jcasa/meld/tnrse2017/finalplots/mlp.png, id=21, 1638.12pt x 1059.96pt>
 File: /home/jcasa/meld/tnrse2017/finalplots/mlp.png Graphic file (type png)
 
 <use /home/jcasa/meld/tnrse2017/finalplots/mlp.png>
 Package pdftex.def Info: /home/jcasa/meld/tnrse2017/finalplots/mlp.png used on 
-input line 108.
+input line 101.
 (pdftex.def)             Requested size: 361.34999pt x 233.80652pt.
 
-</home/jcasa/meld/tnrse2017/finalplots/cnn.png, id=27, 1638.12pt x 1059.96pt>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+</home/jcasa/meld/tnrse2017/finalplots/cnn.png, id=22, 1638.12pt x 1059.96pt>
 File: /home/jcasa/meld/tnrse2017/finalplots/cnn.png Graphic file (type png)
 
 <use /home/jcasa/meld/tnrse2017/finalplots/cnn.png>
 Package pdftex.def Info: /home/jcasa/meld/tnrse2017/finalplots/cnn.png used on 
+input line 109.
+(pdftex.def)             Requested size: 361.34999pt x 233.80652pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+</home/jcasa/meld/tnrse2017/finalplots/rnn.png, id=23, 1638.12pt x 1059.96pt>
+File: /home/jcasa/meld/tnrse2017/finalplots/rnn.png Graphic file (type png)
+
+<use /home/jcasa/meld/tnrse2017/finalplots/rnn.png>
+Package pdftex.def Info: /home/jcasa/meld/tnrse2017/finalplots/rnn.png used on 
 input line 116.
 (pdftex.def)             Requested size: 361.34999pt x 233.80652pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-</home/jcasa/meld/tnrse2017/finalplots/rnn.png, id=28, 1638.12pt x 1059.96pt>
-File: /home/jcasa/meld/tnrse2017/finalplots/rnn.png Graphic file (type png)
 
-<use /home/jcasa/meld/tnrse2017/finalplots/rnn.png>
-Package pdftex.def Info: /home/jcasa/meld/tnrse2017/finalplots/rnn.png used on 
-input line 123.
-(pdftex.def)             Requested size: 361.34999pt x 233.80652pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-</home/jcasa/meld/tnrse2017/finalplots/cnnrnn.png, id=29, 1638.12pt x 1059.96pt
+</home/jcasa/meld/tnrse2017/finalplots/cnnrnn.png, id=24, 1638.12pt x 1059.96pt
 >
 File: /home/jcasa/meld/tnrse2017/finalplots/cnnrnn.png Graphic file (type png)
  <use /home/jcasa/meld/tnrse2017/finalplots/cnnrnn.png>
 Package pdftex.def Info: /home/jcasa/meld/tnrse2017/finalplots/cnnrnn.png used 
-on input line 130.
+on input line 123.
 (pdftex.def)             Requested size: 361.34999pt x 233.80652pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[6 </home/jcasa/meld/tnrse2017/finalplots/mlp.png (PNG copy)>] [7 </home/jcasa/
-meld/tnrse2017/finalplots/cnn.png (PNG copy)> </home/jcasa/meld/tnrse2017/final
-plots/rnn.png (PNG copy)>] [8 </home/jcasa/meld/tnrse2017/finalplots/cnnrnn.png
- (PNG copy)>]
-</home/jcasa/meld/tnrse2017/finalplots/aud1.png, id=41, 1175.1102pt x 641.0349p
+[5] [6 </home/jcasa/meld/tnrse2017/finalplots/mlp.png (PNG copy)> </home/jcasa/
+meld/tnrse2017/finalplots/cnn.png (PNG copy)>]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[7 </home/jcasa/meld/tnrse2017/finalplots/rnn.png (PNG copy)> </home/jcasa/meld
+/tnrse2017/finalplots/cnnrnn.png (PNG copy)>]
+</home/jcasa/meld/tnrse2017/finalplots/aud1.png, id=36, 1175.1102pt x 641.0349p
 t>
 File: /home/jcasa/meld/tnrse2017/finalplots/aud1.png Graphic file (type png)
  <use /home/jcasa/meld/tnrse2017/finalplots/aud1.png>
 Package pdftex.def Info: /home/jcasa/meld/tnrse2017/finalplots/aud1.png used on
- input line 190.
+ input line 183.
 (pdftex.def)             Requested size: 487.8225pt x 266.11255pt.
 
-Overfull \hbox (18.06747pt too wide) in paragraph at lines 190--191
+Overfull \hbox (18.06747pt too wide) in paragraph at lines 183--184
  [][] 
  []
 
@@ -400,12 +390,29 @@ Overfull \hbox (18.06747pt too wide) in paragraph at lines 190--191
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-</home/jcasa/meld/tnrse2017/finalplots/faces1.png, id=42, 1175.1102pt x 641.034
+</home/jcasa/meld/tnrse2017/finalplots/faces1.png, id=37, 1175.1102pt x 641.034
 9pt>
 File: /home/jcasa/meld/tnrse2017/finalplots/faces1.png Graphic file (type png)
  <use /home/jcasa/meld/tnrse2017/finalplots/faces1.png>
 Package pdftex.def Info: /home/jcasa/meld/tnrse2017/finalplots/faces1.png used 
-on input line 198.
+on input line 191.
+(pdftex.def)             Requested size: 487.8225pt x 266.11255pt.
+
+Overfull \hbox (18.06747pt too wide) in paragraph at lines 191--192
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+</home/jcasa/meld/tnrse2017/finalplots/faces1_8.png, id=38, 1175.1102pt x 641.0
+349pt>
+File: /home/jcasa/meld/tnrse2017/finalplots/faces1_8.png Graphic file (type png
+)
+ <use /home/jcasa/meld/tnrse2017/finalplots/faces1_8.png>
+Package pdftex.def Info: /home/jcasa/meld/tnrse2017/finalplots/faces1_8.png use
+d on input line 198.
 (pdftex.def)             Requested size: 487.8225pt x 266.11255pt.
 
 Overfull \hbox (18.06747pt too wide) in paragraph at lines 198--199
@@ -416,13 +423,12 @@ Overfull \hbox (18.06747pt too wide) in paragraph at lines 198--199
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-</home/jcasa/meld/tnrse2017/finalplots/faces1_8.png, id=43, 1175.1102pt x 641.0
-349pt>
-File: /home/jcasa/meld/tnrse2017/finalplots/faces1_8.png Graphic file (type png
-)
- <use /home/jcasa/meld/tnrse2017/finalplots/faces1_8.png>
-Package pdftex.def Info: /home/jcasa/meld/tnrse2017/finalplots/faces1_8.png use
-d on input line 205.
+</home/jcasa/meld/tnrse2017/finalplots/aud100.png, id=39, 1175.1102pt x 641.034
+9pt>
+File: /home/jcasa/meld/tnrse2017/finalplots/aud100.png Graphic file (type png)
+ <use /home/jcasa/meld/tnrse2017/finalplots/aud100.png>
+Package pdftex.def Info: /home/jcasa/meld/tnrse2017/finalplots/aud100.png used 
+on input line 205.
 (pdftex.def)             Requested size: 487.8225pt x 266.11255pt.
 
 Overfull \hbox (18.06747pt too wide) in paragraph at lines 205--206
@@ -433,12 +439,13 @@ Overfull \hbox (18.06747pt too wide) in paragraph at lines 205--206
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-</home/jcasa/meld/tnrse2017/finalplots/aud100.png, id=44, 1175.1102pt x 641.034
-9pt>
-File: /home/jcasa/meld/tnrse2017/finalplots/aud100.png Graphic file (type png)
- <use /home/jcasa/meld/tnrse2017/finalplots/aud100.png>
-Package pdftex.def Info: /home/jcasa/meld/tnrse2017/finalplots/aud100.png used 
-on input line 212.
+</home/jcasa/meld/tnrse2017/finalplots/faces100.png, id=40, 1175.1102pt x 641.0
+349pt>
+File: /home/jcasa/meld/tnrse2017/finalplots/faces100.png Graphic file (type png
+)
+ <use /home/jcasa/meld/tnrse2017/finalplots/faces100.png>
+Package pdftex.def Info: /home/jcasa/meld/tnrse2017/finalplots/faces100.png use
+d on input line 212.
 (pdftex.def)             Requested size: 487.8225pt x 266.11255pt.
 
 Overfull \hbox (18.06747pt too wide) in paragraph at lines 212--213
@@ -449,13 +456,13 @@ Overfull \hbox (18.06747pt too wide) in paragraph at lines 212--213
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-</home/jcasa/meld/tnrse2017/finalplots/faces100.png, id=45, 1175.1102pt x 641.0
-349pt>
-File: /home/jcasa/meld/tnrse2017/finalplots/faces100.png Graphic file (type png
-)
- <use /home/jcasa/meld/tnrse2017/finalplots/faces100.png>
-Package pdftex.def Info: /home/jcasa/meld/tnrse2017/finalplots/faces100.png use
-d on input line 219.
+</home/jcasa/meld/tnrse2017/finalplots/faces100_8.png, id=41, 1175.1102pt x 641
+.0349pt>
+File: /home/jcasa/meld/tnrse2017/finalplots/faces100_8.png Graphic file (type p
+ng)
+ <use /home/jcasa/meld/tnrse2017/finalplots/faces100_8.png>
+Package pdftex.def Info: /home/jcasa/meld/tnrse2017/finalplots/faces100_8.png u
+sed on input line 219.
 (pdftex.def)             Requested size: 487.8225pt x 266.11255pt.
 
 Overfull \hbox (18.06747pt too wide) in paragraph at lines 219--220
@@ -466,13 +473,12 @@ Overfull \hbox (18.06747pt too wide) in paragraph at lines 219--220
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-</home/jcasa/meld/tnrse2017/finalplots/faces100_8.png, id=46, 1175.1102pt x 641
-.0349pt>
-File: /home/jcasa/meld/tnrse2017/finalplots/faces100_8.png Graphic file (type p
-ng)
- <use /home/jcasa/meld/tnrse2017/finalplots/faces100_8.png>
-Package pdftex.def Info: /home/jcasa/meld/tnrse2017/finalplots/faces100_8.png u
-sed on input line 226.
+</home/jcasa/meld/tnrse2017/finalplots/aud1la.png, id=42, 1175.1102pt x 641.034
+9pt>
+File: /home/jcasa/meld/tnrse2017/finalplots/aud1la.png Graphic file (type png)
+ <use /home/jcasa/meld/tnrse2017/finalplots/aud1la.png>
+Package pdftex.def Info: /home/jcasa/meld/tnrse2017/finalplots/aud1la.png used 
+on input line 226.
 (pdftex.def)             Requested size: 487.8225pt x 266.11255pt.
 
 Overfull \hbox (18.06747pt too wide) in paragraph at lines 226--227
@@ -483,15 +489,16 @@ Overfull \hbox (18.06747pt too wide) in paragraph at lines 226--227
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-</home/jcasa/meld/tnrse2017/finalplots/aud1la.png, id=47, 1175.1102pt x 641.034
-9pt>
-File: /home/jcasa/meld/tnrse2017/finalplots/aud1la.png Graphic file (type png)
- <use /home/jcasa/meld/tnrse2017/finalplots/aud1la.png>
-Package pdftex.def Info: /home/jcasa/meld/tnrse2017/finalplots/aud1la.png used 
-on input line 233.
+</home/jcasa/meld/tnrse2017/finalplots/faces1ff.png, id=43, 1175.1102pt x 641.0
+349pt>
+File: /home/jcasa/meld/tnrse2017/finalplots/faces1ff.png Graphic file (type png
+)
+ <use /home/jcasa/meld/tnrse2017/finalplots/faces1ff.png>
+Package pdftex.def Info: /home/jcasa/meld/tnrse2017/finalplots/faces1ff.png use
+d on input line 234.
 (pdftex.def)             Requested size: 487.8225pt x 266.11255pt.
 
-Overfull \hbox (18.06747pt too wide) in paragraph at lines 233--234
+Overfull \hbox (18.06747pt too wide) in paragraph at lines 234--235
  [][] 
  []
 
@@ -499,13 +506,13 @@ Overfull \hbox (18.06747pt too wide) in paragraph at lines 233--234
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-</home/jcasa/meld/tnrse2017/finalplots/faces1ff.png, id=48, 1175.1102pt x 641.0
-349pt>
-File: /home/jcasa/meld/tnrse2017/finalplots/faces1ff.png Graphic file (type png
-)
- <use /home/jcasa/meld/tnrse2017/finalplots/faces1ff.png>
-Package pdftex.def Info: /home/jcasa/meld/tnrse2017/finalplots/faces1ff.png use
-d on input line 241.
+</home/jcasa/meld/tnrse2017/finalplots/faces1ff_8.png, id=44, 1175.1102pt x 641
+.0349pt>
+File: /home/jcasa/meld/tnrse2017/finalplots/faces1ff_8.png Graphic file (type p
+ng)
+ <use /home/jcasa/meld/tnrse2017/finalplots/faces1ff_8.png>
+Package pdftex.def Info: /home/jcasa/meld/tnrse2017/finalplots/faces1ff_8.png u
+sed on input line 241.
 (pdftex.def)             Requested size: 487.8225pt x 266.11255pt.
 
 Overfull \hbox (18.06747pt too wide) in paragraph at lines 241--242
@@ -515,67 +522,54 @@ Overfull \hbox (18.06747pt too wide) in paragraph at lines 241--242
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
+[8]
 
-</home/jcasa/meld/tnrse2017/finalplots/faces1ff_8.png, id=49, 1175.1102pt x 641
-.0349pt>
-File: /home/jcasa/meld/tnrse2017/finalplots/faces1ff_8.png Graphic file (type p
-ng)
- <use /home/jcasa/meld/tnrse2017/finalplots/faces1ff_8.png>
-Package pdftex.def Info: /home/jcasa/meld/tnrse2017/finalplots/faces1ff_8.png u
-sed on input line 248.
-(pdftex.def)             Requested size: 487.8225pt x 266.11255pt.
+LaTeX Warning: Text page 9 contains only floats.
 
-Overfull \hbox (18.06747pt too wide) in paragraph at lines 248--249
- [][] 
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[9]
+[9 </home/jcasa/meld/tnrse2017/finalplots/aud1.png> </home/jcasa/meld/tnrse2017
+/finalplots/faces1.png>]
 
 LaTeX Warning: Text page 10 contains only floats.
 
-[10 </home/jcasa/meld/tnrse2017/finalplots/aud1.png> </home/jcasa/meld/tnrse201
-7/finalplots/faces1.png>]
+[10 </home/jcasa/meld/tnrse2017/finalplots/faces1_8.png> </home/jcasa/meld/tnrs
+e2017/finalplots/aud100.png>]
 
 LaTeX Warning: Text page 11 contains only floats.
 
-[11 </home/jcasa/meld/tnrse2017/finalplots/faces1_8.png> </home/jcasa/meld/tnrs
-e2017/finalplots/aud100.png>]
-
-LaTeX Warning: Text page 12 contains only floats.
-
-[12 </home/jcasa/meld/tnrse2017/finalplots/faces100.png> </home/jcasa/meld/tnrs
-e2017/finalplots/faces100_8.png>] [13 </home/jcasa/meld/tnrse2017/finalplots/au
-d1la.png>] [14 </home/jcasa/meld/tnrse2017/finalplots/faces1ff.png>] [15 </home
-/jcasa/meld/tnrse2017/finalplots/faces1ff_8.png>] (./tnnls2017_2.bbl [16])
+[11 </home/jcasa/meld/tnrse2017/finalplots/faces100.png> </home/jcasa/meld/tnrs
+e2017/finalplots/faces100_8.png>] [12 </home/jcasa/meld/tnrse2017/finalplots/au
+d1la.png>] [13 </home/jcasa/meld/tnrse2017/finalplots/faces1ff.png>] [14 </home
+/jcasa/meld/tnrse2017/finalplots/faces1ff_8.png>] (./tnnls2017_2.bbl [15])
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no ™ in font ptmr7t!
 
-[17]
+[16]
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no “ in font ptmr7t!
- [18] (./tnnls2017_2.aux) ) 
+ [17] (./tnnls2017_2.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
 Here is how much of TeX's memory you used:
- 3332 strings out of 493029
- 52639 string characters out of 6136234
- 119191 words of memory out of 5000000
- 6800 multiletter control sequences out of 15000+600000
+ 3326 strings out of 493029
+ 52434 string characters out of 6136234
+ 121181 words of memory out of 5000000
+ 6795 multiletter control sequences out of 15000+600000
  43422 words of font info for 83 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  38i,7n,23p,1584b,349s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/
-8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb
-></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/te
-xlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/urw/times/utmri8a.pfb>
-Output written on tnnls2017_2.pdf (18 pages, 1986001 bytes).
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/u
+tmri8a.pfb>
+Output written on tnnls2017_2.pdf (17 pages, 1854561 bytes).
 PDF statistics:
- 106 PDF objects out of 1000 (max. 8388607)
- 55 compressed objects within 1 object stream
+ 101 PDF objects out of 1000 (max. 8388607)
+ 53 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 76 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 71 words of extra memory for PDF output out of 10000 (max. 10000000)
 
