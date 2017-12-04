@@ -2,7 +2,7 @@
 
 
 
-\documentclass[journal,12pt,onecolumn,draftclsnofoot,]{IEEEtran}
+\documentclass[journal]{IEEEtran}
 
 \usepackage{cite}
 \usepackage{graphicx}
@@ -23,7 +23,7 @@
 \begin{document}
 % Definition of blocks:
 
-\title{EEG and MEG Inversion Using Convolutional and Recurrent Neural Networks}
+\title{A New Technique of EEG and MEG Rapid Inversion Using Convolutional and Recurrent Neural Networks}
 
 
 \author{Joaquin~J.~Casanova,~\IEEEmembership{Member,~IEEE,}
@@ -44,7 +44,7 @@ FL, 32611 USA e-mail: jcasa@ufl.edu}% <-this % stops a space
 
 \begin{abstract}
 
-  Real-time localization of neuronal activity has a number of uses, including brain-computer interfaces and medical diagnostics. Generally, this is done by taking measurements of the brain's magnetic and electric fields (magnetoencephalography [MEG] and electroencephalography [EEG]), and inverting the measurements. Most approaches are physics-based, and attempt to find the best estimate of the lead-field matrix, which relates the dipole activation to the field strength by minimizing the error of an estimate. To date, most approaches using the lead-field matrix are complicated and too slow in real time, aimed primarily at elucidating brain structural functional relationships from experimental data. We propose a new technique in which the location of peak neuronal current is estimated by treating EEG and MEG as a two-channel image, or time-series of images, which is processed by a neural network which returns the location of the dipole of peak magnitude. Four architectures are tested: 2-layer perceptron, convolutional neural network (CNN), recurrent neural network (RNN), and CNN feeding RNN. In the absence of true measures of neuronal activity, we used two publicly available MEG/EEG datasets, and treated the estimates of the traditional minimum-norm estimate (MNE) as true estimates. We test the four variations of the network architecture, and in the best case (CNN only), we achieve test dataset errors (RMSE of max dipole location) of 1.9 and 5.1 mm on two separate datasets of MEG/EEG time series from subjects with different types of stimulus.
+ Real-time localization of neuronal activity has a number of uses, including brain-computer interfaces and medical diagnostics. Generally, this is done by taking measurements of the brain's magnetic and electric fields (magnetoencephalography [MEG] and electroencephalography [EEG]), and inverting the measurements. Most approaches are physics-based, and attempt to find the best estimate of the lead-field matrix, which relates the dipole activation to the field strength by minimizing the error of an estimate. To date, most approaches using the lead-field matrix are complicated and too slow in real time, aimed primarily at elucidating brain structural functional relationships from experimental data. We propose a new technique in which the location of peak neuronal current is estimated by treating EEG and MEG as a two-channel image, or time-series of images, which is processed by a neural network which returns the location of the dipole of peak magnitude. Four architectures are tested: 2-layer perceptron, convolutional neural network (CNN), recurrent neural network (RNN), and CNN feeding RNN. In the absence of true measures of neuronal activity, we used two publicly available MEG/EEG datasets, and treated the estimates of the traditional minimum-norm estimate (MNE) as true estimates. We test the four variations of the network architecture, and in the best case (CNN only), we achieve test dataset errors (RMSE of max dipole location) of 1.9 and 5.1 mm on two separate datasets of MEG/EEG time series from subjects with different types of stimulus.
   
 \end{abstract}
 
@@ -68,7 +68,7 @@ The fundamental model for describing the relationship between MEG/EEG measuremen
 \begin{figure*}[h!]
 \centering
 \includegraphics[width=5in]{3cartoons}
-\caption{Simplified drawing of the neuron/fields model used in this paper and the two others commonly used in MEG/EEG inversion.}
+\caption{Simplified drawing of the neuron/fields models discussed in this paper: (a) estimation of current at every point; (b) single-dipole fit; (c) maximum dipole location,  used in this paper.}
 \label{fig:cartoon}
 \end{figure*}
 
@@ -88,7 +88,7 @@ In this section, we describe our methodology, including datasets, preprocessing,
 
 To test our method, we used two multimodal datasets. Both were processed using the python-mne package \cite{gramfort2014mne}. In each, we use the current map predicted by MNE as the truth; from this we find the location of the maximum dipole as the truth on which to train our networks. This is because there is no real, publicly available dataset which includes both MEG/EEG eletrocortigraphic (ECoG) measurements (placing electrodes directly in the brain to measure activity, the only way to exactly measure the location of peak neural current). The spatial location error associated with inversion is estimated at around 3mm \cite{leahy1998study}, so errors we report are in addition to that error. This is a limitation of the datasets available, and not the fundamentals of our proposed technique - with a training dataset which has ECoG we could achieve higher spatial accuracy.
 
-One dataset \cite{wakeman2015multi} consisted of 19 subjects presented with stimulus of famous, unfamiliar, or scrambled faces. This data was obtained from the OpenfMRI database. Its accession number is ds000117. There were 102 magnetometers, 204 planar gradiometers, and 70 electrodes, with 3 electrodes used for ocular and cardiac arifacts. We excluded gradiometers, as our study is to develop an inversion technique for use with our own MEG system, which only has the radial magnetometers. We considered one subject only (sub007) as that subject's MRI was the only one to segment properly into skin, skull, and cortex layers (an important feature for the inversion step). We used the data processing pipeline provided with the dataset here: \url{http://mne-tools.github.io/mne-biomag-group-demo/}. The sampling rate was 1100 Hz, with 551 time points per trial, and oct6 (source spacing 4.9 mm) grid for the dipole mesh used in MNE. There were a total of 879 trials. We studied subjects 7 and 8, as their MRIs were best segmented by the MNE toolbox - accurate segmentation into skull, skin, and cortex is necessary for classical inversion of MEG/EEG.
+One dataset \cite{wakeman2015multi} consisted of 19 subjects presented with stimulus of famous, unfamiliar, or scrambled faces. This data was obtained from the OpenfMRI database. Its accession number is ds000117. There were 102 magnetometers, 204 planar gradiometers, and 70 electrodes, with 3 electrodes used for ocular and cardiac arifacts. We excluded gradiometers, as our study is to develop an inversion technique for use with our own MEG system, which only has the radial magnetometers. We considered two subjects only (sub007 and sub008) as those subjects' MRIs were the only one to segment properly into skin, skull, and cortex layers (an important feature for the inversion step). We used the data processing pipeline provided with the dataset here: \url{http://mne-tools.github.io/mne-biomag-group-demo/}. The sampling rate was 1100 Hz, with 551 time points per trial, and oct6 (source spacing 4.9 mm) grid for the dipole mesh used in MNE. There were a total of 879 trials. 
 
 The second dataset \cite{gramfort2013meg} is included with MNE, and consists of trials where multiple subjects received audio or visual stimulus: checkerboard patterns were presented into the left and right visual field, interspersed by tones to the left or right ear. The dataset includes, for each trial, one ocular channel (for artifact removal), 59 EEG channels 102, and MEG channels. The source grid used was oct5 (9.9 mm). The sampling rate was 150 Hz, for 106 time steps, with 239 trials. 
 
